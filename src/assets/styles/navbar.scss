@@ -1,0 +1,12 @@
+.navbar {
+  .navbar-nav {
+    width: 100%;
+  }
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+      color: gold;
+    }
+  }
+}
