@@ -10,13 +10,7 @@ import Container from "react-bootstrap/Container";
 
 function App() {
   return (
-    <Navbar
-      collapseOnSelect
-      expand="md"
-      bg="dark"
-      variant="dark"
-      className="justify"
-    >
+    <Navbar collapseOnSelect expand="md" variant="dark" className="justify">
       <Container>
         <Navbar.Brand href="#home">
           <img
