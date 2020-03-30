@@ -2,6 +2,9 @@ import React from "react";
 import "../assets/styles/footer1.scss";
 import { Link } from "react-router-dom";
 
+// components
+import Map from "./Map";
+
 // assets
 import RMClogo from "../assets/images/RMC.png";
 
@@ -18,13 +21,15 @@ function Footer1() {
   return (
     <div className="footer1 debugger justify-content-center">
       <Container>
-        <Row>
-          <Col className="debugger">
+        <Row noGutters className="justify-content-center">
+          <Col xs={8} md={3}>
             <img id="footer1-RMClogo" src={RMClogo} alt="RMC Logo" />
-            <p>Tell us more about your goals, so we can get you started.</p>
+            <p className="d-none d-sm-block">
+              Tell us more about your goals, so we can get you started.
+            </p>
           </Col>
-          <Col className="debugger">
-            <h6>Quick Links</h6>
+          <Col xs={8} md={3}>
+            <h6 className="d-none d-sm-block">Quick Links</h6>
             <p>
               <Link>About us</Link>
             </p>
@@ -38,7 +43,7 @@ function Footer1() {
               <Link>Let's talk</Link>
             </p>
           </Col>
-          <Col className="debugger">
+          <Col xs={8} md={3} className="d-none d-sm-block">
             <h6>Get in touch</h6>
             <p>
               {" "}
@@ -56,7 +61,16 @@ function Footer1() {
               rmcordoviz@outlook.com
             </p>
           </Col>
-          <Col className="debugger">4</Col>
+          <Col xs={8} md={3}>
+            <div style={{ height: "200px" }}>
+              <Map
+                googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7F3Mt64XDAJ6EeXCRxh0H28vD2lZoYh4`}
+                loadingElement={<div style={{ height: `100%` }} />}
+                containerElement={<div style={{ height: `100%` }} />}
+                mapElement={<div style={{ height: `100%` }} />}
+              />
+            </div>
+          </Col>
         </Row>
       </Container>
     </div>

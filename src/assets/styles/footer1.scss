@@ -1,6 +1,19 @@
 .footer1 {
   text-align: center;
+  padding: 2% 0;
+
+  .col:first-child {
+    p {
+      margin: 0 15%;
+    }
+  }
   #footer1-RMClogo {
     width: 50%;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
