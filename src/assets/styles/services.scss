@@ -15,8 +15,12 @@ $gold-color: #ffc107;
   text-align: center;
   margin: 0% 1%;
   &:hover {
-    cursor: pointer;
+    .line-indicator {
+      border: 5px solid $gold-color;
+      background-color: $gold-color;
+    }
   }
+  cursor: pointer;
 }
 
 .category-title {
@@ -34,8 +38,8 @@ $gold-color: #ffc107;
   margin-top: 15%;
   margin-bottom: 10%;
 
-  &:hover {
-    border: 5px solid $gold-color;
-    background-color: $gold-color;
-  }
+  // &:hover {
+  //   border: 5px solid $gold-color;
+  //   background-color: $gold-color;
+  // }
 }
