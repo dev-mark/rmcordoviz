@@ -17,7 +17,7 @@ import Coaching from "../components/Services-Coaching";
 import Marketing from "../components/Services-Marketing";
 
 const Services = () => {
-  const [selected, setSelected] = useState("development");
+  const [selected, setSelected] = useState("coaching");
 
   return (
     <div>
@@ -35,7 +35,7 @@ const Services = () => {
       </div>
       <div className="services-category  text-center">
         <Container>
-          <Row noGutters className=" justify-content-center align-middle">
+          <Row noGutters className=" justify-content-center">
             <Col lg={3} className=" category-title">
               <h3 className="text-warning">Coaching</h3>
             </Col>
@@ -95,7 +95,7 @@ const Services = () => {
           </Row>
         </Container>
       </div>
-      <Container className="debugger">
+      <Container className="">
         {selected === "coaching" && <Coaching />}
         {selected === "marketing" && <Marketing />}
         {selected === "development" && <SoftwareDevelopment />}
