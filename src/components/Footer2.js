@@ -37,6 +37,7 @@ function Footer() {
               <div className="footer-socialMediaLogos">
                 <a href="https://www.facebook.com/rmccordoviz/">
                   <img
+                    className="icons-white"
                     src={facebookLogo}
                     height="20"
                     width="20"
@@ -45,6 +46,7 @@ function Footer() {
                 </a>
                 <a href="https://twitter.com/rmccordoviz">
                   <img
+                    className="icons-white"
                     src={twitterLogo}
                     height="20"
                     width="20"
@@ -53,6 +55,7 @@ function Footer() {
                 </a>
                 <a href="https://www.linkedin.com/company/rmccordoviz/">
                   <img
+                    className="icons-white"
                     src={linkedInLogo}
                     height="20"
                     width="20"
@@ -61,6 +64,7 @@ function Footer() {
                 </a>
                 <a href="https://www.instagram.com/rmcordoviz/">
                   <img
+                    className="icons-white"
                     src={instagramLogo}
                     height="20"
                     width="20"

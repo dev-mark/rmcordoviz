@@ -47,12 +47,19 @@ function Footer1() {
             <h6>Get in touch</h6>
             <p>
               {" "}
-              <img src={phoneSolid} height="15" width="15" alt="phone icon" />
+              <img
+                className="icons-white"
+                src={phoneSolid}
+                height="15"
+                width="15"
+                alt="phone icon"
+              />
               +1 877 690 9730
             </p>
             <p>
               {" "}
               <img
+                className="icons-white"
                 src={envelopeSolid}
                 height="15"
                 width="15"

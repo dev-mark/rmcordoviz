@@ -1,7 +1,8 @@
 .footer1 {
   text-align: center;
   padding: 2% 0;
-
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
   .col:first-child {
     p {
       margin: 0 15%;
@@ -12,8 +13,20 @@
   }
 
   a {
+    color: white;
     &:hover {
+      color: gold;
       text-decoration: none;
     }
+  }
+}
+
+.icons-white {
+  filter: invert(100%) sepia(0%) saturate(1352%) hue-rotate(87deg)
+    brightness(119%) contrast(200%);
+
+  &:hover {
+    filter: invert(50%) sepia(100%) saturate(50%) hue-rotate(0) brightness(10%)
+      contrast(10%);
   }
 }
