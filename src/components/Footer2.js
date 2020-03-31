@@ -51,7 +51,7 @@ function Footer() {
                     alt="twitter logo"
                   />
                 </a>
-                <a href="https://www.instagram.com/rmcordoviz/">
+                <a href="https://www.linkedin.com/company/rmccordoviz/">
                   <img
                     src={linkedInLogo}
                     height="20"
@@ -59,7 +59,7 @@ function Footer() {
                     alt="linkedIn logo"
                   />
                 </a>
-                <a href="https://www.linkedin.com/company/rmccordoviz/">
+                <a href="https://www.instagram.com/rmcordoviz/">
                   <img
                     src={instagramLogo}
                     height="20"

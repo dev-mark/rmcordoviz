@@ -1,4 +1,6 @@
 .footer {
+  color: white;
+  background-color: grey;
   padding: 1% 0 2% 0;
   .footer-text {
     p {
@@ -11,6 +13,15 @@
   }
   .footer-socialMediaLogos {
     margin-top: 1%;
+    img {
+      filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
+        brightness(119%) contrast(119%);
+
+      &:hover {
+        filter: invert(1) sepia(0%) saturate(0%) hue-rotate(0) brightness(200%)
+          contrast(1%);
+      }
+    }
 
     a {
       margin: 0 1.5%;
