@@ -2,13 +2,16 @@ import React from "react";
 import "../assets/styles/services-development.scss";
 
 // bootstrap
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 // images
 import webDev from "../assets/images/web-dev.jpeg";
 import appDev from "../assets/images/app-dev.jpeg";
+import sample1 from "../assets/images/sample1.jpeg";
+import sample2 from "../assets/images/sample2.jpeg";
+import sample3 from "../assets/images/sample3.jpeg";
+import sample4 from "../assets/images/sample4.jpeg";
 
 function SoftwareDevelopment() {
   return (
@@ -65,6 +68,52 @@ function SoftwareDevelopment() {
             alt="app development"
             className="development-image"
           />
+        </Col>
+      </Row>
+      <Row className=" justify-content-center mb-5 mt-3">
+        <Col lg={3} className="  text-center justify-content-center">
+          <div className=" sample-website-images-container">
+            <img
+              className="sample-website-images"
+              src={sample1}
+              alt="sample1"
+              height="35"
+              width="35"
+            />
+          </div>
+        </Col>
+        <Col lg={3} className="  text-center justify-content-center">
+          <div className=" sample-website-images-container">
+            <img
+              className="sample-website-images"
+              src={sample2}
+              alt="sample2"
+              height="35"
+              width="35"
+            />
+          </div>
+        </Col>
+        <Col lg={3} className="  text-center justify-content-center">
+          <div className=" sample-website-images-container">
+            <img
+              className="sample-website-images"
+              src={sample3}
+              alt="sample3"
+              height="35"
+              width="35"
+            />
+          </div>
+        </Col>
+        <Col lg={3} className="  text-center justify-content-center">
+          <div className=" sample-website-images-container">
+            <img
+              className="sample-website-images"
+              src={sample4}
+              alt="sample4"
+              height="35"
+              width="35"
+            />
+          </div>
         </Col>
       </Row>
     </div>
