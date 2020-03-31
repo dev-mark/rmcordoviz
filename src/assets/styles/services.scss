@@ -1,7 +1,41 @@
+$gold-color: #ffc107;
+
 .services-banner {
   height: 60vh;
   background-image: url("../images/services-cover.jpeg");
   width: 100%;
   background-size: cover;
   background-position-y: bottom;
+}
+
+.icon-container {
+  margin-bottom: 10%;
+}
+.category-container {
+  text-align: center;
+  margin: 0% 1%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.category-title {
+  margin: 2% 1% 1% 1%;
+  display: flex;
+  h3 {
+    margin: auto;
+  }
+}
+
+.line-indicator {
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 95%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+
+  &:hover {
+    border: 5px solid $gold-color;
+    background-color: $gold-color;
+  }
 }

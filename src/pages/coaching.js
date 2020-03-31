@@ -87,7 +87,7 @@ function coaching() {
       <Row className=" justify-content-center ">
         <Container>
           <h1 className="text-warning mt-5 mb-5">Our Team</h1>
-          <Row className="  justify-content-center">
+          <Row className="justify-content-center">
             <Col
               lg={4}
               className=" ml-4 mr-4 mb-5 text-white content-team-container"
