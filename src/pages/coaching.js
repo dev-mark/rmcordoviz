@@ -97,7 +97,7 @@ function coaching() {
                 className="coaching-team-image p-4"
                 alt="Ross Cordoviz"
               />
-              <h4 className="mt-4 mb-4">Ross Cordoviz</h4>
+              <h4 className="mt-4 mb-4 content-team-name">Ross Cordoviz</h4>
             </Col>
             <Col
               lg={4}
@@ -108,7 +108,7 @@ function coaching() {
                 className="coaching-team-image p-4"
                 alt="Melanie Cordoviz"
               />
-              <h4 className="mt-4 mb-4">Melanie Cordoviz</h4>
+              <h4 className="mt-4 mb-4 content-team-name">Melanie Cordoviz</h4>
             </Col>
           </Row>
         </Container>

@@ -16,12 +16,19 @@ li {
 
 .coaching-team-image {
   width: 100%;
+  max-height: 350px;
 }
 
 .content-team-container {
   background-color: none;
   border: 2px solid $gold-color;
   border-radius: 10px;
+  text-align: center;
+
+  .content-team-name {
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 #color-overlay {
