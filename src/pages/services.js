@@ -17,7 +17,7 @@ import Coaching from "../components/Services-Coaching";
 import Marketing from "../components/Services-Marketing";
 
 const Services = () => {
-  const [selected, setSelected] = useState("marketing");
+  const [selected, setSelected] = useState("development");
 
   return (
     <div>
