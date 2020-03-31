@@ -34,9 +34,6 @@ function App() {
               <Link>Services</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link>Services</Link>
-            </Nav.Link>
-            <Nav.Link>
               <Link>Contact</Link>
             </Nav.Link>
             <Nav.Link>
