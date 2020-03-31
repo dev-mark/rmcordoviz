@@ -16,7 +16,7 @@ import Row from "react-bootstrap/Row";
 function Footer() {
   return (
     <div>
-      <div className="footer justify-content-center debugger">
+      <div className="footer justify-content-center">
         <Container>
           <Row>
             <Col className="footer-text">

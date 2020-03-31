@@ -19,7 +19,7 @@ import Row from "react-bootstrap/Row";
 
 function Footer1() {
   return (
-    <div className="footer1 debugger justify-content-center">
+    <div className="footer1  justify-content-center">
       <Container>
         <Row noGutters className="justify-content-center">
           <Col xs={8} md={3}>
@@ -31,16 +31,16 @@ function Footer1() {
           <Col xs={8} md={3}>
             <h6 className="d-none d-sm-block">Quick Links</h6>
             <p>
-              <Link>About us</Link>
+              <Link to="/about">About us</Link>
             </p>
             <p>
-              <Link>Coaching</Link>
+              <Link to="/coaching">Coaching</Link>
             </p>
             <p>
-              <Link>Health and wellness</Link>
+              <Link to="/health-and-wellness">Health and wellness</Link>
             </p>
             <p>
-              <Link>Let's talk</Link>
+              <Link to="/contact">Let's talk</Link>
             </p>
           </Col>
           <Col xs={8} md={3} className="d-none d-sm-block">

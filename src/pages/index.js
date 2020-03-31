@@ -8,10 +8,10 @@ import Footer2 from "../components/Footer2.js";
 function index() {
   return (
     <div>
-      <Navbar />
-      <h1> THIS IS THE BODY</h1>
-      <Footer1 />
-      <Footer2 />
+      {/* <Navbar /> */}
+      <h1> HOME PAGE</h1>
+      {/* <Footer1 />
+      <Footer2 /> */}
     </div>
   );
 }

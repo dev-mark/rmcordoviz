@@ -25,22 +25,22 @@ function App() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="justify-content-end">
             <Nav.Link>
-              <Link>Home</Link>
+              <Link to="/">Home</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link>About</Link>
+              <Link to="/about">About</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link>Services</Link>
+              <Link to="/services">Services</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link>Contact</Link>
+              <Link to="/contact">Contact</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link>Coaching</Link>
+              <Link to="/coaching">Coaching</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link>Health and Wellness</Link>
+              <Link to="/health-and-wellness">Health and Wellness</Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
