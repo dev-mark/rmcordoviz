@@ -1,0 +1,44 @@
+$gold-color: #ffc107;
+
+#coaching-content-text {
+  padding: 5% 10%;
+  line-height: 170%;
+}
+.coaching-banner {
+  height: 60vh;
+  background-image: url("../images/coaching.jpg");
+  background-size: cover;
+  background-position-y: bottom;
+}
+li {
+  list-style-type: none;
+}
+
+.coaching-team-image {
+  width: 100%;
+}
+
+.content-team-container {
+  background-color: none;
+  border: 2px solid $gold-color;
+  border-radius: 10px;
+}
+
+#color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.center-text-to-div {
+  h1 {
+    letter-spacing: 15px;
+  }
+  letter-spacing: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

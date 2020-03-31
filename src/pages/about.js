@@ -18,11 +18,11 @@ function about() {
       </div>
       <div>
         <Row noGutters className="mb-5 justify-content-center">
-          <Col md={5} className=" fix-holder-height">
+          <Col lg={5} className=" fix-holder-height">
             <img src={RossImage} className="image" />
           </Col>
           <Col
-            md={6}
+            lg={6}
             className="text-left bg-warning fix-holder-height info-div"
           >
             <div className="mb-4">
@@ -62,11 +62,11 @@ function about() {
           </Col>
         </Row>
         <Row noGutters className=" justify-content-center">
-          <Col md={5} className=" fix-holder-height">
+          <Col lg={5} className=" fix-holder-height">
             <img src={MelanieImage} className="image" />
           </Col>
           <Col
-            md={6}
+            lg={6}
             className="text-left bg-warning fix-holder-height info-div"
           >
             <div className="mb-4">
