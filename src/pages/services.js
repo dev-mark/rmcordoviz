@@ -12,9 +12,9 @@ import consultantIcon from "../assets/icons/consultant.svg";
 import codeIcon from "../assets/icons/code.svg";
 
 // Components
-import SoftwareDevelopment from "../components/SoftwareDevelopment";
-import Coaching from "../components/Coaching";
-import Marketing from "../components/Marketing";
+import SoftwareDevelopment from "../components/Services-SoftwareDevelopment";
+import Coaching from "../components/Services-Coaching";
+import Marketing from "../components/Services-Marketing";
 
 const Services = () => {
   const [selected, setSelected] = useState("marketing");

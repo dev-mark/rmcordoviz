@@ -1,0 +1,36 @@
+$gold-color: #ffc107;
+
+.marketing-content {
+  text-align: center;
+  padding: 0% 10% 2% 10%;
+  line-height: 170%;
+  letter-spacing: 1px;
+}
+
+.seo-checklist {
+  padding: 4% 20%;
+  display: flex;
+  line-height: 200%;
+  ul {
+    padding-left: 20%;
+    span {
+      padding-right: 3%;
+    }
+
+    li {
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.services-icon-container {
+  border: 2px solid $gold-color;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  margin: auto;
+  img {
+    margin: auto;
+  }
+}
