@@ -19,7 +19,7 @@ function about() {
       <div>
         <Row noGutters className="mb-5 justify-content-center">
           <Col lg={5} className=" fix-holder-height">
-            <img src={RossImage} className="image" />
+            <img src={RossImage} className="image" alt="Ross Cordoviz" />
           </Col>
           <Col
             lg={6}
@@ -63,7 +63,7 @@ function about() {
         </Row>
         <Row noGutters className=" justify-content-center">
           <Col lg={5} className=" fix-holder-height">
-            <img src={MelanieImage} className="image" />
+            <img src={MelanieImage} className="image" alt="Melanie Cordoviz" />
           </Col>
           <Col
             lg={6}

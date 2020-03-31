@@ -92,14 +92,22 @@ function coaching() {
               lg={4}
               className=" ml-4 mr-4 mb-5 text-white content-team-container"
             >
-              <img src={RossImage} className="coaching-team-image p-4" />
+              <img
+                src={RossImage}
+                className="coaching-team-image p-4"
+                alt="Ross Cordoviz"
+              />
               <h4 className="mt-4 mb-4">Ross Cordoviz</h4>
             </Col>
             <Col
               lg={4}
               className=" ml-4 mr-4 mb-5 text-white content-team-container"
             >
-              <img src={MelanieImage} className="coaching-team-image p-4" />
+              <img
+                src={MelanieImage}
+                className="coaching-team-image p-4"
+                alt="Melanie Cordoviz"
+              />
               <h4 className="mt-4 mb-4">Melanie Cordoviz</h4>
             </Col>
           </Row>
