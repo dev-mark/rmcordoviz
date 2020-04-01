@@ -19,12 +19,12 @@ import Button from "react-bootstrap/Button";
 function zija() {
   return (
     <div>
-      <div className=" zija-banner">
+      <div className="zija-banner">
         <div id="zija-color-overlay">
-          <div className="center-text-to-div top-layer">
+          <div className="center-text-to-div">
             <img
               src={zijaDistributorLogo}
-              className=""
+              className=" top-layer"
               alt="Zija Distributer logo"
             />
           </div>
