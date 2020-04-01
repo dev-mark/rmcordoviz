@@ -44,3 +44,22 @@
 .services-container-landing-page {
   height: 60vh;
 }
+
+.why-container {
+  background-color: white;
+  border-radius: 5%;
+  height: 35vh;
+}
+.why-images-container {
+  width: 100%;
+}
+.why-images {
+  width: 82.5%;
+  object-fit: contain;
+  height: 19vh;
+  bottom: 5%;
+  position: absolute;
+}
+.feedback-carousel {
+  height: 45vh;
+}
