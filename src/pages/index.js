@@ -21,6 +21,10 @@ import thumbsUpManPhoto from "../assets/images/thumbs-up-man.png";
 import greatIdeaPhoto from "../assets/images/great-idea.png";
 import businessSolutionPhoto from "../assets/images/business-solution.png";
 
+// components
+import ServiceCategory from "../components/Service-Category";
+import WhyUs from "../components/Why-Us";
+
 const Index = () => {
   const [index, setIndex] = useState(0);
 
@@ -48,51 +52,26 @@ const Index = () => {
         <Container>
           <h1 className="">Services</h1>
           <Row noGutters className=" justify-content-center">
-            <Col lg={3} className=" category-container">
-              <div className=" icon-container">
-                <img
-                  src={consultantIcon}
-                  alt="consultant logo"
-                  height="200"
-                  width="200"
-                />
-              </div>
-              <h3>Certified Consultant</h3>
-              <p>
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Praesent venenatis.
-              </p>
-            </Col>
-            <Col lg={3} className=" category-container">
-              <div className=" icon-container">
-                <img
-                  src={marketingIcon}
-                  alt="marketing logo"
-                  height="200"
-                  width="200"
-                />
-              </div>
-              <h3>Marketing</h3>
-              <p>
-                Nullam consequat urna at quam scelerisque vehicula. Morbi non
-                nisi tempor, dapibus orci sit amet.
-              </p>
-            </Col>
-            <Col lg={3} className=" category-container">
-              <div className=" icon-container">
-                <img
-                  src={codeIcon}
-                  alt="marketing logo"
-                  height="200"
-                  width="200"
-                />
-              </div>
-              <h3>Web Development</h3>
-              <p>
-                Mauris malesuada sodales libero nec sodales. Donec interdum
-                ligula ut neque hendrerit porttitor. Curabitur porttitor.
-              </p>
-            </Col>
+            <ServiceCategory
+              title="Certified Consultant"
+              icon={consultantIcon}
+              description="Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Praesent venenatis."
+            />
+
+            <ServiceCategory
+              title="Marketing"
+              icon={marketingIcon}
+              description="Nullam consequat urna at quam scelerisque vehicula. Morbi non
+              nisi tempor, dapibus orci sit amet."
+            />
+
+            <ServiceCategory
+              title="Web Development"
+              icon={codeIcon}
+              description=" Mauris malesuada sodales libero nec sodales. Donec interdum
+              ligula ut neque hendrerit porttitor. Curabitur porttitor."
+            />
           </Row>
         </Container>
       </div>
@@ -101,62 +80,42 @@ const Index = () => {
         <Container className="text-center">
           <h1 className="text-white my-5">Why Us?</h1>
           <Row className=" justify-content-center">
-            <Col lg={3} className=" why-container text-left p-4 m-4">
-              <h5>Personal Consultation</h5>
-              <p>ONE ON ONE TALK</p>
-              <img
-                src={oneOnOnePhoto}
-                alt="one on one"
-                className=" why-images"
-              />
-            </Col>
-            <Col lg={3} className=" why-container text-left p-4 m-4">
-              <h5>Business Solution</h5>
-              <p>FINDING SOLUTION</p>
-              <img
-                src={businessSolutionPhoto}
-                alt="business solution"
-                className=" why-images"
-              />
-            </Col>
-            <Col lg={3} className=" why-container text-left p-4 m-4">
-              <h5>Great Ideas</h5>
-              <p>IDEAS THAT WILL BLOW YOUR MIND</p>
-              <img
-                src={greatIdeaPhoto}
-                alt="great idea"
-                className=" why-images"
-              />
-            </Col>
+            <WhyUs
+              title="Personal Consultation"
+              subtitle="ONE ON ONE TALK"
+              image={oneOnOnePhoto}
+            />
+
+            <WhyUs
+              title="Business Solution"
+              subtitle="FINDING SOLUTION"
+              image={businessSolutionPhoto}
+            />
+
+            <WhyUs
+              title="Great Ideas"
+              subtitle="IDEAS THAT WILL BLOW YOUR MIND"
+              image={greatIdeaPhoto}
+            />
           </Row>
           <Row className=" justify-content-center mb-5">
-            <Col lg={3} className=" why-container text-left p-4 m-4">
-              <h5>Improved Business</h5>
-              <p> BUSINESS TO WHOLE NEW LEVEL</p>
-              <img
-                src={thumbsUpManPhoto}
-                alt="Thumbs up man"
-                className=" why-images"
-              />
-            </Col>
-            <Col lg={3} className=" why-container text-left p-4 m-4">
-              <h5>Shared Expertise</h5>
-              <p>LEARN FROM THE BEST</p>
-              <img
-                src={sharedExpertisePhoto}
-                alt="shared expertise"
-                className="why-images "
-              />
-            </Col>
-            <Col lg={3} className=" why-container text-left p-4 m-4">
-              <h5>Achieved Goals</h5>
-              <p>CLOSE THE DEAL</p>
-              <img
-                src={successManPhoto}
-                alt="Happy man"
-                className=" why-images"
-              />
-            </Col>
+            <WhyUs
+              title="Improved Business"
+              subtitle="BUSINESS TO WHOLE NEW LEVEL"
+              image={thumbsUpManPhoto}
+            />
+
+            <WhyUs
+              title="Shared Expertise"
+              subtitle="LEARN FROM THE BEST"
+              image={sharedExpertisePhoto}
+            />
+
+            <WhyUs
+              title="Achieved Goals"
+              subtitle="CLOSE THE DEAL"
+              image={successManPhoto}
+            />
           </Row>
         </Container>
       </div>
@@ -164,7 +123,7 @@ const Index = () => {
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}
-        className="debugger feedback-carousel bg-warning"
+        className=" feedback-carousel bg-warning"
       >
         <Carousel.Item className="text-center">
           <h1>

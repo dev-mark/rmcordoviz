@@ -153,6 +153,13 @@ $zija-color: #05ce7c;
 .success-story-container {
   background-color: white;
   margin: 3% 0;
+  a {
+    color: black;
+    &:hover {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
   .success-story-image-holder {
     width: 100%;
     .success-story-image {

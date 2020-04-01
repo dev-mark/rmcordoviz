@@ -11,6 +11,9 @@ import Button from "react-bootstrap/Button";
 import RossImage from "../assets/images/Ross.PNG";
 import MelanieImage from "../assets/images/Melanie.PNG";
 
+// components
+import TeamMember from "../components/Team-Member";
+
 function coaching() {
   return (
     <div>
@@ -91,28 +94,8 @@ function coaching() {
         <Container>
           <h1 className="text-warning mt-5 mb-5">Our Team</h1>
           <Row className="justify-content-center">
-            <Col
-              lg={4}
-              className=" ml-4 mr-4 mb-5 text-white content-team-container"
-            >
-              <img
-                src={RossImage}
-                className="coaching-team-image p-4"
-                alt="Ross Cordoviz"
-              />
-              <h4 className="mt-4 mb-4 content-team-name">Ross Cordoviz</h4>
-            </Col>
-            <Col
-              lg={4}
-              className=" ml-4 mr-4 mb-5 text-white content-team-container"
-            >
-              <img
-                src={MelanieImage}
-                className="coaching-team-image p-4"
-                alt="Melanie Cordoviz"
-              />
-              <h4 className="mt-4 mb-4 content-team-name">Melanie Cordoviz</h4>
-            </Col>
+            <TeamMember name="Ross Cordoviz" image={RossImage} />
+            <TeamMember name="Melanie Cordoviz" image={MelanieImage} />
           </Row>
         </Container>
       </Row>

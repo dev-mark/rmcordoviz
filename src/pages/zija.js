@@ -1,6 +1,10 @@
 import React from "react";
 import "../assets/styles/zija.scss";
 
+// components
+import SuccesStoryContainer from "../components/SuccessStoryContainer";
+import ZijaProductContainer from "../components/Zija-Product-Container";
+
 // images
 import zijaDistributorLogo from "../assets/images/zija-independent-distributor-logo.png";
 import product1Feature from "../assets/images/zija-featured-1.png";
@@ -36,40 +40,18 @@ function zija() {
             <h1 className="zija-color mt-5">Featured Product</h1>
           </Row>
           <Row noGutters className=" justify-content-center">
-            <Col lg={3} className=" mr-3 ml-3 featured-product-container">
-              <div className="product-overlay">
-                <h5>Product</h5>
-              </div>
-
-              <img
-                src={product1Feature}
-                alt="consultant logo"
-                height="200"
-                width="200"
-              />
-            </Col>
-            <Col lg={3} className=" mr-3 ml-3 featured-product-container">
-              <div className="product-overlay">
-                <h5>Product</h5>
-              </div>
-              <img
-                src={product2Feature}
-                alt="marketing logo"
-                height="200"
-                width="200"
-              />
-            </Col>
-            <Col lg={3} className=" mr-3 ml-3 featured-product-container">
-              <div className="product-overlay">
-                <h5>Product</h5>
-              </div>
-              <img
-                src={product3Feature}
-                alt="marketing logo"
-                height="200"
-                width="200"
-              />
-            </Col>
+            <ZijaProductContainer
+              productName="Product Name"
+              productImage={product1Feature}
+            />
+            <ZijaProductContainer
+              productName="Product Name"
+              productImage={product2Feature}
+            />
+            <ZijaProductContainer
+              productName="Product Name"
+              productImage={product3Feature}
+            />
           </Row>
         </Container>
       </div>
@@ -105,75 +87,27 @@ function zija() {
           <h1 className="zija-color mt-5">Success Stories</h1>
         </Row>
         <Row noGutters className=" justify-content-center">
-          <Col lg={3} className=" mr-3 ml-3 success-story-container">
-            <div className="success-story-image-holder">
-              <img
-                className="success-story-image"
-                src={successStory1}
-                alt="consultant logo"
-                height="200"
-                width="200"
-              />
-
-              <h3 className=" text-left success-story-title">Brent Noel</h3>
-              <hr />
-              <p className="text-left pl-2">
-                Proin bibendum at urna ac venenatis. Fusce sodales, leo eu
-                sollicitudin cursus, purus lorem viverra...
-              </p>
-              <p className="text-left pl-2">
-                <a href="https://blog.zijainternational.com/fall-health-challenge-winner-brent-noel/">
-                  Read more...
-                </a>
-              </p>
-            </div>
-          </Col>
-          <Col lg={3} className=" mr-3 ml-3 success-story-container">
-            <div className="success-story-image-holder">
-              <img
-                className="success-story-image"
-                src={successStory2}
-                alt="consultant logo"
-                height="200"
-                width="200"
-              />
-
-              <h3 className=" text-left success-story-title">Matthew Maloy</h3>
-              <hr />
-              <p className="text-left pl-2">
-                Praesent eget hendrerit turpis. Maecenas sed est eu nulla
-                placerat dapibus non eu ante. In...
-              </p>
-              <p className="text-left pl-2">
-                <a href="https://blog.zijainternational.com/health-challenge-matthew-maloy/">
-                  Read more...
-                </a>
-              </p>
-            </div>
-          </Col>
-          <Col lg={3} className=" mr-3 ml-3 success-story-container">
-            <div className="success-story-image-holder">
-              <img
-                className="success-story-image"
-                src={successStory3}
-                alt="consultant logo"
-                height="200"
-                width="200"
-              />
-
-              <h3 className=" text-left success-story-title">Kelly Aney</h3>
-              <hr />
-              <p className="text-left pl-2">
-                In hac habitasse platea dictumst. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames...
-              </p>
-              <p className="text-left pl-2">
-                <a href="https://blog.zijainternational.com/health-challenge-winner-kelly-aney/">
-                  Read more...
-                </a>
-              </p>
-            </div>
-          </Col>
+          <SuccesStoryContainer
+            name="Brent Noel"
+            image={successStory1}
+            description="Proin bibendum at urna ac venenatis. Fusce sodales, leo eu
+                  sollicitudin cursus, purus lorem viverra..."
+            link="https://blog.zijainternational.com/fall-health-challenge-winner-brent-noel/"
+          />
+          <SuccesStoryContainer
+            name="Matthew Maloy"
+            image={successStory2}
+            description="Praesent eget hendrerit turpis. Maecenas sed est eu nulla
+            placerat dapibus non eu ante. In..."
+            link="https://blog.zijainternational.com/health-challenge-matthew-maloy/"
+          />
+          <SuccesStoryContainer
+            name="Kelly Aney"
+            image={successStory3}
+            description="In hac habitasse platea dictumst. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames..."
+            link="https://blog.zijainternational.com/health-challenge-winner-kelly-aney/"
+          />
         </Row>
       </Container>
 
