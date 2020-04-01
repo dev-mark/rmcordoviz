@@ -7,9 +7,13 @@ $gold-color: #ffc107;
   }
   a {
     color: white;
+
     &:hover {
-      text-decoration: none;
       color: $gold-color;
+      text-decoration: none;
     }
+  }
+  .selected-state {
+    color: $gold-color;
   }
 }

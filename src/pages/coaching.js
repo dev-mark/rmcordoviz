@@ -76,7 +76,10 @@ function coaching() {
                   <strong>It’s time and you deserve it!</strong>
                 </span>
               </p>
-              <Button variant="warning" className="text-white mt-3">
+              <Button
+                variant="warning"
+                className="text-white mt-3 find-more-button"
+              >
                 <strong>Find out more</strong>
               </Button>
             </Col>

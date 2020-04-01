@@ -37,34 +37,38 @@ function zija() {
           </Row>
           <Row noGutters className=" justify-content-center">
             <Col lg={3} className=" mr-3 ml-3 featured-product-container">
-              <div className="">
-                <img
-                  src={product1Feature}
-                  alt="consultant logo"
-                  height="200"
-                  width="200"
-                />
+              <div className="product-overlay">
+                <h5>Product</h5>
               </div>
+
+              <img
+                src={product1Feature}
+                alt="consultant logo"
+                height="200"
+                width="200"
+              />
             </Col>
             <Col lg={3} className=" mr-3 ml-3 featured-product-container">
-              <div className="">
-                <img
-                  src={product2Feature}
-                  alt="marketing logo"
-                  height="200"
-                  width="200"
-                />
+              <div className="product-overlay">
+                <h5>Product</h5>
               </div>
+              <img
+                src={product2Feature}
+                alt="marketing logo"
+                height="200"
+                width="200"
+              />
             </Col>
             <Col lg={3} className=" mr-3 ml-3 featured-product-container">
-              <div className="">
-                <img
-                  src={product3Feature}
-                  alt="marketing logo"
-                  height="200"
-                  width="200"
-                />
+              <div className="product-overlay">
+                <h5>Product</h5>
               </div>
+              <img
+                src={product3Feature}
+                alt="marketing logo"
+                height="200"
+                width="200"
+              />
             </Col>
           </Row>
         </Container>
@@ -85,7 +89,7 @@ function zija() {
                     </p>
                     <Button
                       variant="outline"
-                      className="zija-button text-white pt-2 pb-2"
+                      className="zija-button  pt-2 pb-2"
                     >
                       Shop now
                     </Button>

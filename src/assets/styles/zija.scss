@@ -29,6 +29,31 @@ $zija-color: #05ce7c;
   background-color: white;
   border-radius: 5%;
   padding: 5% 0;
+  position: relative;
+
+  .product-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 5%;
+    padding: 5% 0;
+    opacity: 0;
+    // color: $zija-color;
+    display: flex;
+    h5 {
+      margin: auto;
+      font-weight: bold;
+    }
+  }
+
+  &:hover .product-overlay {
+    opacity: 1;
+  }
 }
 
 .zija-color {
@@ -49,6 +74,18 @@ $zija-color: #05ce7c;
     border: 2px solid white;
     width: 35%;
     border-radius: 30%/100%;
+    color: white;
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+      color: white;
+      font-weight: bold;
+      // border: 2px solid $zija-color;
+      // background-color: rgba(255, 255, 255, 0.8);
+    }
   }
 
   .text-container {
@@ -96,7 +133,17 @@ $zija-color: #05ce7c;
 .learn-more-button {
   background-color: $zija-color !important;
   border: none !important;
-  border-radius: 5% !important;
+  // border-radius: 5% !important;
+  width: 150px;
+  padding: 10px 0 !important;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 255.75);
+
+    font-weight: bold;
+  }
 }
 
 .zija-bottom-text-container {

@@ -15,5 +15,10 @@
   padding: 5% 5% 11% 5%;
   button {
     width: 100%;
+
+    &:hover {
+      color: white;
+      // font-weight: bold;
+    }
   }
 }

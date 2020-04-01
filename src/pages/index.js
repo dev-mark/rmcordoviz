@@ -38,13 +38,15 @@ const Index = () => {
           <p className="text-white">
             A coach can be the difference between making a thousands to millions
           </p>
-          <Button className="bg-warning text-white pt-2 pb-2">Lets Talk</Button>
+          <Button className="bg-warning text-white pt-2 pb-2 landing-button">
+            Lets Talk
+          </Button>
         </div>
       </div>
 
-      <div className=" bg-warning services-container-landing-page">
+      <div className=" bg-warning services-container-landing-page MB-5">
         <Container>
-          <h1 className="mt-4 mb-4">Services</h1>
+          <h1 className="">Services</h1>
           <Row noGutters className=" justify-content-center">
             <Col lg={3} className=" category-container">
               <div className=" icon-container">
