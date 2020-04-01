@@ -1,0 +1,75 @@
+$zija-color: #05ce7c;
+
+.zija-banner {
+  height: 60vh;
+  background-image: url("../images/ameo-banner.png");
+  width: 100%;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+#zija-color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.featured-product-container {
+  margin: 3% 0;
+  border: 2px solid $zija-color;
+  border-radius: 5%;
+  padding: 5% 0;
+}
+
+.zija-color {
+  color: $zija-color;
+}
+
+.shop-now-container {
+  height: 60vh;
+  background-color: $zija-color;
+
+  .zija-button {
+    background-color: none;
+    border: 2px solid white;
+    width: 35%;
+    border-radius: 30%/100%;
+  }
+
+  .text-container {
+    height: 60vh;
+    display: flex;
+    .text-content {
+      margin: auto;
+      padding: 0 25%;
+    }
+  }
+}
+
+.learn-more-button {
+  background-color: $zija-color !important;
+  border: none !important;
+  border-radius: 5% !important;
+}
+
+.zija-bottom-text-container {
+  padding: 3% 20% 5% 20%;
+}
+
+.success-story-container {
+  background-color: white;
+  margin: 3% 0;
+  .success-story-image-holder {
+    width: 100%;
+    .success-story-image {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .success-story-title {
+    padding: 3%;
+  }
+}
