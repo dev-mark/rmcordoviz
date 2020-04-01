@@ -70,27 +70,31 @@ function zija() {
         </Container>
       </div>
 
-      <div className=" shop-now-container text-white">
-        <Container className="">
-          <Row className="">
-            <Col lg={9} className=" text-center text-container ">
-              <div className=" text-content">
-                <h1 className="text-white ">THIS IS LIFE UNLIMITED</h1>
-                <p>
-                  Health, Wellness & Beauty. Financial & Time Freedom. Personal
-                  Development. Active Lifestyle. It’s All Possible with Zija
-                  International.
-                </p>
-                <Button
-                  variant="outline"
-                  className="zija-button text-white pt-2 pb-2"
-                >
-                  Shop now
-                </Button>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+      <div className=" ">
+        <Row noGutters className="   shop-now-container text-white">
+          <div class="linear-green-overlay">
+            <Container>
+              <Row className="">
+                <Col lg={9} className="  text-center text-container ">
+                  <div className=" text-content">
+                    <h1 className="text-white ">THIS IS LIFE UNLIMITED</h1>
+                    <p>
+                      Health, Wellness & Beauty. Financial & Time Freedom.
+                      Personal Development. Active Lifestyle. It’s All Possible
+                      with Zija International.
+                    </p>
+                    <Button
+                      variant="outline"
+                      className="zija-button text-white pt-2 pb-2"
+                    >
+                      Shop now
+                    </Button>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        </Row>
       </div>
       <Container>
         <Row noGutters className=" justify-content-center">
