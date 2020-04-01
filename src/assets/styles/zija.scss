@@ -31,6 +31,63 @@ $zija-color: #05ce7c;
   height: 60vh;
   background-color: $zija-color;
 
+  background: $zija-color;
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(5, 206, 124, 1) 0%,
+    rgba(5, 206, 124, 1) 18%,
+    rgba(5, 206, 124, 1) 42%,
+    rgba(5, 206, 124, 1) 69%,
+    rgba(255, 255, 255, 1) 69%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, rgba(5, 206, 124, 1)),
+    color-stop(18%, rgba(5, 206, 124, 1)),
+    color-stop(42%, rgba(5, 206, 124, 1)),
+    color-stop(69%, rgba(5, 206, 124, 1)),
+    color-stop(69%, rgba(255, 255, 255, 1)),
+    color-stop(100%, rgba(255, 255, 255, 1))
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(5, 206, 124, 1) 0%,
+    rgba(5, 206, 124, 1) 18%,
+    rgba(5, 206, 124, 1) 42%,
+    rgba(5, 206, 124, 1) 69%,
+    rgba(255, 255, 255, 1) 69%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(5, 206, 124, 1) 0%,
+    rgba(5, 206, 124, 1) 18%,
+    rgba(5, 206, 124, 1) 42%,
+    rgba(5, 206, 124, 1) 69%,
+    rgba(255, 255, 255, 1) 69%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(5, 206, 124, 1) 0%,
+    rgba(5, 206, 124, 1) 18%,
+    rgba(5, 206, 124, 1) 42%,
+    rgba(5, 206, 124, 1) 69%,
+    rgba(255, 255, 255, 1) 69%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(5, 206, 124, 1) 0%,
+    rgba(5, 206, 124, 1) 18%,
+    rgba(5, 206, 124, 1) 42%,
+    rgba(5, 206, 124, 1) 69%,
+    rgba(255, 255, 255, 1) 69%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05ce7c', endColorstr='#ffffff', GradientType=1 );
   .zija-button {
     background-color: none;
     border: 2px solid white;
