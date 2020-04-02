@@ -36,7 +36,7 @@ function zija() {
       </div>
       <div className="services-category  text-center">
         <Container>
-          <Row noGutters className=" justify-content-center">
+          <Row className=" justify-content-center">
             <h1 className="zija-color text-title ">Featured Product</h1>
           </Row>
           <Row noGutters className=" justify-content-center mb-5">
