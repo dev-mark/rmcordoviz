@@ -35,7 +35,7 @@ const Index = () => {
   return (
     <div>
       <div className="landing-banner">
-        <div className="center-text-to-div">
+        <div className="center-text-to-div text-left">
           <h3 className="text-white">RMCordoviz Inc.</h3>
           <h1 className="text-warning">
             <strong>Helping you achieve business success</strong>
@@ -43,11 +43,11 @@ const Index = () => {
           <p className="text-white">
             A coach can be the difference between making a thousands to millions
           </p>
-          <Button className="bg-warning text-white pt-2 pb-2 landing-button">
+          <Button className="bg-warning  pt-2 pb-2 landing-button">
             <i>
               <PhoneVolumeIcon className="landing-button-icon" />
             </i>
-            Lets Talk
+            <strong>Let's Talk</strong>
           </Button>
         </div>
       </div>

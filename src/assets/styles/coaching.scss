@@ -52,15 +52,3 @@ li {
   background-color: black;
   opacity: 0.8;
 }
-
-.center-text-to-div {
-  h1 {
-    letter-spacing: 15px;
-  }
-  z-index: 10;
-  letter-spacing: 5px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
