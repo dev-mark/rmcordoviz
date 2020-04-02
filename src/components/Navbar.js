@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/navbar.scss";
 import logo from "../assets/images/RMC.png";
@@ -8,12 +8,17 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
-const App = () => {
-  const [selected, setSelected] = useState("home");
+const App = props => {
+  const [location, setLocation] = useState("");
+
+  useEffect(() => {
+    setLocation(window.location.pathname);
+  }, [window.location.pathname]);
+
   return (
     <Navbar collapseOnSelect expand="md" variant="dark" className="justify">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src={logo}
             width="60"
@@ -28,8 +33,8 @@ const App = () => {
             <Nav.Link>
               <Link
                 to="/"
-                className={selected === "home" && "selected-state"}
-                onClick={() => setSelected("home")}
+                className={location === "/" && "selected-state"}
+                onClick={() => setLocation("home")}
               >
                 Home
               </Link>
@@ -38,8 +43,8 @@ const App = () => {
             <Nav.Link>
               <Link
                 to="/about"
-                className={selected === "about" && "selected-state"}
-                onClick={() => setSelected("about")}
+                className={location === "/about" && "selected-state"}
+                onClick={() => setLocation("about")}
               >
                 About
               </Link>
@@ -47,8 +52,8 @@ const App = () => {
             <Nav.Link>
               <Link
                 to="/services"
-                className={selected === "services" && "selected-state"}
-                onClick={() => setSelected("services")}
+                className={location === "/services" && "selected-state"}
+                onClick={() => setLocation("services")}
               >
                 Services
               </Link>
@@ -56,8 +61,8 @@ const App = () => {
             <Nav.Link>
               <Link
                 to="/contact"
-                className={selected === "contact" && "selected-state"}
-                onClick={() => setSelected("contact")}
+                className={location === "/contact" && "selected-state"}
+                onClick={() => setLocation("contact")}
               >
                 Contact
               </Link>
@@ -65,8 +70,8 @@ const App = () => {
             <Nav.Link>
               <Link
                 to="/coaching"
-                className={selected === "coaching" && "selected-state"}
-                onClick={() => setSelected("coaching")}
+                className={location === "/coaching" && "selected-state"}
+                onClick={() => setLocation("coaching")}
               >
                 Coaching
               </Link>
@@ -75,9 +80,9 @@ const App = () => {
               <Link
                 to="/health-and-wellness"
                 className={
-                  selected === "health-and-wellness" && "selected-state"
+                  location === "/health-and-wellness" && "selected-state"
                 }
-                onClick={() => setSelected("health-and-wellness")}
+                onClick={() => setLocation("health-and-wellness")}
               >
                 Health and Wellness
               </Link>
