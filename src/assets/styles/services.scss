@@ -37,9 +37,9 @@ $gold-color: #ffc107;
   width: 95%;
   margin-top: 15%;
   margin-bottom: 10%;
+}
 
-  // &:hover {
-  //   border: 5px solid $gold-color;
-  //   background-color: $gold-color;
-  // }
+.selected-indicator {
+  border: 5px solid $gold-color;
+  background-color: $gold-color;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/styles/services.scss";
 
 // bootstrap
@@ -17,7 +17,7 @@ import Coaching from "../components/Services-Coaching";
 import Marketing from "../components/Services-Marketing";
 
 const Services = () => {
-  const [selected, setSelected] = useState("coaching");
+  const [selected, setSelected] = useState("marketing");
 
   return (
     <div>
@@ -60,7 +60,10 @@ const Services = () => {
                   width="200"
                 />
               </div>
-              <hr className="line-indicator" />
+              <hr
+                className={`line-indicator ${selected === "coaching" &&
+                  "selected-indicator"}`}
+              />
             </Col>
             <Col
               lg={3}
@@ -75,7 +78,10 @@ const Services = () => {
                   width="200"
                 />
               </div>
-              <hr className="line-indicator" />
+              <hr
+                className={`line-indicator ${selected === "marketing" &&
+                  "selected-indicator"}`}
+              />
             </Col>
             <Col
               lg={3}
@@ -90,7 +96,10 @@ const Services = () => {
                   width="200"
                 />
               </div>
-              <hr className="line-indicator" />
+              <hr
+                className={`line-indicator ${selected === "development" &&
+                  "selected-indicator"}`}
+              />
             </Col>
           </Row>
         </Container>
