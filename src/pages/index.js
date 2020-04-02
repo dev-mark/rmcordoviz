@@ -23,6 +23,7 @@ import businessSolutionPhoto from "../assets/images/business-solution.png";
 // components
 import ServiceCategory from "../components/Service-Category";
 import WhyUs from "../components/Why-Us";
+import CustomerStatement from "../components/Customer-Statement";
 
 const Index = () => {
   const [index, setIndex] = useState(0);
@@ -124,29 +125,31 @@ const Index = () => {
         onSelect={handleSelect}
         className=" feedback-carousel bg-warning"
       >
-        <Carousel.Item className="text-center">
-          <h1>
-            "Cras venenatis ante at eros mattis euismod. In ac purus vulputate,
+        <Carousel.Item>
+          <CustomerStatement
+            name="Abigail A. Dodson"
+            feedback="Cras venenatis ante at eros mattis euismod. In ac purus vulputate,
             dignissim velit a, volutpat sem. Vivamus neque arcu, maximus vel
             nibh in, ultrices dapibus."
-          </h1>
-          <h4>- Abigail A. Dodson</h4>
+          />
         </Carousel.Item>
-        <Carousel.Item className="text-center">
-          <h1>
-            "Aliquam fermentum libero libero, quis semper mauris volutpat non.
-            Nulla maximus arcu sed mauris semper dapibus. Sed vel risus cursus,
-            dignissim dolor ac, pharetra enim."
-          </h1>
-          <h4>- Hector G. Oneal</h4>
+
+        <Carousel.Item>
+          <CustomerStatement
+            name="Hector G. Oneal"
+            feedback="Aliquam fermentum libero libero, quis semper mauris volutpat non.
+          Nulla maximus arcu sed mauris semper dapibus. Sed vel risus cursus,
+          dignissim dolor ac, pharetra enim."
+          />
         </Carousel.Item>
-        <Carousel.Item className="text-center">
-          <h1>
-            "In lacinia luctus odio id fermentum. Nulla convallis eros eleifend
-            ex venenatis gravida. Nulla fringilla ullamcorper nisl quis
-            eleifend. Suspendisse sed arcu ultricies, bibendum purus."
-          </h1>
-          <h4>- Harold P. Tabor </h4>
+
+        <Carousel.Item>
+          <CustomerStatement
+            name="Harold P. Tabor"
+            feedback="In lacinia luctus odio id fermentum. Nulla convallis eros eleifend
+          ex venenatis gravida. Nulla fringilla ullamcorper nisl quis
+          eleifend. Suspendisse sed arcu ultricies, bibendum purus."
+          />
         </Carousel.Item>
       </Carousel>
     </div>
