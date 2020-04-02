@@ -24,10 +24,10 @@ const Services = () => {
       <div className=" services-banner">
         <div id="color-overlay">
           <div className=" center-text-to-div">
-            <h1 className=" text-warning">
+            <h1 className="banner-title text-warning">
               <strong>SERVICES</strong>
             </h1>
-            <p className="  text-white">
+            <p className="subtitle  text-white">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec.
             </p>
           </div>
@@ -35,7 +35,7 @@ const Services = () => {
       </div>
       <div className="services-category  text-center">
         <Container>
-          <Row noGutters className=" justify-content-center">
+          <Row noGutters className="mt-4 justify-content-center">
             <Col lg={3} className=" category-title">
               <h3 className="text-warning">Coaching</h3>
             </Col>

@@ -9,7 +9,7 @@ function ServiceCategory(props) {
   return (
     <Col lg={3} className=" category-container">
       <div className=" icon-container">
-        <img src={props.icon} alt={props.title} height="200" width="200" />
+        <img src={props.icon} alt={props.title} height="160" width="160" />
       </div>
       <h3 className="text-capitalize">{props.title}</h3>
       <p>{props.description}</p>

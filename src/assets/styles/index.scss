@@ -1,7 +1,12 @@
+body {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
 .text-title {
   font-size: 46px;
   margin: 5% 0;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .center-text-to-div {
@@ -14,4 +19,21 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+p,
+a {
+  line-height: 170%;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 15px;
+  color: #c7c7c7;
+}
+
+.banner-title {
+  letter-spacing: 7px;
+  font-size: 50px;
+  font-weight: bolder;
 }

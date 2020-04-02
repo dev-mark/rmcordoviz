@@ -60,7 +60,7 @@ function zija() {
         <Row noGutters className="   shop-now-container text-white">
           <div class="linear-green-overlay">
             <Container>
-              <Row className="">
+              <Row>
                 <Col lg={9} className="  text-center text-container ">
                   <div className=" text-content">
                     <h1 className="text-white ">THIS IS LIFE UNLIMITED</h1>
@@ -111,18 +111,20 @@ function zija() {
         </Row>
       </Container>
 
-      <div className="">
-        <Row noGutters className=" justify-content-center text-white">
+      <div>
+        <Row noGutters className=" justify-content-center">
           <div className="zija-bottom-text-container">
-            <h4 className="zija-color ">
+            <h4 className="zija-color">
               BE REWARDED FOR YOUR TALENTS AND EFFORTS
             </h4>
-            <p>
+            <p className=" text-white">
               Whatever your goals may be, Zija's turnkey business model,
               easy-to-use tools, unmatched support, and rewarding compensation
               plan make starting and building your own business a reality.
             </p>
-            <Button className="learn-more-button">Learn more</Button>
+            <Button className="learn-more-button">
+              <strong>Learn more</strong>
+            </Button>
           </div>
         </Row>
       </div>

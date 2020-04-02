@@ -17,13 +17,13 @@ import TeamMember from "../components/Team-Member";
 function coaching() {
   return (
     <div>
-      <div className=" coaching-banner">
+      <div className="coaching-banner blur-background">
         <div id="color-overlay">
           <div className="center-text-to-div">
-            <h1 className="text-warning">
+            <h1 className="text-warning banner-title">
               <strong>COACHING</strong>
             </h1>
-            <p className="text-white">
+            <p className="text-white subtitle">
               A coach can be the difference between making a thousands to
               millions
             </p>
@@ -31,63 +31,62 @@ function coaching() {
         </div>
       </div>
       <Row className=" justify-content-center coaching-content">
-        <Container>
-          <h1 className="text-warning mt-5 mb-5">
-            Are you ready to LEVEL UP?{" "}
-          </h1>
-          <Row>
-            <Col className=" text-white mb-4" id="coaching-content-text">
+        {/* <Container> */}
+        <h1 className="text-warning text-title">Are you ready to LEVEL UP? </h1>
+        <Row noGutters className=" justify-content-center">
+          <Col lg={8} className=" text-white mb-4" id="coaching-content-text">
+            <p>
+              Your business is moving but you are still struggling to get a
+              break. Our one on one business coaching opportunity is for
+              entrepreneurs who are just getting started or if you are needing
+              that push to the next level…
+            </p>
+            <p className="text-left checklist">
+              <li>
+                <span className="text-warning">•</span> Are you content with
+                your current revenue?
+              </li>
+              <li>
+                <span className="text-warning">•</span> Do you have an exit
+                plan?
+              </li>
+              <li>
+                <span className="text-warning">•</span> Are you on the road to
+                the next level?
+              </li>
+              <li>
+                <span className="text-warning">•</span> Is your vision clear?
+              </li>
+              <li>
+                <span className="text-warning">•</span> Are you constantly
+                choosing your business over your personal life?
+              </li>
+              <li>
+                <span className="text-warning">•</span> Do you just need an
+                adjustment to get yourself organized?
+              </li>
+              <li>
+                <span className="text-warning">•</span> are you finally ready to
+                invest and put away the rainy day fund?
+              </li>
+            </p>
+            <p>
+              If you answered yes to any of the questions above then it’s time
+              to LEVEL UP 10x
               <p>
-                Your business is moving but you are still struggling to get a
-                break. Our one on one business coaching opportunity is for
-                entrepreneurs who are just getting started or if you are needing
-                that push to the next level…
+                {" "}
+                <strong className="text-warning">
+                  {" "}
+                  It’s time and you deserve it!
+                </strong>
               </p>
-              <p className="text-left">
-                <li>
-                  <span className="text-warning">•</span> Are you content with
-                  your current revenue?
-                </li>
-                <li>
-                  <span className="text-warning">•</span> Do you have an exit
-                  plan?
-                </li>
-                <li>
-                  <span className="text-warning">•</span> Are you on the road to
-                  the next level?
-                </li>
-                <li>
-                  <span className="text-warning">•</span> Is your vision clear?
-                </li>
-                <li>
-                  <span className="text-warning">•</span> Are you constantly
-                  choosing your business over your personal life?
-                </li>
-                <li>
-                  <span className="text-warning">•</span> Do you just need an
-                  adjustment to get yourself organized?
-                </li>
-                <li>
-                  <span className="text-warning">•</span> are you finally ready
-                  to invest and put away the rainy day fund?
-                </li>
-              </p>
-              <p>
-                If you answered yes to any of the questions above then it’s time
-                to LEVEL UP 10x —–
-                <span className="text-warning">
-                  <strong>It’s time and you deserve it!</strong>
-                </span>
-              </p>
-              <Button
-                variant="warning"
-                className="text-white mt-3 find-more-button"
-              >
-                <strong>Find out more</strong>
-              </Button>
-            </Col>
-          </Row>
-        </Container>
+            </p>
+            <Button variant="warning" className="mt-3 find-more-button">
+              <strong>Find out more</strong>
+            </Button>
+          </Col>
+        </Row>
+        {/* </Container> */}
       </Row>
 
       <Row className=" justify-content-center ">

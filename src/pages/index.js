@@ -36,11 +36,11 @@ const Index = () => {
     <div>
       <div className="landing-banner">
         <div className="center-text-to-div text-left">
-          <h3 className="text-white">RMCordoviz Inc.</h3>
-          <h1 className="text-warning">
-            <strong>Helping you achieve business success</strong>
+          <h5 className="text-white">RMCordoviz Inc.</h5>
+          <h1 className="text-warning banner-title">
+            Helping you achieve business success
           </h1>
-          <p className="text-white">
+          <p className="subtitle">
             A coach can be the difference between making a thousands to millions
           </p>
           <Button className="bg-warning  pt-2 pb-2 landing-button">
@@ -74,7 +74,7 @@ const Index = () => {
             />
 
             <ServiceCategory
-              title="Web Development"
+              title="Software Development"
               icon={DevelopmentIcon}
               description=" Mauris malesuada sodales libero nec sodales. Donec interdum
               ligula ut neque hendrerit porttitor. Curabitur porttitor."

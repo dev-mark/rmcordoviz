@@ -19,7 +19,7 @@ function Marketing() {
         <h1 className="text-warning mt-5 mb-5">STAND OUT.</h1>
       </div>
       <Row className=" marketing-content text-white justify-content-center">
-        <Col lg={12} className="">
+        <Col lg={10} className="">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             et dolor vitae libero porttitor malesuada. Proin ultricies euismod

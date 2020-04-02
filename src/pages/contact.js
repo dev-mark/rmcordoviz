@@ -19,8 +19,8 @@ import Button from "react-bootstrap/Button";
 function contact() {
   return (
     <Container className="mt-4 mb-5 text-white">
-      <div className="pt-2 pb-4">
-        <h1>Get in Touch</h1>
+      <div className="py-5 banner-title ">
+        <h1>GET IN TOUCH</h1>
       </div>
       <div>
         <Row className="mb-5 justify-content-center">
@@ -76,7 +76,7 @@ function contact() {
             <Row noGutters>
               <Col className=" contact-info mb-3">
                 <h5>
-                  <strong>Ross and Melanie Cordoviz</strong>
+                  <strong>ROSS AND MELANIE CORDOVIZ</strong>
                 </h5>
                 <Row noGutters className="mb-1">
                   <Col lg={1}>

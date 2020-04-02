@@ -13,8 +13,8 @@ import MelanieImage from "../assets/images/Melanie.PNG";
 function about() {
   return (
     <Container className="mt-4 mb-5">
-      <div className="pt-2 pb-4  text-white">
-        <h1>About Us</h1>
+      <div className="py-5  text-white banner-title">
+        <h1>ABOUT US</h1>
       </div>
       <div>
         <Container>
