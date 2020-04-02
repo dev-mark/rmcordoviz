@@ -11,6 +11,13 @@ $gold-color: #ffc107;
 .icon-container {
   margin-bottom: 10%;
 }
+
+.icon-component {
+  fill: $gold-color;
+  width: 60%;
+  height: 60%;
+}
+
 .category-container {
   text-align: center;
   margin: 0% 1%;
@@ -42,4 +49,8 @@ $gold-color: #ffc107;
 .selected-indicator {
   border: 5px solid $gold-color;
   background-color: $gold-color;
+}
+
+.gold-color {
+  color: $gold-color;
 }

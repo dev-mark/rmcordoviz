@@ -1,3 +1,5 @@
+$gold-color: #ffc107;
+
 .footer {
   color: white;
   background-color: black;
@@ -14,8 +16,16 @@
   .footer-socialMediaLogos {
     margin-top: 1%;
 
+    .footer-social-media-logo {
+      height: 3vh;
+    }
+
     a {
       margin: 0 1.5%;
+      color: white;
+      &:hover {
+        color: $gold-color;
+      }
     }
   }
 

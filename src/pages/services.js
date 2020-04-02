@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../assets/styles/services.scss";
 
 // bootstrap
@@ -7,9 +7,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 // icons
-import marketingIcon from "../assets/icons/marketing.svg";
-import consultantIcon from "../assets/icons/consultant.svg";
-import codeIcon from "../assets/icons/code.svg";
+import { ReactComponent as MarketingIcon } from "../assets/icons/marketing.svg";
+import { ReactComponent as ConsultantIcon } from "../assets/icons/consultant.svg";
+import { ReactComponent as DevelopmentIcon } from "../assets/icons/code.svg";
 
 // Components
 import SoftwareDevelopment from "../components/Services-SoftwareDevelopment";
@@ -53,12 +53,7 @@ const Services = () => {
               onClick={() => setSelected("coaching")}
             >
               <div className=" icon-container">
-                <img
-                  src={consultantIcon}
-                  alt="consultant logo"
-                  height="200"
-                  width="200"
-                />
+                <ConsultantIcon className="icon-component" />
               </div>
               <hr
                 className={`line-indicator ${selected === "coaching" &&
@@ -71,12 +66,7 @@ const Services = () => {
               onClick={() => setSelected("marketing")}
             >
               <div className=" icon-container">
-                <img
-                  src={marketingIcon}
-                  alt="marketing logo"
-                  height="200"
-                  width="200"
-                />
+                <MarketingIcon className="icon-component" />
               </div>
               <hr
                 className={`line-indicator ${selected === "marketing" &&
@@ -89,12 +79,7 @@ const Services = () => {
               onClick={() => setSelected("development")}
             >
               <div className=" icon-container">
-                <img
-                  src={codeIcon}
-                  alt="marketing logo"
-                  height="200"
-                  width="200"
-                />
+                <DevelopmentIcon className="icon-component" />
               </div>
               <hr
                 className={`line-indicator ${selected === "development" &&

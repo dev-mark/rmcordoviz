@@ -4,13 +4,15 @@ import "../assets/styles/home.scss";
 // bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
 
 // icons
-import marketingIcon from "../assets/icons/marketing.svg";
-import consultantIcon from "../assets/icons/consultant.svg";
-import codeIcon from "../assets/icons/code.svg";
+import { ReactComponent as MarketingIcon } from "../assets/icons/marketing.svg";
+import { ReactComponent as ConsultantIcon } from "../assets/icons/consultant.svg";
+import { ReactComponent as DevelopmentIcon } from "../assets/icons/code.svg";
+import { ReactComponent as PhoneVolumeIcon } from "../assets/icons/phone-volume-solid.svg";
 
 // images
 import oneOnOnePhoto from "../assets/images/one-one-talk.png";
@@ -21,7 +23,7 @@ import greatIdeaPhoto from "../assets/images/great-idea.png";
 import businessSolutionPhoto from "../assets/images/business-solution.png";
 
 // components
-import ServiceCategory from "../components/Service-Category";
+// import ServiceCategory from "../components/Service-Category";
 import WhyUs from "../components/Why-Us";
 import CustomerStatement from "../components/Customer-Statement";
 
@@ -43,6 +45,9 @@ const Index = () => {
             A coach can be the difference between making a thousands to millions
           </p>
           <Button className="bg-warning text-white pt-2 pb-2 landing-button">
+            <i>
+              <PhoneVolumeIcon className="landing-button-icon" />
+            </i>
             Lets Talk
           </Button>
         </div>
@@ -52,26 +57,57 @@ const Index = () => {
         <Container>
           <h1 className="">Services</h1>
           <Row noGutters className=" justify-content-center">
-            <ServiceCategory
+            {/* <ServiceCategory
               title="Certified Consultant"
-              icon={consultantIcon}
+              icon={ConsultantIcon}
               description="Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Praesent venenatis."
             />
 
             <ServiceCategory
               title="Marketing"
-              icon={marketingIcon}
+              icon={MarketingIcon}
               description="Nullam consequat urna at quam scelerisque vehicula. Morbi non
               nisi tempor, dapibus orci sit amet."
             />
 
             <ServiceCategory
               title="Web Development"
-              icon={codeIcon}
+              icon={DevelopmentIcon}
               description=" Mauris malesuada sodales libero nec sodales. Donec interdum
               ligula ut neque hendrerit porttitor. Curabitur porttitor."
-            />
+            /> */}
+
+            <Col lg={3} className=" category-container">
+              <div className=" icon-container">
+                <ConsultantIcon className="services-icon-landing" />
+              </div>
+              <h3 className="text-capitalize">Certified Consultant</h3>
+              <p>
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Praesent venenatis.
+              </p>
+            </Col>
+            <Col lg={3} className=" category-container">
+              <div className=" icon-container">
+                <MarketingIcon className="services-icon-landing" />
+              </div>
+              <h3 className="text-capitalize">Marketing</h3>
+              <p>
+                Nullam consequat urna at quam scelerisque vehicula. Morbi non
+                nisi tempor, dapibus orci sit amet.
+              </p>
+            </Col>
+            <Col lg={3} className=" category-container">
+              <div className=" icon-container">
+                <DevelopmentIcon className="services-icon-landing" />
+              </div>
+              <h3 className="text-capitalize">Web Development</h3>
+              <p>
+                Mauris malesuada sodales libero nec sodales. Donec interdum
+                ligula ut neque hendrerit porttitor. Curabitur porttitor.
+              </p>
+            </Col>
           </Row>
         </Container>
       </div>

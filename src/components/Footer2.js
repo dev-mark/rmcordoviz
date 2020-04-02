@@ -1,12 +1,11 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import "../assets/styles/footer2.scss";
 
 // icons
-import facebookLogo from "../assets/icons/facebook-logo.svg";
-import twitterLogo from "../assets/icons/twitter-logo.svg";
-import linkedInLogo from "../assets/icons/linkedin-logo.svg";
-import instagramLogo from "../assets/icons/instagram-logo.svg";
+import { ReactComponent as FacebookLogo } from "../assets/icons/facebook-logo.svg";
+import { ReactComponent as TwitterLogo } from "../assets/icons/twitter-logo.svg";
+import { ReactComponent as LinkedInLogo } from "../assets/icons/linkedin-logo.svg";
+import { ReactComponent as InstagramLogo } from "../assets/icons/instagram-logo.svg";
 
 // bootstrap
 import Container from "react-bootstrap/Container";
@@ -33,43 +32,18 @@ function Footer() {
           </Row>
           <Row>
             <Col>
-              {" "}
               <div className="footer-socialMediaLogos">
                 <a href="https://www.facebook.com/rmccordoviz/">
-                  <img
-                    className="icons-white"
-                    src={facebookLogo}
-                    height="20"
-                    width="20"
-                    alt="facebook logo"
-                  />
+                  <FacebookLogo className="footer-social-media-logo" />
                 </a>
                 <a href="https://twitter.com/rmccordoviz">
-                  <img
-                    className="icons-white"
-                    src={twitterLogo}
-                    height="20"
-                    width="20"
-                    alt="twitter logo"
-                  />
+                  <TwitterLogo className="footer-social-media-logo" />
                 </a>
                 <a href="https://www.linkedin.com/company/rmccordoviz/">
-                  <img
-                    className="icons-white"
-                    src={linkedInLogo}
-                    height="20"
-                    width="20"
-                    alt="linkedIn logo"
-                  />
+                  <LinkedInLogo className="footer-social-media-logo" />
                 </a>
                 <a href="https://www.instagram.com/rmcordoviz/">
-                  <img
-                    className="icons-white"
-                    src={instagramLogo}
-                    height="20"
-                    width="20"
-                    alt="instagram logo"
-                  />
+                  <InstagramLogo className="footer-social-media-logo" />
                 </a>
               </div>
             </Col>

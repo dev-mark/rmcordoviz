@@ -9,8 +9,9 @@ import Map from "./Map";
 import RMClogo from "../assets/images/RMC.png";
 
 // icons
-import phoneSolid from "../assets/icons/phone-solid.svg";
-import envelopeSolid from "../assets/icons/envelope-solid.svg";
+import { ReactComponent as PhoneIcon } from "../assets/icons/phone-solid.svg";
+import { ReactComponent as EmailIcon } from "../assets/icons/envelope-solid.svg";
+import { ReactComponent as MarkerIcon } from "../assets/icons/map-marker.svg";
 
 // bootstrap
 import Container from "react-bootstrap/Container";
@@ -45,28 +46,32 @@ function Footer1() {
           </Col>
           <Col xs={8} md={3} className="d-none d-sm-block">
             <h6>Get in touch</h6>
-            <p>
-              {" "}
-              <img
-                className="icons-white"
-                src={phoneSolid}
-                height="15"
-                width="15"
-                alt="phone icon"
-              />
-              +1 877 690 9730
-            </p>
-            <p>
-              {" "}
-              <img
-                className="icons-white"
-                src={envelopeSolid}
-                height="15"
-                width="15"
-                alt="envelope icon"
-              />
-              rmcordoviz@outlook.com
-            </p>
+            <div className="text-left">
+              <Row className="mb-1">
+                <Col lg={1}>
+                  <i>
+                    <PhoneIcon className="contact-icons" />
+                  </i>
+                </Col>
+                <Col>+1 877 690 9730</Col>
+              </Row>
+              <Row className="mb-1">
+                <Col lg={1}>
+                  <i>
+                    <EmailIcon className="contact-icons" />
+                  </i>
+                </Col>
+                <Col>rmcordoviz@outlook.com</Col>
+              </Row>
+              <Row className="mb-1">
+                <Col lg={1}>
+                  <i>
+                    <MarkerIcon className="contact-icons" />
+                  </i>
+                </Col>
+                <Col>600 Crowfoot Crescent, Calgary, AB T3G 0B4, Canada</Col>
+              </Row>
+            </div>
           </Col>
           <Col xs={8} md={3}>
             <div style={{ height: "200px" }}>

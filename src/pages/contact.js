@@ -1,13 +1,13 @@
 import React from "react";
 import "../assets/styles/contact.scss";
 
+// icons
+import { ReactComponent as PhoneIcon } from "../assets/icons/phone-solid.svg";
+import { ReactComponent as EmailIcon } from "../assets/icons/envelope-solid.svg";
+import { ReactComponent as MarkerIcon } from "../assets/icons/map-marker.svg";
+
 // component
 import Map from "../components/Map";
-
-// icons
-import phone from "../assets/icons/phone-solid.svg";
-import envelope from "../assets/icons/envelope-solid.svg";
-import marker from "../assets/icons/map-marker.svg";
 
 // bootstrap
 import Container from "react-bootstrap/Container";
@@ -78,23 +78,30 @@ function contact() {
                 <h5>
                   <strong>Ross and Melanie Cordoviz</strong>
                 </h5>
-                <p>
-                  <img src={phone} height="15" width="15" alt="phone icon" />
-                  +1 877 690 9730
-                </p>
-                <p>
-                  <img
-                    src={envelope}
-                    height="15"
-                    width="15"
-                    alt="envelope icon"
-                  />
-                  rmcordoviz@outlook.com
-                </p>
-                <p>
-                  <img src={marker} height="15" width="15" alt="marker icon" />
-                  600 Crowfoot Crescent, Calgary, AB T3G 0B4, Canada
-                </p>
+                <Row noGutters className="mb-1">
+                  <Col lg={1}>
+                    <i>
+                      <PhoneIcon className="contact-icons" />
+                    </i>
+                  </Col>
+                  <Col>+1 877 690 9730</Col>
+                </Row>
+                <Row noGutters className="mb-1">
+                  <Col lg={1}>
+                    <i>
+                      <EmailIcon className="contact-icons" />
+                    </i>
+                  </Col>
+                  <Col>rmcordoviz@outlook.com</Col>
+                </Row>
+                <Row noGutters className="mb-1">
+                  <Col lg={1}>
+                    <i>
+                      <MarkerIcon className="contact-icons" />
+                    </i>
+                  </Col>
+                  <Col>600 Crowfoot Crescent, Calgary, AB T3G 0B4, Canada</Col>
+                </Row>
               </Col>
             </Row>
             <Row noGutters>

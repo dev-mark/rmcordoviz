@@ -1,12 +1,12 @@
 .contact-info {
   text-align: left;
-  padding: 5% 15% !important;
+  padding: 5% 10% !important;
   background-color: white;
   color: black;
 }
 
 .contact-map {
-  height: 333px;
+  height: 395px;
 }
 
 .contact-form {
@@ -21,4 +21,8 @@
       // font-weight: bold;
     }
   }
+}
+.contact-icons {
+  width: 15px;
+  // margin-right: 7px;
 }

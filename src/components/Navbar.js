@@ -13,6 +13,7 @@ const App = props => {
 
   useEffect(() => {
     setLocation(window.location.pathname);
+    // eslint-disable-next-line
   }, [window.location.pathname]);
 
   return (

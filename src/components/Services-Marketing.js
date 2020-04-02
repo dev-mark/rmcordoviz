@@ -6,11 +6,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 // icons
-import checkIcon from "../assets/icons/check-solid.svg";
-import facebookLogo from "../assets/icons/facebook-logo.svg";
-import instagramLogo from "../assets/icons/instagram-logo.svg";
-import twitterLogo from "../assets/icons/twitter-logo.svg";
-import linkedinLogo from "../assets/icons/linkedin-logo.svg";
+import { ReactComponent as FacebookLogo } from "../assets/icons/facebook-logo.svg";
+import { ReactComponent as TwitterLogo } from "../assets/icons/twitter-logo.svg";
+import { ReactComponent as LinkedInLogo } from "../assets/icons/linkedin-logo.svg";
+import { ReactComponent as InstagramLogo } from "../assets/icons/instagram-logo.svg";
+import { ReactComponent as CheckIcon } from "../assets/icons/check-solid.svg";
 
 function Marketing() {
   return (
@@ -47,51 +47,27 @@ function Marketing() {
         <Col lg={10} className=" ">
           <ul>
             <li className="">
-              <span>
-                <img
-                  className="icons-white"
-                  src={checkIcon}
-                  alt="Check Icon"
-                  height="20"
-                  width="20"
-                />
-              </span>
+              <i>
+                <CheckIcon className="gold-check-icon" />
+              </i>
               Target Market Business Analysis
             </li>
             <li>
-              <span>
-                <img
-                  className="icons-white"
-                  src={checkIcon}
-                  alt="Check Icon"
-                  height="20"
-                  width="20"
-                />
-              </span>
+              <i>
+                <CheckIcon className="gold-check-icon" />
+              </i>
               Keyword Research and Development
             </li>
             <li>
-              <span>
-                <img
-                  className="icons-white"
-                  src={checkIcon}
-                  alt="Check Icon"
-                  height="20"
-                  width="20"
-                />
-              </span>
+              <i>
+                <CheckIcon className="gold-check-icon" />
+              </i>
               Content Optimization and Submission
             </li>
             <li>
-              <span>
-                <img
-                  className="icons-white"
-                  src={checkIcon}
-                  alt="Check Icon"
-                  height="20"
-                  width="20"
-                />
-              </span>
+              <i>
+                <CheckIcon className="gold-check-icon" />
+              </i>
               Continuous Testing and Measuring
             </li>
           </ul>
@@ -102,48 +78,32 @@ function Marketing() {
       </div>
       <Row className=" justify-content-center mb-5 mt-3">
         <Col lg={2} className="  text-center justify-content-center">
-          <div className="services-icon-container">
-            <img
-              className="icons-white"
-              src={facebookLogo}
-              alt="Facebook Icon"
-              height="35"
-              width="35"
-            />
-          </div>
+          <a href="https://www.facebook.com/rmccordoviz/">
+            <div className="services-icon-container">
+              <FacebookLogo className="services-icon" />
+            </div>
+          </a>
         </Col>
         <Col lg={2} className="  text-center justify-content-center">
-          <div className="services-icon-container">
-            <img
-              className="icons-white"
-              src={twitterLogo}
-              alt="Twitter Icon"
-              height="35"
-              width="35"
-            />
-          </div>
+          <a href="https://twitter.com/rmccordoviz">
+            <div className="services-icon-container">
+              <TwitterLogo className="services-icon" />
+            </div>
+          </a>
         </Col>
         <Col lg={2} className="  text-center justify-content-center">
-          <div className="services-icon-container">
-            <img
-              className="icons-white"
-              src={linkedinLogo}
-              alt="Linkedin Icon"
-              height="35"
-              width="35"
-            />
-          </div>
+          <a href="https://www.linkedin.com/company/rmccordoviz/">
+            <div className="services-icon-container">
+              <LinkedInLogo className="services-icon" />
+            </div>
+          </a>
         </Col>
         <Col lg={2} className="  text-center justify-content-center">
-          <div className="services-icon-container">
-            <img
-              className="icons-white"
-              src={instagramLogo}
-              alt="Instagram Icon"
-              height="35"
-              width="35"
-            />
-          </div>
+          <a href="https://www.instagram.com/rmcordoviz/">
+            <div className="services-icon-container">
+              <InstagramLogo className="services-icon" />
+            </div>
+          </a>
         </Col>
       </Row>
     </div>
