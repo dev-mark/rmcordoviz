@@ -37,9 +37,9 @@ function zija() {
       <div className="services-category  text-center">
         <Container>
           <Row noGutters className=" justify-content-center">
-            <h1 className="zija-color mt-5">Featured Product</h1>
+            <h1 className="zija-color text-title ">Featured Product</h1>
           </Row>
-          <Row noGutters className=" justify-content-center">
+          <Row noGutters className=" justify-content-center mb-5">
             <ZijaProductContainer
               productName="Product Name"
               productImage={product1Feature}
@@ -84,9 +84,9 @@ function zija() {
       </div>
       <Container>
         <Row noGutters className=" justify-content-center">
-          <h1 className="zija-color mt-5">Success Stories</h1>
+          <h1 className="zija-color text-title">Success Stories</h1>
         </Row>
-        <Row noGutters className=" justify-content-center">
+        <Row noGutters className=" justify-content-center mb-5">
           <SuccesStoryContainer
             name="Brent Noel"
             image={successStory1}
@@ -114,7 +114,7 @@ function zija() {
       <div className="">
         <Row noGutters className=" justify-content-center text-white">
           <div className="zija-bottom-text-container">
-            <h4 className="zija-color mt-3">
+            <h4 className="zija-color ">
               BE REWARDED FOR YOUR TALENTS AND EFFORTS
             </h4>
             <p>

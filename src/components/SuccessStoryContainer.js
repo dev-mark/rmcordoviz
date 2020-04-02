@@ -5,7 +5,6 @@ import "../assets/styles/zija.scss";
 import Col from "react-bootstrap/Col";
 
 function SuccessStoryContainer(props) {
-  //   const [link, image, name, description] = props;
   return (
     <Col lg={3} className=" mr-3 ml-3 success-story-container">
       <a href={props.link}>
