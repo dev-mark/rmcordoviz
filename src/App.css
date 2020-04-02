@@ -1,5 +1,11 @@
+@font-face {
+  src: url("./assets/fonts/Oswald-Fonts.ttf");
+  font-family: Oswald;
+}
+
 .App {
   text-align: center;
+  font-family: "Oswald", sans-serif;
 }
 
 .debugger {

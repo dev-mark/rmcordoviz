@@ -77,28 +77,28 @@ function Marketing() {
         <h5 className="text-warning mt-5 mb-5">Connect with us:</h5>
       </div>
       <Row className=" justify-content-center mb-5 mt-3">
-        <Col lg={2} className="  text-center justify-content-center">
+        <Col lg={1} className="  text-center justify-content-center mx-1">
           <a href="https://www.facebook.com/rmccordoviz/">
             <div className="services-icon-container">
               <FacebookLogo className="services-icon" />
             </div>
           </a>
         </Col>
-        <Col lg={2} className="  text-center justify-content-center">
+        <Col lg={1} className="   text-center justify-content-center">
           <a href="https://twitter.com/rmccordoviz">
             <div className="services-icon-container">
               <TwitterLogo className="services-icon" />
             </div>
           </a>
         </Col>
-        <Col lg={2} className="  text-center justify-content-center">
+        <Col lg={1} className="   text-center justify-content-center">
           <a href="https://www.linkedin.com/company/rmccordoviz/">
             <div className="services-icon-container">
               <LinkedInLogo className="services-icon" />
             </div>
           </a>
         </Col>
-        <Col lg={2} className="  text-center justify-content-center">
+        <Col lg={1} className="   text-center justify-content-center">
           <a href="https://www.instagram.com/rmcordoviz/">
             <div className="services-icon-container">
               <InstagramLogo className="services-icon" />
