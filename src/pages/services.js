@@ -53,7 +53,10 @@ const Services = () => {
               onClick={() => setSelected("coaching")}
             >
               <div className=" icon-container">
-                <ConsultantIcon className="icon-component" />
+                <ConsultantIcon
+                  className={`icon-component ${selected === "coaching" &&
+                    "icon-component-selected"}`}
+                />
               </div>
               <hr
                 className={`line-indicator ${selected === "coaching" &&
@@ -66,7 +69,10 @@ const Services = () => {
               onClick={() => setSelected("marketing")}
             >
               <div className=" icon-container">
-                <MarketingIcon className="icon-component" />
+                <MarketingIcon
+                  className={`icon-component ${selected === "marketing" &&
+                    "icon-component-selected"}`}
+                />
               </div>
               <hr
                 className={`line-indicator ${selected === "marketing" &&
@@ -79,7 +85,10 @@ const Services = () => {
               onClick={() => setSelected("development")}
             >
               <div className=" icon-container">
-                <DevelopmentIcon className="icon-component" />
+                <DevelopmentIcon
+                  className={`icon-component ${selected === "development" &&
+                    "icon-component-selected"}`}
+                />
               </div>
               <hr
                 className={`line-indicator ${selected === "development" &&

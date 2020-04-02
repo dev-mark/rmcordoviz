@@ -152,7 +152,12 @@ $zija-color: #05ce7c;
 
 .success-story-container {
   background-color: white;
-  margin: 3% 0;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 1);
+  }
   a {
     color: black;
     &:hover {

@@ -21,13 +21,21 @@ $gold-color: #ffc107;
 .category-container {
   text-align: center;
   margin: 0% 1%;
+  cursor: pointer;
   &:hover {
     .line-indicator {
-      border: 5px solid $gold-color;
-      background-color: $gold-color;
+      border: 5px solid white;
+      background-color: white;
+    }
+
+    .icon-component {
+      fill: white;
     }
   }
-  cursor: pointer;
+
+  .icon-component-selected {
+    fill: white;
+  }
 }
 
 .category-title {
@@ -47,8 +55,8 @@ $gold-color: #ffc107;
 }
 
 .selected-indicator {
-  border: 5px solid $gold-color;
-  background-color: $gold-color;
+  border: 5px solid white;
+  background-color: white;
 }
 
 .gold-color {
