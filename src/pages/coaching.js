@@ -18,7 +18,7 @@ import TeamMember from "../components/Team-Member";
 function coaching() {
   return (
     <div>
-      <div className="coaching-banner blur-background">
+      <div className="coaching-banner">
         <div id="color-overlay">
           <div className="center-text-to-div">
             <h1 className="text-warning banner-title">
