@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
 
 // icons
 import MarketingIcon from "../assets/icons/marketing.svg";
@@ -35,19 +36,21 @@ const Index = () => {
   return (
     <div>
       <div className="landing-banner">
-        <div className="center-text-to-div text-left">
+        <div className="center-text-to-div text-center">
           <h5 className="text-white">RMCordoviz Inc.</h5>
-          <h1 className="text-warning banner-title">
+          <h1 className="text-warning landing-header">
             Helping you achieve business success
           </h1>
-          <p className="subtitle">
+          <p className="subtitle mb-5">
             A coach can be the difference between making a thousands to millions
           </p>
           <Button className="bg-warning  pt-2 pb-2 landing-button">
-            <i>
-              <PhoneVolumeIcon className="landing-button-icon" />
-            </i>
-            <strong>Let's Talk</strong>
+            <Link to="/contact" className="black-link">
+              <i>
+                <PhoneVolumeIcon className="landing-button-icon" />
+              </i>
+              <strong>Let's Talk</strong>
+            </Link>
           </Button>
         </div>
       </div>

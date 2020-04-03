@@ -101,13 +101,14 @@
 }
 
 .landing-header {
-  letter-spacing: 7px;
-  font-size: 50px;
+  letter-spacing: 12px !important;
+  font-size: 55px;
   font-weight: bolder;
+  line-height: 140%;
 }
 
 .category-container-landing {
-  padding: 1% 0;
+  // padding: 1% 0;
   a {
     text-decoration: none;
     color: black;

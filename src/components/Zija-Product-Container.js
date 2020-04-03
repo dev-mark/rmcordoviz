@@ -7,9 +7,11 @@ import Col from "react-bootstrap/Col";
 function ZijaProductContainer(props) {
   return (
     <Col lg={3} className=" mr-3 ml-3 featured-product-container">
-      <div className="product-overlay">
-        <h5>{props.productName}</h5>
-      </div>
+      <a href={props.link}>
+        <div className="product-overlay">
+          <h5>{props.productName}</h5>
+        </div>
+      </a>
 
       <img
         src={props.productImage}

@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/styles/coaching.scss";
+import { Link } from "react-router-dom";
 
 // bootstrap
 import Container from "react-bootstrap/Container";
@@ -82,7 +83,9 @@ function coaching() {
               </p>
             </p>
             <Button variant="warning" className="mt-3 find-more-button">
-              <strong>Find out more</strong>
+              <Link to="/contact" className="black-link">
+                <strong>Find out more</strong>
+              </Link>
             </Button>
           </Col>
         </Row>

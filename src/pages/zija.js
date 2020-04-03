@@ -24,15 +24,17 @@ function zija() {
   return (
     <div>
       <div className="zija-banner">
-        <div id="zija-color-overlay">
-          <div className="center-text-to-div">
-            <img
-              src={zijaDistributorLogo}
-              className=" top-layer"
-              alt="Zija Distributer logo"
-            />
+        <a href="https://global.zijainternational.com/">
+          <div id="zija-color-overlay">
+            <div className="center-text-to-div">
+              <img
+                src={zijaDistributorLogo}
+                className=" top-layer"
+                alt="Zija Distributer logo"
+              />
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div className="services-category  text-center">
         <Container>
@@ -41,16 +43,19 @@ function zija() {
           </Row>
           <Row noGutters className=" justify-content-center mb-5">
             <ZijaProductContainer
-              productName="Product Name"
+              productName="PERFORMA-BUILD"
               productImage={product1Feature}
+              link="https://global.zijainternational.com/shop/products/104126"
             />
             <ZijaProductContainer
-              productName="Product Name"
+              productName="WEIGHT MANAGEMENT BUNDLE"
               productImage={product2Feature}
+              link="https://global.zijainternational.com/shop/products/104312"
             />
             <ZijaProductContainer
-              productName="Product Name"
+              productName="AIRTHERAPY RATA DIFFUSER"
               productImage={product3Feature}
+              link="https://global.zijainternational.com/shop/products/177366"
             />
           </Row>
         </Container>
@@ -73,7 +78,9 @@ function zija() {
                       variant="outline"
                       className="zija-button  pt-2 pb-2"
                     >
-                      Shop now
+                      <a href="https://global.zijainternational.com/shop">
+                        Shop now
+                      </a>
                     </Button>
                   </div>
                 </Col>
@@ -123,7 +130,9 @@ function zija() {
               plan make starting and building your own business a reality.
             </p>
             <Button className="learn-more-button">
-              <strong>Learn more</strong>
+              <a href="https://global.zijainternational.com/">
+                <strong>Learn more</strong>
+              </a>
             </Button>
           </div>
         </Row>

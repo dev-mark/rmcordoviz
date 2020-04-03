@@ -6,7 +6,6 @@ import "../assets/styles/home.scss";
 import Col from "react-bootstrap/Col";
 
 function ServiceCategory(props) {
-  console.log(props);
   return (
     <Col lg={3} className="category-container-landing ">
       <Link to={`/services`}>

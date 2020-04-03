@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .text-title {
@@ -36,4 +36,14 @@ a {
   letter-spacing: 7px;
   font-size: 50px;
   font-weight: bolder;
+}
+
+.black-link {
+  color: black;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+  }
 }

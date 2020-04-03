@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/styles/footer1.scss";
-import { Link } from "react-router-dom";
 
 // components
 import Map from "./Map";
@@ -19,6 +18,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 function Footer1() {
+  const BASE_URL = window.location.origin;
   return (
     <div className="footer1  justify-content-center">
       <Container>
@@ -32,16 +32,18 @@ function Footer1() {
           <Col xs={8} md={3}>
             <h6 className="d-none d-sm-block">Quick Links</h6>
             <p>
-              <Link to="/about">About us</Link>
+              <a href={`${BASE_URL}/about`}>About us</a>
             </p>
             <p>
-              <Link to="/coaching">Coaching</Link>
+              <a href={`${BASE_URL}/coaching`}>Coaching</a>
             </p>
             <p>
-              <Link to="/health-and-wellness">Health and wellness</Link>
+              <a href={`${BASE_URL}/health-and-wellness`}>
+                Health and wellness
+              </a>
             </p>
             <p>
-              <Link to="/contact">Let's talk</Link>
+              <a href={`${BASE_URL}/contact`}>Let's talk</a>
             </p>
           </Col>
           <Col xs={8} md={3} className="d-none d-sm-block">

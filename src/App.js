@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "./assets/styles/index.scss";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route, withRouter } from "react-router-dom";
 
 // pages
 import index from "./pages/index";
@@ -19,21 +19,19 @@ import Footer2 from "./components/Footer2";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path="/about" component={about} />
-          <Route path="/services" component={services} />
-          <Route path="/contact" component={contact} />
-          <Route path="/coaching" component={coaching} />
-          <Route path="/health-and-wellness" component={zija} />
-          <Route path="/" component={index} />
-        </Switch>
-        <Footer1 />
-        <Footer2 />
-      </Router>
+      <Navbar />
+      <Switch>
+        <Route path="/about" component={about} />
+        <Route path="/services" component={services} />
+        <Route path="/contact" component={contact} />
+        <Route path="/coaching" component={coaching} />
+        <Route path="/health-and-wellness" component={zija} />
+        <Route path="/" component={index} />
+      </Switch>
+      <Footer1 />
+      <Footer2 />
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
