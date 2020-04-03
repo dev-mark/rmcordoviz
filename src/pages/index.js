@@ -4,6 +4,7 @@ import "../assets/styles/home.scss";
 // bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
@@ -35,24 +36,38 @@ const Index = () => {
   };
   return (
     <div>
-      <div className="landing-banner">
-        <div className="center-text-to-div text-center">
-          <h5 className="text-white">RMCordoviz Inc.</h5>
-          <h1 className="text-warning landing-header">
-            Helping you achieve business success
-          </h1>
-          <p className="subtitle mb-5">
-            A coach can be the difference between making a thousands to millions
-          </p>
-          <Button className="bg-warning  pt-2 pb-2 landing-button">
-            <Link to="/contact" className="black-link">
-              <i>
-                <PhoneVolumeIcon className="landing-button-icon" />
-              </i>
-              <strong>Let's Talk</strong>
-            </Link>
-          </Button>
-        </div>
+      <div className="">
+        <Row noGutters className=" justify-content-center landing-banner">
+          <div id="landing-color-overlay">
+            <Col lg={12} className="debugger content-container-1">
+              <Row
+                noGutters
+                className=" jsutify-content-center landing-page-content-container"
+              >
+                <Col lg={10} className="">
+                  <div className="text-left  vertical-center">
+                    <h5 className="text-white">RMCORDOVIZ INC.</h5>
+                    <h1 className="text-warning landing-header">
+                      <strong>HELPING YOU ACHIEVE BUSINESS SUCCESS</strong>
+                    </h1>
+                    <p className="subtitle mb-5">
+                      A coach can be the difference between making a thousands
+                      to millions
+                    </p>
+                    <Button className="bg-warning  pt-2 pb-2 landing-button">
+                      <Link to="/contact" className="black-link">
+                        <i>
+                          <PhoneVolumeIcon className="landing-button-icon" />
+                        </i>
+                        <strong>Let's Talk</strong>
+                      </Link>
+                    </Button>
+                  </div>
+                </Col>
+              </Row>
+            </Col>
+          </div>
+        </Row>
       </div>
 
       <div className=" bg-warning services-container-landing-page">
