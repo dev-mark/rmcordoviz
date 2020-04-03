@@ -38,35 +38,35 @@ const Index = () => {
     <div>
       <div className="">
         <Row noGutters className=" justify-content-center landing-banner">
-          <div id="landing-color-overlay">
-            <Col lg={12} className="debugger content-container-1">
-              <Row
-                noGutters
-                className=" jsutify-content-center landing-page-content-container"
-              >
-                <Col lg={10} className="">
-                  <div className="text-left  vertical-center">
-                    <h5 className="text-white">RMCORDOVIZ INC.</h5>
-                    <h1 className="text-warning landing-header">
-                      <strong>HELPING YOU ACHIEVE BUSINESS SUCCESS</strong>
-                    </h1>
-                    <p className="subtitle mb-5">
-                      A coach can be the difference between making a thousands
-                      to millions
-                    </p>
-                    <Button className="bg-warning  pt-2 pb-2 landing-button">
-                      <Link to="/contact" className="black-link">
-                        <i>
-                          <PhoneVolumeIcon className="landing-button-icon" />
-                        </i>
-                        <strong>Let's Talk</strong>
-                      </Link>
-                    </Button>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-          </div>
+          <div id="landing-color-overlay" />
+          <Col lg={12} className=" content-container-1">
+            <Row
+              noGutters
+              className=" jsutify-content-center landing-page-content-container"
+            >
+              <Col lg={10} className="">
+                <div className="text-left  vertical-center">
+                  <h5 className="text-white">RMCORDOVIZ INC.</h5>
+                  <h1 className="text-warning landing-header">
+                    <strong>HELPING YOU ACHIEVE BUSINESS SUCCESS</strong>
+                  </h1>
+                  <p className="subtitle mb-5">
+                    A coach can be the difference between making a thousands to
+                    millions
+                  </p>
+                  <Button className="bg-warning  pt-2 pb-2 landing-button">
+                    <Link to="/contact" className="black-link">
+                      <i>
+                        <PhoneVolumeIcon className="landing-button-icon" />
+                      </i>
+                      <strong>Let's Talk</strong>
+                    </Link>
+                  </Button>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+          {/* </div> */}
         </Row>
       </div>
 
