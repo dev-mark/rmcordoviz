@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/styles/contact.scss";
 
 // icons
@@ -16,7 +16,15 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-function contact() {
+const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [referrals, setReferrals] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = () => {
+    alert("Coming soon.");
+  };
   return (
     <Container className="mt-4 mb-5 text-white">
       <div className="py-5 banner-title ">
@@ -25,12 +33,20 @@ function contact() {
       <div>
         <Row className="mb-5 justify-content-center">
           <Col lg={6} className="">
-            <Form className="text-left  contact-form mb-3">
+            <Form
+              className="text-left  contact-form mb-3"
+              onSubmit={handleSubmit}
+            >
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>
                   Name <span className="text-danger">*</span>
                 </Form.Label>
-                <Form.Control type="text" placeholder="Enter your name here" />
+                <Form.Control
+                  type="text"
+                  placeholder="Enter your name here"
+                  value={name}
+                  onChange={value => setName(value.target.value)}
+                />
               </Form.Group>
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>
@@ -39,6 +55,8 @@ function contact() {
                 <Form.Control
                   type="email"
                   placeholder="Enter your email here"
+                  value={email}
+                  onChange={value => setEmail(value.target.value)}
                 />
               </Form.Group>
               <Form.Group controlId="exampleForm.ControlInput1">
@@ -46,6 +64,8 @@ function contact() {
                 <Form.Control
                   type="Text"
                   placeholder="Enter your referrals here"
+                  value={referrals}
+                  onChange={value => setReferrals(value.target.value)}
                 />
               </Form.Group>
               <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -56,6 +76,8 @@ function contact() {
                   as="textarea"
                   rows="4"
                   placeholder="Tell us what you want"
+                  value={message}
+                  onChange={value => setMessage(value.target.value)}
                 />
               </Form.Group>
               <p>
@@ -67,7 +89,7 @@ function contact() {
                 </small>
               </p>
 
-              <Button variant="warning">
+              <Button type="submit" variant="warning">
                 <strong>Send</strong>
               </Button>
             </Form>
@@ -119,6 +141,6 @@ function contact() {
       </div>
     </Container>
   );
-}
+};
 
-export default contact;
+export default Contact;

@@ -21,11 +21,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-        <Route path="/about" component={about} />
-        <Route path="/services" component={services} />
-        <Route path="/contact" component={contact} />
-        <Route path="/coaching" component={coaching} />
-        <Route path="/health-and-wellness" component={zija} />
+        <Route exact path="/about" component={about} />
+        <Route exact path="/services" component={services} />
+        <Route exact path="/contact" component={contact} />
+        <Route exact path="/coaching" component={coaching} />
+        <Route exact path="/health-and-wellness" component={zija} />
         <Route path="/" component={index} />
       </Switch>
       <Footer1 />

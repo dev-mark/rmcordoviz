@@ -58,7 +58,7 @@ const Index = () => {
       <div className=" bg-warning services-container-landing-page">
         <Container className=" bg-warning">
           <Row className=" justify-content-center">
-            <h1 className="text-title">Services</h1>
+            <h1 className="text-title">SERVICES</h1>
           </Row>
 
           <Row noGutters className="justify-content-center pb-5">
@@ -89,7 +89,7 @@ const Index = () => {
       <div>
         <Container className="text-center">
           <Row className=" justify-content-center">
-            <h1 className="text-title text-white">Why Choose Us?</h1>
+            <h1 className="text-title text-white">WHY CHOOSE US?</h1>
           </Row>
           <Row className=" justify-content-center">
             <WhyUs
