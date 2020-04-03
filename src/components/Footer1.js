@@ -71,7 +71,9 @@ function Footer1() {
                     <MarkerIcon className="contact-icons" />
                   </i>
                 </Col>
-                <Col>600 Crowfoot Crescent, Calgary, AB T3G 0B4, Canada</Col>
+                <Col className="text-capitalize">
+                  6671 S Las Vegas Blvd. Building D, Las Vegas, Nevada, 89119
+                </Col>
               </Row>
             </div>
           </Col>

@@ -26,7 +26,7 @@
   }
 
   .row-container {
-    height: 91vh;
+    height: 92vh;
     position: relative;
   }
 
@@ -34,9 +34,9 @@
     background-color: rgba($color: #000000, $alpha: 0);
     background-image: url("../images/ross-and-melanie.png");
     background-repeat: no-repeat;
-    background-size: 55% 72%;
+    background-size: 55% 75%;
     background-position: bottom right;
-    height: 91vh;
+    height: 92vh;
     padding: 0 15%;
   }
 }
@@ -110,51 +110,26 @@
 #landing-color-overlay {
   position: absolute;
   width: 100%;
-  height: 91vh;
-  opacity: 0.9;
-  background: rgba(92, 92, 92, 1);
+  height: 92vh;
+  opacity: 0.95;
+  background: rgb(4, 4, 4);
   background: -moz-linear-gradient(
-    top,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(92, 92, 92, 1)),
-    color-stop(0%, rgba(92, 92, 92, 1)),
-    color-stop(0%, rgba(92, 92, 92, 1)),
-    color-stop(100%, rgba(0, 0, 0, 1))
+    0deg,
+    rgba(4, 4, 4, 1) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(47, 47, 47, 1) 100%
   );
   background: -webkit-linear-gradient(
-    top,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
+    0deg,
+    rgba(4, 4, 4, 1) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(47, 47, 47, 1) 100%
   );
   background: linear-gradient(
-    to bottom,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(92, 92, 92, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
+    0deg,
+    rgba(4, 4, 4, 1) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(47, 47, 47, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c5c5c', endColorstr='#000000', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040404",endColorstr="#2f2f2f",GradientType=1);
 }

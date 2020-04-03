@@ -122,7 +122,9 @@ const Contact = () => {
                       <MarkerIcon className="contact-icons" />
                     </i>
                   </Col>
-                  <Col>600 Crowfoot Crescent, Calgary, AB T3G 0B4, Canada</Col>
+                  <Col className="text-capitalize">
+                    6671S Las Vegas Blvd. Building D, Las Vegas, Nevada, 89119
+                  </Col>
                 </Row>
               </Col>
             </Row>
