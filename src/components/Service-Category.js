@@ -8,7 +8,14 @@ import Col from "react-bootstrap/Col";
 function ServiceCategory(props) {
   return (
     <Col lg={3} className="category-container-landing ">
-      <Link to={`/services`}>
+      <Link
+        to={{
+          pathname: "/services",
+          state: {
+            category: props.category
+          }
+        }}
+      >
         <div className=" icon-container">
           <img src={props.icon} alt={props.title} height="160" width="160" />
         </div>

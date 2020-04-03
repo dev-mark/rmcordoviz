@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/styles/services.scss";
 
 // bootstrap
@@ -16,9 +16,15 @@ import SoftwareDevelopment from "../components/Services-SoftwareDevelopment";
 import Coaching from "../components/Services-Coaching";
 import Marketing from "../components/Services-Marketing";
 
-const Services = () => {
+const Services = props => {
   const [selected, setSelected] = useState("marketing");
 
+  useEffect(() => {
+    if (props.location.state !== undefined) {
+      setSelected(props.location.state.category);
+    }
+    // eslint-disable-next-line
+  }, []);
   return (
     <div>
       <div className=" services-banner">

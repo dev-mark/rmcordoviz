@@ -67,6 +67,7 @@ const Index = () => {
               icon={ConsultantIcon}
               description="Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Praesent venenatis."
+              category="coaching"
             />
 
             <ServiceCategory
@@ -74,6 +75,7 @@ const Index = () => {
               icon={MarketingIcon}
               description="Nullam consequat urna at quam scelerisque vehicula. Morbi non
               nisi tempor, dapibus orci sit amet."
+              category="marketing"
             />
 
             <ServiceCategory
@@ -81,6 +83,7 @@ const Index = () => {
               icon={DevelopmentIcon}
               description=" Mauris malesuada sodales libero nec sodales. Donec interdum
               ligula ut neque hendrerit porttitor. Curabitur porttitor."
+              category="development"
             />
           </Row>
         </Container>
