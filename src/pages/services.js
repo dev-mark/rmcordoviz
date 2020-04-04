@@ -39,71 +39,71 @@ const Services = props => {
           </div>
         </div>
       </div>
-      <div className="services-category  text-center">
-        <Container>
-          <Row noGutters className="mt-4 justify-content-center">
-            <Col lg={3} className=" category-title">
-              <h3 className="text-warning">Coaching</h3>
-            </Col>
-            <Col lg={3} className=" category-title">
-              <h3 className="text-warning">Marketing</h3>
-            </Col>
-            <Col lg={3} className=" category-title">
-              <h3 className="text-warning">Software Development</h3>
-            </Col>
-          </Row>
-          <Row noGutters className=" justify-content-center">
-            <Col
-              lg={3}
-              className=" category-container"
-              onClick={() => setSelected("coaching")}
-            >
-              <div className=" icon-container">
-                <ConsultantIcon
-                  className={`icon-component ${selected === "coaching" &&
-                    "icon-component-selected"}`}
-                />
-              </div>
-              <hr
-                className={`line-indicator ${selected === "coaching" &&
-                  "selected-indicator"}`}
+
+      <Container className="services-category  text-center">
+        <Row noGutters className="mt-4 justify-content-center">
+          <Col lg={3} className=" category-title">
+            <h3 className="text-warning">Coaching</h3>
+          </Col>
+          <Col lg={3} className=" category-title">
+            <h3 className="text-warning">Marketing</h3>
+          </Col>
+          <Col lg={3} className=" category-title">
+            <h3 className="text-warning">Software Development</h3>
+          </Col>
+        </Row>
+        <Row noGutters className=" justify-content-center">
+          <Col
+            lg={3}
+            className=" category-container"
+            onClick={() => setSelected("coaching")}
+          >
+            <div className=" icon-container">
+              <ConsultantIcon
+                className={`icon-component ${selected === "coaching" &&
+                  "icon-component-selected"}`}
               />
-            </Col>
-            <Col
-              lg={3}
-              className=" category-container"
-              onClick={() => setSelected("marketing")}
-            >
-              <div className=" icon-container">
-                <MarketingIcon
-                  className={`icon-component ${selected === "marketing" &&
-                    "icon-component-selected"}`}
-                />
-              </div>
-              <hr
-                className={`line-indicator ${selected === "marketing" &&
-                  "selected-indicator"}`}
+            </div>
+            <hr
+              className={`line-indicator ${selected === "coaching" &&
+                "selected-indicator"}`}
+            />
+          </Col>
+          <Col
+            lg={3}
+            className=" category-container"
+            onClick={() => setSelected("marketing")}
+          >
+            <div className=" icon-container">
+              <MarketingIcon
+                className={`icon-component ${selected === "marketing" &&
+                  "icon-component-selected"}`}
               />
-            </Col>
-            <Col
-              lg={3}
-              className=" category-container"
-              onClick={() => setSelected("development")}
-            >
-              <div className=" icon-container">
-                <DevelopmentIcon
-                  className={`icon-component ${selected === "development" &&
-                    "icon-component-selected"}`}
-                />
-              </div>
-              <hr
-                className={`line-indicator ${selected === "development" &&
-                  "selected-indicator"}`}
+            </div>
+            <hr
+              className={`line-indicator ${selected === "marketing" &&
+                "selected-indicator"}`}
+            />
+          </Col>
+          <Col
+            lg={3}
+            className=" category-container"
+            onClick={() => setSelected("development")}
+          >
+            <div className=" icon-container">
+              <DevelopmentIcon
+                className={`icon-component ${selected === "development" &&
+                  "icon-component-selected"}`}
               />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+            </div>
+            <hr
+              className={`line-indicator ${selected === "development" &&
+                "selected-indicator"}`}
+            />
+          </Col>
+        </Row>
+      </Container>
+
       <Container className="">
         {selected === "coaching" && <Coaching />}
         {selected === "marketing" && <Marketing />}

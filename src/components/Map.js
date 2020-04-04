@@ -12,13 +12,7 @@ function Map() {
       defaultZoom={15}
       defaultCenter={{ lat: 51.12941, lng: -114.20409 }}
     >
-      <Marker
-        position={{ lat: 51.12941, lng: -114.20409 }}
-        // icon={{
-        //   url: RMClogo,
-        //   scaledSize: new window.google.maps.Size(40, 25)
-        // }}
-      />
+      <Marker position={{ lat: 51.12941, lng: -114.20409 }} />
     </GoogleMap>
   );
 }

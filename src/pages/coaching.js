@@ -32,10 +32,9 @@ function coaching() {
         </div>
       </div>
       <Row className=" justify-content-center coaching-content">
-        {/* <Container> */}
         <h1 className="text-warning text-title">Are you ready to LEVEL UP? </h1>
         <Row noGutters className=" justify-content-center">
-          <Col lg={8} className=" text-white mb-4" id="coaching-content-text">
+          <Col lg={8} className=" text-white " id="coaching-content-text">
             <p>
               Your business is moving but you are still struggling to get a
               break. Our one on one business coaching opportunity is for
@@ -75,9 +74,7 @@ function coaching() {
               If you answered yes to any of the questions above then it’s time
               to LEVEL UP 10x
               <p>
-                {" "}
                 <strong className="text-warning">
-                  {" "}
                   It’s time and you deserve it!
                 </strong>
               </p>
@@ -89,7 +86,6 @@ function coaching() {
             </Button>
           </Col>
         </Row>
-        {/* </Container> */}
       </Row>
 
       <Row className=" justify-content-center ">

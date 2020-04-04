@@ -17,14 +17,14 @@ function SoftwareDevelopment() {
   return (
     <div className="text-white">
       <Row noGutters className=" justify-content-center mb-5 ">
-        <Col lg={5} className=" ml-2 mr-2">
+        <Col lg={5} className=" mr-4">
           <img
             src={webDev}
             alt="web development"
             className="development-image"
           />
         </Col>
-        <Col lg={5} className=" ml-2 mr-2">
+        <Col lg={5} className="mr-4">
           <div className="text-left text-white  development-text-container">
             <h3 className="text-warning mt-4 mb-3">Web Development</h3>
             <p>

@@ -29,39 +29,38 @@ function zija() {
             <div className="center-text-to-div">
               <img
                 src={zijaDistributorLogo}
-                className=" top-layer"
+                className="zija-ditributor-logo"
                 alt="Zija Distributer logo"
               />
             </div>
           </div>
         </a>
       </div>
-      <div className="services-category  text-center">
-        <Container>
-          <Row className=" justify-content-center">
-            <h1 className="zija-color text-title ">Featured Product</h1>
-          </Row>
-          <Row noGutters className=" justify-content-center mb-5">
-            <ZijaProductContainer
-              productName="PERFORMA-BUILD"
-              productImage={product1Feature}
-              link="https://global.zijainternational.com/shop/products/104126"
-            />
-            <ZijaProductContainer
-              productName="WEIGHT MANAGEMENT BUNDLE"
-              productImage={product2Feature}
-              link="https://global.zijainternational.com/shop/products/104312"
-            />
-            <ZijaProductContainer
-              productName="AIRTHERAPY RATA DIFFUSER"
-              productImage={product3Feature}
-              link="https://global.zijainternational.com/shop/products/177366"
-            />
-          </Row>
-        </Container>
-      </div>
 
-      <div className=" ">
+      <Container className="services-category  text-center">
+        <Row className=" justify-content-center">
+          <h1 className="zija-color text-title ">Featured Product</h1>
+        </Row>
+        <Row noGutters className=" justify-content-center mb-5">
+          <ZijaProductContainer
+            productName="PERFORMA-BUILD"
+            productImage={product1Feature}
+            link="https://global.zijainternational.com/shop/products/104126"
+          />
+          <ZijaProductContainer
+            productName="WEIGHT MANAGEMENT BUNDLE"
+            productImage={product2Feature}
+            link="https://global.zijainternational.com/shop/products/104312"
+          />
+          <ZijaProductContainer
+            productName="AIRTHERAPY RATA DIFFUSER"
+            productImage={product3Feature}
+            link="https://global.zijainternational.com/shop/products/177366"
+          />
+        </Row>
+      </Container>
+
+      <div>
         <Row noGutters className="   shop-now-container text-white">
           <div class="linear-green-overlay">
             <Container>
@@ -89,6 +88,7 @@ function zija() {
           </div>
         </Row>
       </div>
+
       <Container>
         <Row noGutters className=" justify-content-center">
           <h1 className="zija-color text-title">Success Stories</h1>
@@ -118,7 +118,7 @@ function zija() {
         </Row>
       </Container>
 
-      <div>
+      <Container fluid>
         <Row noGutters className=" justify-content-center">
           <div className="zija-bottom-text-container">
             <h4 className="zija-color">
@@ -136,7 +136,7 @@ function zija() {
             </Button>
           </div>
         </Row>
-      </div>
+      </Container>
     </div>
   );
 }

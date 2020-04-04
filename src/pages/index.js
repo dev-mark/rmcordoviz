@@ -36,119 +36,107 @@ const Index = () => {
   };
   return (
     <div>
-      <div className="">
-        <Row noGutters className=" justify-content-center landing-banner">
+      <Container fluid className="landing-banner">
+        <Row noGutters className=" justify-content-center ">
           <div id="landing-color-overlay" />
-          <Col lg={12} className=" content-container-1">
-            <Row
-              noGutters
-              className=" jsutify-content-center landing-page-content-container"
-            >
-              <Col lg={10} className="">
-                <div className="text-left  vertical-center">
-                  <h5 className="text-white">RMCORDOVIZ INC.</h5>
-                  <h1 className="text-warning landing-header">
-                    <strong>HELPING YOU ACHIEVE BUSINESS SUCCESS</strong>
-                  </h1>
-                  <p className="subtitle mb-5">
-                    A coach can be the difference between making a thousands to
-                    millions
-                  </p>
-                  <Button className="bg-warning  pt-2 pb-2 landing-button">
-                    <Link to="/contact" className="black-link">
-                      <i>
-                        <PhoneVolumeIcon className="landing-button-icon" />
-                      </i>
-                      <strong>Let's Talk</strong>
-                    </Link>
-                  </Button>
-                </div>
-              </Col>
-            </Row>
+          <Col lg={9} className=" landing-page-content-container">
+            <div className="text-left  vertical-center">
+              <h5 className="text-white">RMCORDOVIZ INC.</h5>
+              <h1 className="text-warning landing-header">
+                <strong>HELPING YOU ACHIEVE BUSINESS SUCCESS</strong>
+              </h1>
+              <p className="subtitle mb-5">
+                A coach can be the difference between making a thousands to
+                millions
+              </p>
+              <Button className="bg-warning  pt-2 pb-2 landing-button">
+                <Link to="/contact" className="black-link">
+                  <i>
+                    <PhoneVolumeIcon className="landing-button-icon" />
+                  </i>
+                  <strong>Let's Talk</strong>
+                </Link>
+              </Button>
+            </div>
           </Col>
-          {/* </div> */}
         </Row>
-      </div>
+      </Container>
 
-      <div className=" bg-warning services-container-landing-page">
-        <Container className=" bg-warning">
-          <Row className=" justify-content-center">
-            <h1 className="text-title">SERVICES</h1>
-          </Row>
+      <Container fluid className=" bg-warning">
+        <Row className=" justify-content-center">
+          <h1 className="text-title">SERVICES</h1>
+        </Row>
 
-          <Row noGutters className="justify-content-center pb-5">
-            <ServiceCategory
-              title="Certified Consultant"
-              icon={ConsultantIcon}
-              description="Class aptent taciti sociosqu ad litora torquent per conubia
+        <Row noGutters className="justify-content-center pb-5">
+          <ServiceCategory
+            title="Certified Consultant"
+            icon={ConsultantIcon}
+            description="Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Praesent venenatis."
-              category="coaching"
-            />
+            category="coaching"
+          />
 
-            <ServiceCategory
-              title="Marketing"
-              icon={MarketingIcon}
-              description="Nullam consequat urna at quam scelerisque vehicula. Morbi non
+          <ServiceCategory
+            title="Marketing"
+            icon={MarketingIcon}
+            description="Nullam consequat urna at quam scelerisque vehicula. Morbi non
               nisi tempor, dapibus orci sit amet."
-              category="marketing"
-            />
+            category="marketing"
+          />
 
-            <ServiceCategory
-              title="Software Development"
-              icon={DevelopmentIcon}
-              description=" Mauris malesuada sodales libero nec sodales. Donec interdum
+          <ServiceCategory
+            title="Software Development"
+            icon={DevelopmentIcon}
+            description=" Mauris malesuada sodales libero nec sodales. Donec interdum
               ligula ut neque hendrerit porttitor. Curabitur porttitor."
-              category="development"
-            />
-          </Row>
-        </Container>
-      </div>
+            category="development"
+          />
+        </Row>
+      </Container>
 
-      <div>
-        <Container className="text-center">
-          <Row className=" justify-content-center">
-            <h1 className="text-title text-white">WHY CHOOSE US?</h1>
-          </Row>
-          <Row className=" justify-content-center">
-            <WhyUs
-              title="Personal Consultation"
-              subtitle="ONE ON ONE TALK"
-              image={oneOnOnePhoto}
-            />
+      <Container className="text-center">
+        <Row className=" justify-content-center">
+          <h1 className="text-title text-white">WHY CHOOSE US?</h1>
+        </Row>
+        <Row className=" justify-content-center">
+          <WhyUs
+            title="Personal Consultation"
+            subtitle="ONE ON ONE TALK"
+            image={oneOnOnePhoto}
+          />
 
-            <WhyUs
-              title="Business Solution"
-              subtitle="FINDING SOLUTION"
-              image={businessSolutionPhoto}
-            />
+          <WhyUs
+            title="Business Solution"
+            subtitle="FINDING SOLUTION"
+            image={businessSolutionPhoto}
+          />
 
-            <WhyUs
-              title="Great Ideas"
-              subtitle="IDEAS THAT WILL BLOW YOUR MIND"
-              image={greatIdeaPhoto}
-            />
-          </Row>
-          <Row className=" justify-content-center mb-5">
-            <WhyUs
-              title="Improved Business"
-              subtitle="BUSINESS TO WHOLE NEW LEVEL"
-              image={thumbsUpManPhoto}
-            />
+          <WhyUs
+            title="Great Ideas"
+            subtitle="IDEAS THAT WILL BLOW YOUR MIND"
+            image={greatIdeaPhoto}
+          />
+        </Row>
+        <Row className=" justify-content-center mb-5">
+          <WhyUs
+            title="Improved Business"
+            subtitle="BUSINESS TO WHOLE NEW LEVEL"
+            image={thumbsUpManPhoto}
+          />
 
-            <WhyUs
-              title="Shared Expertise"
-              subtitle="LEARN FROM THE BEST"
-              image={sharedExpertisePhoto}
-            />
+          <WhyUs
+            title="Shared Expertise"
+            subtitle="LEARN FROM THE BEST"
+            image={sharedExpertisePhoto}
+          />
 
-            <WhyUs
-              title="Achieved Goals"
-              subtitle="CLOSE THE DEAL"
-              image={successManPhoto}
-            />
-          </Row>
-        </Container>
-      </div>
+          <WhyUs
+            title="Achieved Goals"
+            subtitle="CLOSE THE DEAL"
+            image={successManPhoto}
+          />
+        </Row>
+      </Container>
 
       <Carousel
         activeIndex={index}
