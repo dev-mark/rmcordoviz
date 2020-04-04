@@ -8,16 +8,41 @@ $gold-color: #ffc107;
   background-position-y: bottom;
 }
 
-.icon-component {
-  fill: $gold-color;
-  width: 60%;
-  height: 60%;
+.service-category-title {
+  margin: 3% 1%;
+  display: flex;
+  h3 {
+    margin: auto;
+  }
 }
-
-.category-container {
+.services-category-container {
   text-align: center;
   margin: 0% 1%;
   cursor: pointer;
+
+  .icon-component {
+    fill: $gold-color;
+    width: 60%;
+    height: 60%;
+  }
+
+  .icon-component-selected {
+    fill: white;
+  }
+
+  .line-indicator {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 95%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+
+  .selected-indicator {
+    border: 5px solid white;
+    background-color: white;
+  }
+
   &:hover {
     .line-indicator {
       border: 5px solid white;
@@ -28,33 +53,4 @@ $gold-color: #ffc107;
       fill: white;
     }
   }
-
-  .icon-component-selected {
-    fill: white;
-  }
-}
-
-.category-title {
-  margin: 3% 1%;
-  display: flex;
-  h3 {
-    margin: auto;
-  }
-}
-
-.line-indicator {
-  border: 5px solid rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 95%;
-  margin-top: 15%;
-  margin-bottom: 10%;
-}
-
-.selected-indicator {
-  border: 5px solid white;
-  background-color: white;
-}
-
-.gold-color {
-  color: $gold-color;
 }

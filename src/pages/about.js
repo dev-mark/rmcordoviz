@@ -16,9 +16,13 @@ function about() {
       <h1 className=" text-white banner-title">ABOUT US</h1>
       <Row noGutters className="mb-5  justify-content-center">
         <Col lg={11}>
-          <Row noGutters className=" justify-content-center  fix-holder-height">
+          <Row noGutters className=" justify-content-center  row-container">
             <Col lg={5}>
-              <img src={RossImage} className="image" alt="Ross Cordoviz" />
+              <img
+                src={RossImage}
+                className="team-member-image"
+                alt="Ross Cordoviz"
+              />
             </Col>
             <Col lg={7} className="text-left bg-warning  info-div">
               <div className="mb-4">
@@ -67,11 +71,11 @@ function about() {
       </Row>
       <Row noGutters className="mb-5  justify-content-center">
         <Col lg={11}>
-          <Row noGutters className=" justify-content-center  fix-holder-height">
+          <Row noGutters className=" justify-content-center ">
             <Col lg={5}>
               <img
                 src={MelanieImage}
-                className="image"
+                className="team-member-image"
                 alt="Melanie Cordoviz"
               />
             </Col>

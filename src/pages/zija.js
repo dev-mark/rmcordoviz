@@ -61,11 +61,11 @@ function zija() {
       </Container>
 
       <div>
-        <Row noGutters className="   shop-now-container text-white">
-          <div class="linear-green-overlay">
+        <Row noGutters className="shop-now-container text-white">
+          <div class="green-overlay">
             <Container>
               <Row>
-                <Col lg={9} className="  text-center text-container ">
+                <Col lg={9} className="  text-center shop-now-text-container ">
                   <div className=" text-content">
                     <h1 className="text-white ">THIS IS LIFE UNLIMITED</h1>
                     <p>
@@ -75,7 +75,7 @@ function zija() {
                     </p>
                     <Button
                       variant="outline"
-                      className="zija-button  pt-2 pb-2"
+                      className="zija-button  pt-2 pb-2 text-black"
                     >
                       <a href="https://global.zijainternational.com/shop">
                         Shop now
@@ -129,8 +129,11 @@ function zija() {
               easy-to-use tools, unmatched support, and rewarding compensation
               plan make starting and building your own business a reality.
             </p>
-            <Button className="learn-more-button">
-              <a href="https://global.zijainternational.com/">
+            <Button className="learn-more-button ">
+              <a
+                href="https://global.zijainternational.com/"
+                className="text-black"
+              >
                 <strong>Learn more</strong>
               </a>
             </Button>

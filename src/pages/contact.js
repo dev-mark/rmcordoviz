@@ -35,7 +35,7 @@ const Contact = () => {
             className="text-left  contact-form mb-3"
             onSubmit={handleSubmit}
           >
-            <Form.Group controlId="exampleForm.ControlInput1">
+            <Form.Group>
               <Form.Label>
                 Name <span className="text-danger">*</span>
               </Form.Label>
@@ -46,7 +46,7 @@ const Contact = () => {
                 onChange={value => setName(value.target.value)}
               />
             </Form.Group>
-            <Form.Group controlId="exampleForm.ControlInput1">
+            <Form.Group>
               <Form.Label>
                 Email <span className="text-danger">*</span>
               </Form.Label>
@@ -57,7 +57,7 @@ const Contact = () => {
                 onChange={value => setEmail(value.target.value)}
               />
             </Form.Group>
-            <Form.Group controlId="exampleForm.ControlInput1">
+            <Form.Group>
               <Form.Label>Referrals</Form.Label>
               <Form.Control
                 type="Text"

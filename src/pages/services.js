@@ -25,6 +25,7 @@ const Services = props => {
     }
     // eslint-disable-next-line
   }, []);
+
   return (
     <div>
       <div className=" services-banner">
@@ -42,23 +43,23 @@ const Services = props => {
 
       <Container className="services-category  text-center">
         <Row noGutters className="mt-4 justify-content-center">
-          <Col lg={3} className=" category-title">
+          <Col lg={3} className=" service-category-title">
             <h3 className="text-warning">Coaching</h3>
           </Col>
-          <Col lg={3} className=" category-title">
+          <Col lg={3} className=" service-category-title">
             <h3 className="text-warning">Marketing</h3>
           </Col>
-          <Col lg={3} className=" category-title">
+          <Col lg={3} className=" service-category-title">
             <h3 className="text-warning">Software Development</h3>
           </Col>
         </Row>
         <Row noGutters className=" justify-content-center">
           <Col
             lg={3}
-            className=" category-container"
+            className=" services-category-container"
             onClick={() => setSelected("coaching")}
           >
-            <div className=" icon-container">
+            <div>
               <ConsultantIcon
                 className={`icon-component ${selected === "coaching" &&
                   "icon-component-selected"}`}
@@ -71,10 +72,10 @@ const Services = props => {
           </Col>
           <Col
             lg={3}
-            className=" category-container"
+            className=" services-category-container"
             onClick={() => setSelected("marketing")}
           >
-            <div className=" icon-container">
+            <div>
               <MarketingIcon
                 className={`icon-component ${selected === "marketing" &&
                   "icon-component-selected"}`}
@@ -87,10 +88,10 @@ const Services = props => {
           </Col>
           <Col
             lg={3}
-            className=" category-container"
+            className=" services-category-container"
             onClick={() => setSelected("development")}
           >
-            <div className=" icon-container">
+            <div>
               <DevelopmentIcon
                 className={`icon-component ${selected === "development" &&
                   "icon-component-selected"}`}
@@ -104,7 +105,7 @@ const Services = props => {
         </Row>
       </Container>
 
-      <Container className="">
+      <Container>
         {selected === "coaching" && <Coaching />}
         {selected === "marketing" && <Marketing />}
         {selected === "development" && <SoftwareDevelopment />}

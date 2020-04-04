@@ -1,8 +1,7 @@
-.fix-holder-height {
-  .image {
-    width: 100%;
-    height: 100%;
-  }
+.team-member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .info-div {

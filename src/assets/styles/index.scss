@@ -1,6 +1,13 @@
+$gold-color: #ffc107;
+
 body {
   font-size: 16px;
   letter-spacing: 1.5px;
+}
+
+p,
+a {
+  line-height: 170%;
 }
 
 .text-title {
@@ -12,17 +19,11 @@ body {
   h1 {
     letter-spacing: 15px;
   }
-  z-index: 10;
   letter-spacing: 5px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-p,
-a {
-  line-height: 170%;
 }
 
 .subtitle {
@@ -38,7 +39,7 @@ a {
   margin: 5% 0;
 }
 
-.black-link {
+.text-black {
   color: black;
 }
 

@@ -50,7 +50,7 @@ const Index = () => {
                 millions
               </p>
               <Button className="bg-warning  pt-2 pb-2 landing-button">
-                <Link to="/contact" className="black-link">
+                <Link to="/contact" className="text-black">
                   <i>
                     <PhoneVolumeIcon className="landing-button-icon" />
                   </i>
