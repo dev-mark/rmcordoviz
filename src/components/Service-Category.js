@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 
 function ServiceCategory(props) {
   return (
-    <Col lg={3} className="category-container-landing ">
+    <Col lg={3} className="category-container ">
       <Link
         to={{
           pathname: "/services",

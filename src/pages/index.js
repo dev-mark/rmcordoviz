@@ -39,8 +39,8 @@ const Index = () => {
       <Container fluid className="landing-banner">
         <Row noGutters className=" justify-content-center ">
           <div id="landing-color-overlay" />
-          <Col lg={9} className=" landing-page-content-container">
-            <div className="text-left  vertical-center">
+          <Col lg={9} className=" landing-content-container">
+            <div className="text-left  align-text-middle-left">
               <h5 className="text-white">RMCORDOVIZ INC.</h5>
               <h1 className="text-warning landing-header">
                 <strong>HELPING YOU ACHIEVE BUSINESS SUCCESS</strong>
