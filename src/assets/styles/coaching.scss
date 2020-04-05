@@ -36,6 +36,10 @@ $extra-large-device: "only screen and (min-width: 1200px)";
   width: 100%;
   background-size: cover;
   background-position-y: bottom;
+
+  @media #{$extra-small-device} {
+    height: 30vh;
+  }
 }
 
 li {

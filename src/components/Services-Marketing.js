@@ -16,10 +16,13 @@ function Marketing() {
   return (
     <div className="">
       <div>
-        <h1 className="text-warning mt-5 mb-5">STAND OUT.</h1>
+        <h1 className="text-warning mt-5 mb-5 text-title">STAND OUT.</h1>
       </div>
-      <Row className=" marketing-content text-white justify-content-center">
-        <Col lg={10} className="">
+      <Row
+        noGutters
+        className=" marketing-content text-white justify-content-center"
+      >
+        <Col xs={12} md={12} lg={10} className="">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             et dolor vitae libero porttitor malesuada. Proin ultricies euismod
@@ -44,7 +47,7 @@ function Marketing() {
         </Col>
       </Row>
       <Row className=" text-left text-white seo-checklist justify-content-center">
-        <Col lg={10} className=" ">
+        <Col xs={12} lg={10} className=" ">
           <ul>
             <li className="">
               <i>
@@ -74,31 +77,51 @@ function Marketing() {
         </Col>
       </Row>
       <div>
-        <h5 className="text-warning mt-5 mb-5">Connect with us:</h5>
+        <h5 className="text-warning text-title">Connect with us:</h5>
       </div>
       <Row className=" justify-content-center mb-5 mt-3">
-        <Col lg={1} className="  text-center justify-content-center mx-1">
+        <Col
+          xs={3}
+          md={2}
+          lg={1}
+          className="  text-center justify-content-center"
+        >
           <a href="https://www.facebook.com/rmccordoviz/">
             <div className="services-icon-container">
               <FacebookLogo className="services-icon" />
             </div>
           </a>
         </Col>
-        <Col lg={1} className="   text-center justify-content-center">
+        <Col
+          xs={3}
+          md={2}
+          lg={1}
+          className="   text-center justify-content-center"
+        >
           <a href="https://twitter.com/rmccordoviz">
             <div className="services-icon-container">
               <TwitterLogo className="services-icon" />
             </div>
           </a>
         </Col>
-        <Col lg={1} className="   text-center justify-content-center">
+        <Col
+          xs={3}
+          md={2}
+          lg={1}
+          className="   text-center justify-content-center"
+        >
           <a href="https://www.linkedin.com/company/rmccordoviz/">
             <div className="services-icon-container">
               <LinkedInLogo className="services-icon" />
             </div>
           </a>
         </Col>
-        <Col lg={1} className="   text-center justify-content-center">
+        <Col
+          xs={3}
+          md={2}
+          lg={1}
+          className="   text-center justify-content-center"
+        >
           <a href="https://www.instagram.com/rmcordoviz/">
             <div className="services-icon-container">
               <InstagramLogo className="services-icon" />

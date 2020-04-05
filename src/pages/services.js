@@ -16,7 +16,7 @@ import SoftwareDevelopment from "../components/Services-SoftwareDevelopment";
 import Coaching from "../components/Services-Coaching";
 import Marketing from "../components/Services-Marketing";
 
-const Services = props => {
+const Services = (props) => {
   const [selected, setSelected] = useState("marketing");
 
   useEffect(() => {
@@ -30,11 +30,11 @@ const Services = props => {
     <div>
       <div className=" services-banner">
         <div id="color-overlay">
-          <div className=" center-text-to-div">
+          <div className=" center-text-to-div text-center">
             <h1 className="banner-title text-warning">
               <strong>SERVICES</strong>
             </h1>
-            <p className="subtitle  text-white">
+            <p className="subtitle  text-white text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec.
             </p>
           </div>
@@ -43,63 +43,72 @@ const Services = props => {
 
       <Container className="services-category  text-center">
         <Row noGutters className="mt-4 justify-content-center">
-          <Col lg={3} className=" service-category-title">
+          <Col xs={3} lg={3} className="mx-2 service-category-title">
             <h3 className="text-warning">Coaching</h3>
           </Col>
-          <Col lg={3} className=" service-category-title">
+          <Col xs={3} lg={3} className="mx-2  service-category-title">
             <h3 className="text-warning">Marketing</h3>
           </Col>
-          <Col lg={3} className=" service-category-title">
+          <Col xs={3} lg={3} className="mx-2  service-category-title">
             <h3 className="text-warning">Software Development</h3>
           </Col>
         </Row>
         <Row noGutters className=" justify-content-center">
           <Col
+            xs={3}
             lg={3}
-            className=" services-category-container"
+            className="mx-2  services-category-container"
             onClick={() => setSelected("coaching")}
           >
             <div>
               <ConsultantIcon
-                className={`icon-component ${selected === "coaching" &&
-                  "icon-component-selected"}`}
+                className={`icon-component ${
+                  selected === "coaching" && "icon-component-selected"
+                }`}
               />
             </div>
             <hr
-              className={`line-indicator ${selected === "coaching" &&
-                "selected-indicator"}`}
+              className={`line-indicator ${
+                selected === "coaching" && "selected-indicator"
+              }`}
             />
           </Col>
           <Col
+            xs={3}
             lg={3}
-            className=" services-category-container"
+            className="mx-2  services-category-container"
             onClick={() => setSelected("marketing")}
           >
             <div>
               <MarketingIcon
-                className={`icon-component ${selected === "marketing" &&
-                  "icon-component-selected"}`}
+                className={`icon-component ${
+                  selected === "marketing" && "icon-component-selected"
+                }`}
               />
             </div>
             <hr
-              className={`line-indicator ${selected === "marketing" &&
-                "selected-indicator"}`}
+              className={`line-indicator ${
+                selected === "marketing" && "selected-indicator"
+              }`}
             />
           </Col>
           <Col
+            xs={3}
             lg={3}
-            className=" services-category-container"
+            className="mx-2  services-category-container"
             onClick={() => setSelected("development")}
           >
             <div>
               <DevelopmentIcon
-                className={`icon-component ${selected === "development" &&
-                  "icon-component-selected"}`}
+                className={`icon-component ${
+                  selected === "development" && "icon-component-selected"
+                }`}
               />
             </div>
             <hr
-              className={`line-indicator ${selected === "development" &&
-                "selected-indicator"}`}
+              className={`line-indicator ${
+                selected === "development" && "selected-indicator"
+              }`}
             />
           </Col>
         </Row>

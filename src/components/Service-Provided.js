@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 
 function ServiceProvided(props) {
   return (
-    <Col lg={3} className=" mr-3 ml-3">
+    <Col md={4} lg={3} className=" mr-3 ml-3">
       <Row className="coaching-image-holder  justify-content-center">
         <img src={props.image} alt={props.serviceTitle} />
       </Row>

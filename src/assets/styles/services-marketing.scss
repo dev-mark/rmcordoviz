@@ -1,10 +1,22 @@
 $gold-color: #ffc107;
+$extra-small-device: "only screen and (max-width: 600px)";
+$small-device: "only screen and (min-width: 600px)  and (max-device-width : 767px)";
+$medium-device: "only screen and (min-width: 768px)  and (max-device-width : 991px)";
+$large-device: "only screen and (min-width: 992px)  and (max-device-width : 1199px)";
+$extra-large-device: "only screen and (min-width: 1200px)";
 
 .marketing-content {
   text-align: center;
   padding: 0% 10% 2% 10%;
   line-height: 170%;
   letter-spacing: 1px;
+
+  @media #{$extra-small-device} {
+    padding: 0;
+    p {
+      font-size: 12px;
+    }
+  }
 }
 
 .seo-checklist {
@@ -19,6 +31,18 @@ $gold-color: #ffc107;
 
     li {
       letter-spacing: 1px;
+    }
+  }
+
+  @media #{$extra-small-device} {
+    padding: 4% 5%;
+
+    ul {
+      padding-left: 10%;
+    }
+
+    li {
+      font-size: 12px;
     }
   }
 }
@@ -39,6 +63,9 @@ $gold-color: #ffc107;
     -webkit-box-shadow: 0px 0px 10px 0px rgba($color: $gold-color, $alpha: 1);
     -moz-box-shadow: 0px 0px 10px 0px rgba($color: $gold-color, $alpha: 1);
     box-shadow: 0px 0px 10px 0px rgba($color: $gold-color, $alpha: 1);
+  }
+
+  @media #{$extra-small-device} {
   }
 }
 a {

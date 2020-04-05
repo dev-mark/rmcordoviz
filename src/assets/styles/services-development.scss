@@ -1,3 +1,9 @@
+$extra-small-device: "only screen and (max-width: 600px)";
+$small-device: "only screen and (min-width: 600px)  and (max-device-width : 767px)";
+$medium-device: "only screen and (min-width: 768px)  and (max-device-width : 991px)";
+$large-device: "only screen and (min-width: 992px)  and (max-device-width : 1199px)";
+$extra-large-device: "only screen and (min-width: 1200px)";
+
 .development-image {
   width: 100%;
   height: 380px;
@@ -5,7 +11,8 @@
 }
 
 .development-text-container {
-  height: 400px;
+  height: fit-content;
+  padding-left: 5%;
 }
 
 .sample-website-images {
@@ -16,4 +23,9 @@
 
 .sample-website-images-container {
   height: 200px;
+
+  @media #{$extra-small-device} {
+    height: 100%;
+    width: 100%;
+  }
 }

@@ -17,14 +17,14 @@ function SoftwareDevelopment() {
   return (
     <div className="text-white">
       <Row noGutters className=" justify-content-center mb-5 ">
-        <Col lg={5} className=" mr-4">
+        <Col lg={5} className="fit-content">
           <img
             src={webDev}
             alt="web development"
             className="development-image"
           />
         </Col>
-        <Col lg={5} className="mr-4">
+        <Col lg={5} className="fit-content">
           <div className="text-left text-white  development-text-container">
             <h3 className="text-warning mb-3">Web Development</h3>
             <p>
@@ -70,8 +70,13 @@ function SoftwareDevelopment() {
           />
         </Col>
       </Row>
-      <Row className=" justify-content-center mb-5 mt-3">
-        <Col lg={3} className="  text-center justify-content-center">
+      <Row noGutters className=" justify-content-center mb-5 mt-3">
+        <Col
+          xs={5}
+          md={5}
+          lg={3}
+          className="  text-center justify-content-center"
+        >
           <div className=" sample-website-images-container">
             <img
               className="sample-website-images"
@@ -82,7 +87,12 @@ function SoftwareDevelopment() {
             />
           </div>
         </Col>
-        <Col lg={3} className="  text-center justify-content-center">
+        <Col
+          xs={5}
+          md={5}
+          lg={3}
+          className="  text-center justify-content-center"
+        >
           <div className=" sample-website-images-container">
             <img
               className="sample-website-images"
@@ -93,7 +103,12 @@ function SoftwareDevelopment() {
             />
           </div>
         </Col>
-        <Col lg={3} className="  text-center justify-content-center">
+        <Col
+          xs={5}
+          md={5}
+          lg={3}
+          className="  text-center justify-content-center"
+        >
           <div className=" sample-website-images-container">
             <img
               className="sample-website-images"
@@ -104,7 +119,12 @@ function SoftwareDevelopment() {
             />
           </div>
         </Col>
-        <Col lg={3} className="  text-center justify-content-center">
+        <Col
+          xs={5}
+          md={5}
+          lg={3}
+          className="  text-center justify-content-center"
+        >
           <div className=" sample-website-images-container">
             <img
               className="sample-website-images"
