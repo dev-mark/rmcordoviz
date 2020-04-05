@@ -17,14 +17,14 @@ function about() {
       <Row noGutters className="mb-5  justify-content-center">
         <Col lg={11}>
           <Row noGutters className=" justify-content-center  row-container">
-            <Col lg={5}>
+            <Col md={5} lg={5}>
               <img
                 src={RossImage}
                 className="team-member-image"
                 alt="Ross Cordoviz"
               />
             </Col>
-            <Col lg={7} className="text-left bg-warning  info-div">
+            <Col md={7} lg={7} className="text-left bg-warning  info-div">
               <div className="mb-4">
                 <h3>
                   <strong>Ross Cordoviz</strong>
@@ -72,14 +72,14 @@ function about() {
       <Row noGutters className="mb-5  justify-content-center">
         <Col lg={11}>
           <Row noGutters className=" justify-content-center ">
-            <Col lg={5}>
+            <Col md={5} lg={5}>
               <img
                 src={MelanieImage}
                 className="team-member-image"
                 alt="Melanie Cordoviz"
               />
             </Col>
-            <Col lg={7} className="text-left bg-warning  info-div">
+            <Col md={7} lg={7} className="text-left bg-warning  info-div">
               <div className="mb-4">
                 <h3>
                   <strong>Melanie Cordoviz</strong>

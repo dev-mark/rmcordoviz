@@ -9,6 +9,7 @@ import Nav from "react-bootstrap/Nav";
 
 const App = (props) => {
   const [location, setLocation] = useState("");
+  const [navExpanded, setNavExpanded] = useState(false);
 
   useEffect(() => {
     setLocation(window.location.pathname);
@@ -21,6 +22,8 @@ const App = (props) => {
       expand="md"
       variant="dark"
       className="justify top-layer"
+      expanded={navExpanded}
+      onToggle={() => setNavExpanded(!navExpanded)}
     >
       <Navbar.Brand href="/">
         <img
@@ -38,7 +41,10 @@ const App = (props) => {
             <Link
               to="/"
               className={location === "/" && "selected-state"}
-              onClick={() => setLocation("home")}
+              onClick={() => {
+                setLocation("home");
+                setNavExpanded(false);
+              }}
             >
               Home
             </Link>
@@ -48,7 +54,10 @@ const App = (props) => {
             <Link
               to="/about"
               className={location === "/about" && "selected-state"}
-              onClick={() => setLocation("about")}
+              onClick={() => {
+                setLocation("about");
+                setNavExpanded(false);
+              }}
             >
               About
             </Link>
@@ -57,7 +66,10 @@ const App = (props) => {
             <Link
               to="/services"
               className={location === "/services" && "selected-state"}
-              onClick={() => setLocation("services")}
+              onClick={() => {
+                setLocation("services");
+                setNavExpanded(false);
+              }}
             >
               Services
             </Link>
@@ -66,7 +78,10 @@ const App = (props) => {
             <Link
               to="/contact"
               className={location === "/contact" && "selected-state"}
-              onClick={() => setLocation("contact")}
+              onClick={() => {
+                setLocation("contact");
+                setNavExpanded(false);
+              }}
             >
               Contact
             </Link>
@@ -75,7 +90,10 @@ const App = (props) => {
             <Link
               to="/coaching"
               className={location === "/coaching" && "selected-state"}
-              onClick={() => setLocation("coaching")}
+              onClick={() => {
+                setLocation("coaching");
+                setNavExpanded(false);
+              }}
             >
               Coaching
             </Link>
@@ -86,7 +104,10 @@ const App = (props) => {
               className={
                 location === "/health-and-wellness" && "selected-state"
               }
-              onClick={() => setLocation("health-and-wellness")}
+              onClick={() => {
+                setLocation("health-and-wellness");
+                setNavExpanded(false);
+              }}
             >
               Health and Wellness
             </Link>
