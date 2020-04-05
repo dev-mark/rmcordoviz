@@ -74,6 +74,9 @@ li {
 .checklist {
   width: 80%;
   margin: 5% auto;
+  p {
+    margin-bottom: 0;
+  }
 
   @media #{$extra-small-device} {
     li {

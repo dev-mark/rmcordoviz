@@ -3,12 +3,13 @@ $gold-color: #ffc107;
 .navbar {
   position: relative;
   background-color: black;
-  height: 10vh;
+  // height: 10vh;
   .navbar-nav {
     width: 100%;
   }
   a {
     color: white;
+    background-color: black;
 
     &:hover {
       color: $gold-color;
@@ -18,4 +19,12 @@ $gold-color: #ffc107;
   .selected-state {
     color: $gold-color;
   }
+}
+
+.top-layer {
+  z-index: 1;
+}
+
+.black-background {
+  background-color: black;
 }
