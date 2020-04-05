@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 
 function ZijaProductContainer(props) {
   return (
-    <Col lg={3} className=" mr-3 ml-3 featured-product-container">
+    <Col md={3} lg={3} className="featured-product-container">
       <a href={props.link}>
         <div className="product-overlay">
           <h5>{props.productName}</h5>
@@ -18,6 +18,7 @@ function ZijaProductContainer(props) {
         alt="Zija Product"
         height="200"
         width="200"
+        className="zija-featured-product-image"
       />
     </Col>
   );

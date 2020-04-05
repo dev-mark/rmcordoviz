@@ -1,11 +1,32 @@
 $zija-color: #05ce7c;
+$extra-small-device: "only screen and (max-width: 600px)";
+$small-device: "only screen and (min-width: 600px)  and (max-device-width : 767px)";
+$medium-device: "only screen and (min-width: 768px)  and (max-device-width : 991px)";
+$large-device: "only screen and (min-width: 992px)  and (max-device-width : 1199px)";
+$extra-large-device: "only screen and (min-width: 1200px)";
 
 .zija-banner {
   height: 60vh;
   background-image: url("../images/ameo-banner.png");
   width: 100%;
   background-size: cover;
-  background-position-y: bottom;
+
+  @media #{$extra-small-device} {
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    .zija-ditributor-logo {
+      width: 80%;
+    }
+  }
+
+  @media #{$medium-device} {
+    height: 40vh;
+    background-position: center;
+    .zija-ditributor-logo {
+      width: 120%;
+    }
+  }
 }
 
 #zija-color-overlay {
@@ -19,13 +40,23 @@ $zija-color: #05ce7c;
   &:hover {
     background-color: rgba(0, 0, 0, 0.6);
   }
+
+  @media #{$extra-small-device} {
+    height: 30vh;
+  }
+  @media #{$medium-device} {
+    height: 40vh;
+  }
 }
 
 .featured-product-container {
   background-color: white;
   border-radius: 5%;
   padding: 5% 0;
+  margin: 0 2%;
   position: relative;
+  // margin: 3%;
+  // padding: 3% 0;
   a {
     color: white;
     text-decoration: none;
@@ -54,6 +85,26 @@ $zija-color: #05ce7c;
 
   &:hover .product-overlay {
     opacity: 1;
+  }
+
+  .zija-featured-product-image {
+    width: 65%;
+  }
+
+  @media #{$extra-small-device} {
+    margin: 3%;
+    padding: 3% 0;
+    .zija-featured-product-image {
+      width: 80%;
+    }
+  }
+
+  @media #{$medium-device} {
+    margin: 1%;
+    padding: 3% 0;
+    .zija-featured-product-image {
+      width: 100%;
+    }
   }
 }
 
@@ -88,12 +139,17 @@ $zija-color: #05ce7c;
         text-decoration: none;
       }
     }
+
+    @media #{$extra-small-device} {
+      width: 45%;
+    }
   }
 
   .shop-now-text-container {
     height: 60vh;
     display: flex;
     .text-content {
+      font-size: 10px;
       margin: auto;
       padding: 0 25%;
     }
@@ -130,6 +186,15 @@ $zija-color: #05ce7c;
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#05ce7c",endColorstr="#05ce7c",GradientType=1);
   }
+
+  @media #{$extra-small-device} {
+    background-image: none;
+    padding: 0;
+    .text-content {
+      margin: 0;
+      padding: 0 !important;
+    }
+  }
 }
 
 .success-story-container {
@@ -158,6 +223,17 @@ $zija-color: #05ce7c;
   .success-story-title {
     padding: 3%;
   }
+
+  @media #{$medium-device} {
+    .success-story-title {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+  }
 }
 
 .zija-bottom-text-container {
@@ -179,5 +255,9 @@ $zija-color: #05ce7c;
         text-decoration: none;
       }
     }
+  }
+
+  @media #{$extra-small-device} {
+    padding: 10% 0;
   }
 }

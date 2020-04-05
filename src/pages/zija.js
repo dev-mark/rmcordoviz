@@ -37,7 +37,7 @@ function zija() {
         </a>
       </div>
 
-      <Container className="services-category  text-center">
+      <Container fluid className="services-category  text-center">
         <Row className=" justify-content-center">
           <h1 className="zija-color text-title ">Featured Product</h1>
         </Row>
@@ -65,7 +65,11 @@ function zija() {
           <div class="green-overlay">
             <Container>
               <Row>
-                <Col lg={9} className="  text-center shop-now-text-container ">
+                <Col
+                  xs={12}
+                  lg={9}
+                  className="  text-center shop-now-text-container "
+                >
                   <div className=" text-content">
                     <h1 className="text-white ">THIS IS LIFE UNLIMITED</h1>
                     <p>

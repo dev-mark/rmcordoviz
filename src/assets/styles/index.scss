@@ -18,11 +18,17 @@ body {
 p,
 a {
   line-height: 170%;
+  font-size: 1rem;
 }
 
 .text-title {
   font-size: 46px;
   margin: 3% 0;
+
+  @media #{$extra-small-device} {
+    font-size: 32px;
+    margin: 5% 0;
+  }
 }
 
 .center-text-to-div {
@@ -34,6 +40,12 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  @media #{$extra-small-device} {
+    top: 30%;
+    left: 0;
+    transform: translate(0, 0);
+  }
 }
 
 .subtitle {
@@ -62,6 +74,13 @@ a {
   font-size: 50px;
   font-weight: bolder;
   margin: 5% 0;
+
+  @media #{$extra-small-device} {
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 5% 0;
+  }
 }
 
 .text-black {
