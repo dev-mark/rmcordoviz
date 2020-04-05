@@ -39,13 +39,13 @@ const Index = () => {
       <Container fluid className="landing-banner">
         <Row noGutters className=" justify-content-center ">
           <div id="landing-color-overlay" />
-          <Col lg={9} className=" landing-content-container">
+          <Col xs={12} lg={9} className="landing-content-container">
             <div className="text-left  align-text-middle-left">
               <h5 className="text-white">RMCORDOVIZ INC.</h5>
               <h1 className="text-warning landing-header">
                 <strong>HELPING YOU ACHIEVE BUSINESS SUCCESS</strong>
               </h1>
-              <p className="subtitle mb-5">
+              <p className="subtitle">
                 A coach can be the difference between making a thousands to
                 millions
               </p>
@@ -95,9 +95,7 @@ const Index = () => {
       </Container>
 
       <Container className="text-center">
-        <Row className=" justify-content-center">
-          <h1 className="text-title text-white">WHY CHOOSE US?</h1>
-        </Row>
+        <h1 className="text-title text-white">WHY CHOOSE US?</h1>
         <Row className=" justify-content-center">
           <WhyUs
             title="Personal Consultation"
@@ -116,8 +114,6 @@ const Index = () => {
             subtitle="IDEAS THAT WILL BLOW YOUR MIND"
             image={greatIdeaPhoto}
           />
-        </Row>
-        <Row className=" justify-content-center mb-5">
           <WhyUs
             title="Improved Business"
             subtitle="BUSINESS TO WHOLE NEW LEVEL"

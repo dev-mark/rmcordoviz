@@ -1,8 +1,18 @@
 $gold-color: #ffc107;
+$extra-small-device: "only screen and (max-width: 600px)";
+$small-device: "only screen and (min-width: 600px)  and (max-device-width : 767px)";
+$medium-device: "only screen and (min-width: 768px)  and (max-device-width : 991px)";
+$large-device: "only screen and (min-width: 992px)  and (max-device-width : 1199px)";
+$extra-large-device: "only screen and (min-width: 1200px)";
 
 body {
   font-size: 16px;
   letter-spacing: 1.5px;
+
+  @media #{$extra-small-device} {
+    font-size: 400px;
+    letter-spacing: 1.3px;
+  }
 }
 
 p,
@@ -30,6 +40,21 @@ a {
   letter-spacing: 3px;
   font-size: 15px;
   color: #c7c7c7;
+
+  @media #{$extra-small-device} {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  @media #{$medium-device} {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  @media #{$large-device} {
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
 }
 
 .banner-title {

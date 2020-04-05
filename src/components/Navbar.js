@@ -8,7 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
-const App = props => {
+const App = (props) => {
   const [location, setLocation] = useState("");
 
   useEffect(() => {
@@ -17,7 +17,12 @@ const App = props => {
   }, [window.location.pathname]);
 
   return (
-    <Navbar collapseOnSelect expand="md" variant="dark" className="justify">
+    <Navbar
+      collapseOnSelect={true}
+      expand="md"
+      variant="dark"
+      className="justify"
+    >
       <Container>
         <Navbar.Brand href="/">
           <img
