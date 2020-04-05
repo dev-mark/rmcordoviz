@@ -18,7 +18,7 @@ import TeamMember from "../components/Team-Member";
 function coaching() {
   return (
     <div>
-      <div className="coaching-banner">
+      <div className=" coaching-banner">
         <div id="color-overlay">
           <div className="center-text-to-div">
             <h1 className="text-warning banner-title">
@@ -31,10 +31,23 @@ function coaching() {
           </div>
         </div>
       </div>
-      <Row className=" justify-content-center">
-        <h1 className="text-warning text-title">Are you ready to LEVEL UP? </h1>
+      <Row noGutters className=" justify-content-center">
+        <Row noGutters>
+          <Col>
+            <h1 className="text-warning text-title">
+              Are you ready to LEVEL UP?{" "}
+            </h1>
+          </Col>
+        </Row>
+
         <Row noGutters className=" justify-content-center">
-          <Col lg={8} className=" text-white " id="coaching-text-content">
+          <Col
+            xs={11}
+            md={10}
+            lg={8}
+            className=" text-white "
+            id="coaching-text-content"
+          >
             <p>
               Your business is moving but you are still struggling to get a
               break. Our one on one business coaching opportunity is for
@@ -42,33 +55,72 @@ function coaching() {
               that push to the next level…
             </p>
             <p className="text-left checklist">
-              <li>
-                <span className="text-warning">•</span> Are you content with
-                your current revenue?
-              </li>
-              <li>
-                <span className="text-warning">•</span> Do you have an exit
-                plan?
-              </li>
-              <li>
-                <span className="text-warning">•</span> Are you on the road to
-                the next level?
-              </li>
-              <li>
-                <span className="text-warning">•</span> Is your vision clear?
-              </li>
-              <li>
-                <span className="text-warning">•</span> Are you constantly
-                choosing your business over your personal life?
-              </li>
-              <li>
-                <span className="text-warning">•</span> Do you just need an
-                adjustment to get yourself organized?
-              </li>
-              <li>
-                <span className="text-warning">•</span> are you finally ready to
-                invest and put away the rainy day fund?
-              </li>
+              <Row className="mb-2">
+                <Col xs={1} md={1} lg={1} className="text-warning">
+                  •
+                </Col>
+                <Col>
+                  <p>Are you content with your current revenue?</p>{" "}
+                </Col>
+              </Row>
+              <Row className="mb-2">
+                <Col xs={1} md={1} lg={1} className="text-warning">
+                  •
+                </Col>
+                <Col>
+                  <p>Do you have an exit plan?</p>{" "}
+                </Col>
+              </Row>
+              <Row className="mb-2">
+                <Col xs={1} md={1} lg={1} className="text-warning">
+                  •
+                </Col>
+                <Col>
+                  {" "}
+                  <p>Are you on the road to the next level?</p>
+                </Col>
+              </Row>
+              <Row className="mb-1">
+                <Col xs={1} md={1} lg={1} className="text-warning">
+                  •
+                </Col>
+                <Col>
+                  {" "}
+                  <p>Is your vision clear?</p>
+                </Col>
+              </Row>
+              <Row className="mb-1">
+                <Col xs={1} md={1} lg={1} className="text-warning">
+                  •
+                </Col>
+                <Col>
+                  <p>
+                    Are you constantly choosing your business over your personal
+                    life??
+                  </p>
+                </Col>
+              </Row>
+              <Row className="mb-1">
+                <Col xs={1} md={1} lg={1} className="text-warning">
+                  •
+                </Col>
+                <Col>
+                  <p>
+                    Do you just need an adjustment to get yourself organized?
+                  </p>
+                </Col>
+              </Row>
+              <Row className="mb-1">
+                <Col xs={1} md={1} lg={1} className="text-warning">
+                  •
+                </Col>
+                <Col>
+                  <p>
+                    Are you finally ready to invest and put away the rainy day
+                    fund?
+                  </p>
+                </Col>
+              </Row>
             </p>
             <p>
               If you answered yes to any of the questions above then it’s time
@@ -79,7 +131,7 @@ function coaching() {
                 </strong>
               </p>
             </p>
-            <Button variant="warning" className="mt-3 find-more-button">
+            <Button variant="warning" className="my-3 find-more-button">
               <Link to="/contact" className="text-black">
                 <strong>Find out more</strong>
               </Link>
@@ -88,10 +140,10 @@ function coaching() {
         </Row>
       </Row>
 
-      <Row className=" justify-content-center ">
-        <Container>
+      <Row noGutters className=" justify-content-center ">
+        <Container className="pr-0">
           <h1 className="text-warning text-title">Our Team</h1>
-          <Row className="justify-content-center">
+          <Row noGutters className=" justify-content-center">
             <TeamMember name="Ross Cordoviz" image={RossImage} />
             <TeamMember name="Melanie Cordoviz" image={MelanieImage} />
           </Row>

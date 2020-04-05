@@ -29,8 +29,8 @@ const Contact = () => {
   return (
     <Container className="mb-5">
       <h1 className="banner-title  text-white">GET IN TOUCH</h1>
-      <Row className="  justify-content-center">
-        <Col lg={6}>
+      <Row className="  justify-content-center ">
+        <Col md={8} lg={6} className="">
           <Form
             className="text-left  contact-form mb-3"
             onSubmit={handleSubmit}
@@ -43,7 +43,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Enter your name here"
                 value={name}
-                onChange={value => setName(value.target.value)}
+                onChange={(value) => setName(value.target.value)}
               />
             </Form.Group>
             <Form.Group>
@@ -54,7 +54,7 @@ const Contact = () => {
                 type="email"
                 placeholder="Enter your email here"
                 value={email}
-                onChange={value => setEmail(value.target.value)}
+                onChange={(value) => setEmail(value.target.value)}
               />
             </Form.Group>
             <Form.Group>
@@ -63,7 +63,7 @@ const Contact = () => {
                 type="Text"
                 placeholder="Enter your referrals here"
                 value={referrals}
-                onChange={value => setReferrals(value.target.value)}
+                onChange={(value) => setReferrals(value.target.value)}
               />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -75,7 +75,7 @@ const Contact = () => {
                 rows="4"
                 placeholder="Tell us what you want"
                 value={message}
-                onChange={value => setMessage(value.target.value)}
+                onChange={(value) => setMessage(value.target.value)}
               />
             </Form.Group>
             <p>
@@ -92,36 +92,42 @@ const Contact = () => {
             </Button>
           </Form>
         </Col>
-        <Col lg={6}>
+        <Col md={8} lg={6}>
           <Row noGutters>
             <Col className=" contact-info mb-3">
               <h5>
                 <strong>ROSS AND MELANIE CORDOVIZ</strong>
               </h5>
               <Row noGutters className="mb-1">
-                <Col lg={1}>
+                <Col xs={1} md={1} lg={1}>
                   <i>
                     <PhoneIcon className="contact-icons" />
                   </i>
                 </Col>
-                <Col>+1 877 690 9730</Col>
+                <Col>
+                  <p>+1 877 690 9730</p>
+                </Col>
               </Row>
               <Row noGutters className="mb-1">
-                <Col lg={1}>
+                <Col xs={1} md={1} lg={1}>
                   <i>
                     <EmailIcon className="contact-icons" />
                   </i>
                 </Col>
-                <Col>rmcordoviz@outlook.com</Col>
+                <Col>
+                  <p>rmcordoviz@outlook.com</p>
+                </Col>
               </Row>
               <Row noGutters className="mb-1">
-                <Col lg={1}>
+                <Col xs={1} md={1} lg={1}>
                   <i>
                     <MarkerIcon className="contact-icons" />
                   </i>
                 </Col>
                 <Col className="text-capitalize">
-                  6671S Las Vegas Blvd. Building D, Las Vegas, Nevada, 89119
+                  <p>
+                    6671S Las Vegas Blvd. Building D, Las Vegas, Nevada, 89119
+                  </p>
                 </Col>
               </Row>
             </Col>
