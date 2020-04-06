@@ -134,12 +134,7 @@ const Contact = () => {
           </Row>
           <Row noGutters>
             <Col className=" contact-map">
-              <Map
-                googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7F3Mt64XDAJ6EeXCRxh0H28vD2lZoYh4`}
-                loadingElement={<div style={{ height: `100%` }} />}
-                containerElement={<div style={{ height: `100%` }} />}
-                mapElement={<div style={{ height: `100%` }} />}
-              />
+              <Map height="355px" width="100%" />
             </Col>
           </Row>
         </Col>
