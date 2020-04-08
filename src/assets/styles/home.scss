@@ -77,8 +77,10 @@ $extra-large-device: "only screen and (min-width: 1200px)";
   }
 
   @media #{$extra-small-device} {
-    background-size: 100%;
-    background-position: bottom;
+    &::after {
+      content: "";
+      background-image: none;
+    }
 
     .landing-button {
       width: 20%;
@@ -93,8 +95,8 @@ $extra-large-device: "only screen and (min-width: 1200px)";
 
     .landing-content-container {
       background-repeat: no-repeat;
-      background-size: 100% 45%;
-      background-position: bottom right -55px;
+      background-size: 350px;
+      background-position: bottom right -75px;
       height: 92vh;
     }
 
