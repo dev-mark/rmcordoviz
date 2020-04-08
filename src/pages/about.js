@@ -24,7 +24,7 @@ function about() {
                 alt="Ross Cordoviz"
               />
             </Col>
-            <Col md={7} lg={7} className="text-left bg-warning  info-div">
+            <Col md={7} lg={7} className="text-left gold-background  info-div">
               <div className="mb-4">
                 <h3>
                   <strong>Ross Cordoviz</strong>
@@ -79,7 +79,7 @@ function about() {
                 alt="Melanie Cordoviz"
               />
             </Col>
-            <Col md={7} lg={7} className="text-left bg-warning  info-div">
+            <Col md={7} lg={7} className="text-left gold-background  info-div">
               <div className="mb-4">
                 <h3>
                   <strong>Melanie Cordoviz</strong>

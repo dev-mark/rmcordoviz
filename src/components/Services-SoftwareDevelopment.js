@@ -26,7 +26,7 @@ function SoftwareDevelopment() {
         </Col>
         <Col lg={5} className="fit-content">
           <div className="text-left text-white  development-text-container">
-            <h3 className="text-warning mb-3">Web Development</h3>
+            <h3 className="text-gold mb-3">Web Development</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               dictum posuere nulla, vel sodales sapien congue vitae. Cras quis
@@ -46,7 +46,7 @@ function SoftwareDevelopment() {
       <Row noGutters className=" justify-content-center mb-5">
         <Col lg={5} className=" ml-2 mr-2">
           <div className="text-left text-white  development-text-container">
-            <h3 className="text-warning mb-3">App Development</h3>
+            <h3 className="text-gold mb-3">App Development</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               dictum posuere nulla, vel sodales sapien congue vitae. Cras quis

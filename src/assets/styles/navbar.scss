@@ -1,9 +1,24 @@
-$gold-color: #ffc107;
+$gold-color: #e2b654;
 
 .navbar {
   position: relative;
   background-color: black;
 
+  .dropdown-menu {
+    background-color: black;
+  }
+
+  .dropdown-toggle {
+    &::after {
+      content: none;
+    }
+  }
+
+  .drop-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+  }
   .RMClogo {
     width: 60px;
     height: 30px;

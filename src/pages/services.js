@@ -31,7 +31,7 @@ const Services = (props) => {
       <div className=" services-banner">
         <div id="color-overlay">
           <div className=" center-text-to-div text-center">
-            <h1 className="banner-title text-warning">
+            <h1 className="banner-title text-gold">
               <strong>SERVICES</strong>
             </h1>
             <p className="subtitle  text-white text-center">
@@ -44,13 +44,13 @@ const Services = (props) => {
       <Container className="services-category  text-center">
         <Row noGutters className="mt-4 justify-content-center">
           <Col xs={3} lg={3} className="mx-2 service-category-title">
-            <h3 className="text-warning">Coaching</h3>
+            <h3 className="text-gold">Coaching</h3>
           </Col>
           <Col xs={3} lg={3} className="mx-2  service-category-title">
-            <h3 className="text-warning">Marketing</h3>
+            <h3 className="text-gold">Marketing</h3>
           </Col>
           <Col xs={3} lg={3} className="mx-2  service-category-title">
-            <h3 className="text-warning">Software Development</h3>
+            <h3 className="text-gold">Software Development</h3>
           </Col>
         </Row>
         <Row noGutters className=" justify-content-center">

@@ -21,7 +21,7 @@ function coaching() {
       <div className=" coaching-banner">
         <div id="color-overlay">
           <div className="center-text-to-div">
-            <h1 className="text-warning banner-title">
+            <h1 className="text-gold banner-title">
               <strong>COACHING</strong>
             </h1>
             <p className="text-white subtitle">
@@ -34,7 +34,7 @@ function coaching() {
       <Row noGutters className=" justify-content-center">
         <Row noGutters>
           <Col>
-            <h1 className="text-warning text-title">
+            <h1 className="text-gold text-title">
               Are you ready to LEVEL UP?{" "}
             </h1>
           </Col>
@@ -126,12 +126,12 @@ function coaching() {
               If you answered yes to any of the questions above then it’s time
               to LEVEL UP 10x
               <p>
-                <strong className="text-warning">
+                <strong className="text-gold">
                   It’s time and you deserve it!
                 </strong>
               </p>
             </p>
-            <Button variant="warning" className="my-3 find-more-button">
+            <Button className="my-3 find-more-button">
               <Link to="/contact" className="text-black">
                 <strong>Find out more</strong>
               </Link>

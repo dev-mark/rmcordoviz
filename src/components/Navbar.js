@@ -7,6 +7,10 @@ import { ReactComponent as RMClogo } from "../assets/images/RMC-logo.svg";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import NavDropdown from "react-bootstrap/NavDropdown";
+
+// icons
+import { ReactComponent as DropIcon } from "../assets/icons/down-solid.svg";
 
 const App = (props) => {
   const [location, setLocation] = useState("");
@@ -45,7 +49,6 @@ const App = (props) => {
                 Home
               </Link>
             </Nav.Link>
-
             <Nav.Link>
               <Link
                 to="/about"
@@ -110,6 +113,14 @@ const App = (props) => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <NavDropdown
+          title={<DropIcon className="drop-icon" />}
+          id="basic-nav-dropdown"
+          className="dropdown-menu-right"
+        >
+          <NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1">Register</NavDropdown.Item>
+        </NavDropdown>
       </Container>
     </Navbar>
   );

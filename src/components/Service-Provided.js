@@ -12,7 +12,7 @@ function ServiceProvided(props) {
         <img src={props.image} alt={props.serviceTitle} />
       </Row>
       <Row className="coaching-services-title-holder mt-3 mb-3 justify-content-center">
-        <h5 className="text-warning coaching-services-title text-uppercase">
+        <h5 className="text-gold coaching-services-title text-uppercase">
           {props.serviceTitle}
         </h5>
       </Row>

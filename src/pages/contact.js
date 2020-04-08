@@ -87,7 +87,7 @@ const Contact = () => {
               </small>
             </p>
 
-            <Button type="submit" variant="warning">
+            <Button type="submit" className="gold-background text-gold">
               <strong>Send</strong>
             </Button>
           </Form>

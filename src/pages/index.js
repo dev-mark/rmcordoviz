@@ -42,14 +42,14 @@ const Index = () => {
           <Col xs={12} lg={9} className="landing-content-container">
             <div className="text-left  align-text-middle-left">
               <h5 className="text-white">RMCORDOVIZ INC.</h5>
-              <h1 className="text-warning landing-header">
+              <h1 className="landing-header">
                 <strong>HELPING YOU ACHIEVE BUSINESS SUCCESS</strong>
               </h1>
               <p className="subtitle">
                 A coach can be the difference between making a thousands to
                 millions
               </p>
-              <Button className="bg-warning  pt-2 pb-2 landing-button">
+              <Button className="pt-2 pb-2 landing-button">
                 <Link to="/contact" className="text-black">
                   <i>
                     <PhoneVolumeIcon className="landing-button-icon" />
@@ -62,7 +62,7 @@ const Index = () => {
         </Row>
       </Container>
 
-      <Container fluid className=" bg-warning">
+      <Container fluid className="gold-background">
         <Row className=" justify-content-center">
           <h1 className="text-title">SERVICES</h1>
         </Row>
@@ -137,7 +137,7 @@ const Index = () => {
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}
-        className=" feedback-carousel bg-warning"
+        className=" feedback-carousel gold-background"
       >
         <Carousel.Item>
           <CustomerStatement

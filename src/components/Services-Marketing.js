@@ -16,7 +16,7 @@ function Marketing() {
   return (
     <div className="">
       <div>
-        <h1 className="text-warning mt-5 mb-5 text-title">STAND OUT.</h1>
+        <h1 className="text-gold mt-5 mb-5 text-title">STAND OUT.</h1>
       </div>
       <Row
         noGutters
@@ -77,7 +77,7 @@ function Marketing() {
         </Col>
       </Row>
       <div>
-        <h5 className="text-warning text-title">Connect with us:</h5>
+        <h5 className="text-gold text-title">Connect with us:</h5>
       </div>
       <Row className=" justify-content-center mb-5 mt-3">
         <Col

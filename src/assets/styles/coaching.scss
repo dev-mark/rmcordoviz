@@ -1,4 +1,4 @@
-$gold-color: #ffc107;
+$gold-color: #e2b654;
 $extra-small-device: "only screen and (max-width: 600px)";
 $small-device: "only screen and (min-width: 600px)  and (max-device-width : 767px)";
 $medium-device: "only screen and (min-width: 768px)  and (max-device-width : 991px)";
@@ -10,6 +10,8 @@ $extra-large-device: "only screen and (min-width: 1200px)";
 
   .find-more-button {
     padding: 1% 3%;
+    background-color: $gold-color;
+    border: none;
 
     &:hover {
       color: white;
