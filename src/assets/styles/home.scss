@@ -7,11 +7,22 @@ $extra-large-device: "only screen and (min-width: 1200px)";
 
 .landing-banner {
   position: relative;
-  background-color: rgba(0, 0, 0, 1);
-  background: url("../images/RMC.png");
-  background-repeat: no-repeat;
-  background-size: 60% 75%;
-  background-position: right;
+  // background-color: rgba(0, 0, 0, 0.1);
+
+  &::after {
+    content: "";
+    background-image: url("../images/RMC-logo.svg");
+    background-repeat: no-repeat;
+    background-size: 55% 55%;
+    background-position: right;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
 
   .landing-button {
     width: 20%;
@@ -39,8 +50,8 @@ $extra-large-device: "only screen and (min-width: 1200px)";
     background-color: rgba($color: #000000, $alpha: 0);
     background-image: url("../images/ross-and-melanie.png");
     background-repeat: no-repeat;
-    background-size: 70% 75%;
-    background-position: bottom right -115px;
+    background-size: 72% 75%;
+    background-position: bottom right -165px;
     height: 92vh;
   }
 
@@ -193,27 +204,64 @@ $extra-large-device: "only screen and (min-width: 1200px)";
   position: absolute;
   width: 100%;
   height: 92vh;
-  opacity: 0.95;
-  background: rgb(4, 4, 4);
+  opacity: 0.7;
+  background: rgba(115, 115, 115, 1);
   background: -moz-linear-gradient(
-    0deg,
-    rgba(4, 4, 4, 1) 0%,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(47, 47, 47, 1) 100%
+    top,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(107, 107, 107, 1) 5%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(0, 0, 0, 1) 79%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(115, 115, 115, 1)),
+    color-stop(0%, rgba(115, 115, 115, 1)),
+    color-stop(0%, rgba(115, 115, 115, 1)),
+    color-stop(5%, rgba(107, 107, 107, 1)),
+    color-stop(76%, rgba(0, 0, 0, 1)),
+    color-stop(79%, rgba(0, 0, 0, 1))
   );
   background: -webkit-linear-gradient(
-    0deg,
-    rgba(4, 4, 4, 1) 0%,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(47, 47, 47, 1) 100%
+    top,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(107, 107, 107, 1) 5%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(0, 0, 0, 1) 79%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(107, 107, 107, 1) 5%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(0, 0, 0, 1) 79%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(107, 107, 107, 1) 5%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(0, 0, 0, 1) 79%
   );
   background: linear-gradient(
-    0deg,
-    rgba(4, 4, 4, 1) 0%,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(47, 47, 47, 1) 100%
+    to bottom,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(115, 115, 115, 1) 0%,
+    rgba(107, 107, 107, 1) 5%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(0, 0, 0, 1) 79%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040404",endColorstr="#2f2f2f",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#737373', endColorstr='#000000', GradientType=0 );
 }
 
 .category-container {

@@ -3,7 +3,11 @@ $gold-color: #ffc107;
 .navbar {
   position: relative;
   background-color: black;
-  // height: 10vh;
+
+  .RMClogo {
+    width: 60px;
+    height: 30px;
+  }
   .navbar-nav {
     width: 100%;
   }

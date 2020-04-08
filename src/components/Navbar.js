@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/navbar.scss";
-import logo from "../assets/images/RMC.png";
+import { ReactComponent as RMClogo } from "../assets/images/RMC-logo.svg";
 
 // bootstrap
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-// import NavDropdown from "react-bootstrap/NavDropdown";
 
 const App = (props) => {
   const [location, setLocation] = useState("");
@@ -27,13 +26,7 @@ const App = (props) => {
       onToggle={() => setNavExpanded(!navExpanded)}
     >
       <Navbar.Brand href="/">
-        <img
-          src={logo}
-          width="60"
-          height="30"
-          className="d-inline-block align-top"
-          alt="React Bootstrap logo"
-        />
+        <RMClogo className="RMClogo d-inline-block align-top" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav " />
       <Navbar.Collapse id="responsive-navbar-nav ">
