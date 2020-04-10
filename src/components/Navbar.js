@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../assets/styles/navbar.scss";
 import { ReactComponent as RMClogo } from "../assets/images/RMC-logo.svg";
 
 // bootstrap

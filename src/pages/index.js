@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/styles/home.scss";
+import "../assets/styles/index.scss";
 
 // bootstrap
 import Container from "react-bootstrap/Container";

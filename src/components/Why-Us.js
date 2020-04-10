@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/home.scss";
+import "../assets/styles/index.scss";
 
 // bootstrap
 import Col from "react-bootstrap/Col";

@@ -1,9 +1,7 @@
-$gold-color: #e2b654;
-$extra-small-device: "only screen and (max-width: 600px)";
-$small-device: "only screen and (min-width: 600px)  and (max-device-width : 767px)";
-$medium-device: "only screen and (min-width: 768px)  and (max-device-width : 991px)";
-$large-device: "only screen and (min-width: 992px)  and (max-device-width : 1199px)";
-$extra-large-device: "only screen and (min-width: 1200px)";
+@import "./variables";
+@import "./services-coaching";
+@import "./services-development";
+@import "./services-marketing";
 
 .services-banner {
   height: 60vh;

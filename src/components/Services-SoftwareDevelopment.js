@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/services-development.scss";
+import "../assets/styles/services.scss";
 
 // bootstrap
 import Row from "react-bootstrap/Row";

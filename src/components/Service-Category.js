@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../assets/styles/home.scss";
+import "../assets/styles/index.scss";
 
 // bootstrap
 import Col from "react-bootstrap/Col";

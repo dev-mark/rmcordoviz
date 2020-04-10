@@ -1,0 +1,110 @@
+@import "./variables";
+@import "./navbar";
+@import "./footer";
+body {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+
+  @media #{$extra-small-device} {
+    font-size: 400px;
+    letter-spacing: 1.3px;
+  }
+}
+
+p,
+a {
+  line-height: 170%;
+  font-size: 1rem;
+}
+
+.text-title {
+  font-size: 46px;
+  margin: 3% 0;
+
+  @media #{$extra-small-device} {
+    font-size: 32px;
+    margin: 5% 0;
+  }
+}
+
+.center-text-to-div {
+  h1 {
+    letter-spacing: 15px;
+  }
+  letter-spacing: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 15px;
+  color: #c7c7c7;
+
+  @media #{$extra-small-device} {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  @media #{$medium-device} {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  @media #{$large-device} {
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+}
+
+.banner-title {
+  letter-spacing: 7px;
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 5% 0;
+
+  @media #{$extra-small-device} {
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 5% 0;
+  }
+}
+
+.text-black {
+  color: black;
+}
+
+.text-gold {
+  color: $gold-color;
+}
+
+.gold-background {
+  background-color: $gold-color;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#color-overlay {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+  opacity: 0.85;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  @media #{$extra-small-device} {
+    height: 30vh;
+  }
+}
+
+.icon-container {
+  margin-bottom: 10%;
+}

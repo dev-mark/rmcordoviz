@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import "./assets/styles/index.scss";
+import "./assets/styles/main.scss";
 import { Switch, Route, withRouter } from "react-router-dom";
 
 // pages
@@ -13,8 +13,7 @@ import zija from "./pages/zija";
 
 // components
 import Navbar from "./components/Navbar";
-import Footer1 from "./components/Footer1";
-import Footer2 from "./components/Footer2";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -28,8 +27,7 @@ function App() {
         <Route exact path="/health-and-wellness" component={zija} />
         <Route path="/" component={index} />
       </Switch>
-      <Footer1 />
-      <Footer2 />
+      <Footer />
     </div>
   );
 }
