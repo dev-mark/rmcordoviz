@@ -4,10 +4,8 @@ import "../assets/styles/footer1.scss";
 // components
 import Map from "./Map";
 
-// assets
-import RMClogo from "../assets/images/RMC.png";
-
 // icons
+import { ReactComponent as RMClogo } from "../assets/images/RMC-logo.svg";
 import { ReactComponent as PhoneIcon } from "../assets/icons/phone-solid.svg";
 import { ReactComponent as EmailIcon } from "../assets/icons/envelope-solid.svg";
 import { ReactComponent as MarkerIcon } from "../assets/icons/map-marker.svg";
@@ -24,7 +22,7 @@ function Footer1() {
       <Container>
         <Row noGutters className="justify-content-center">
           <Col xs={8} md={4} lg={3}>
-            <img id="footer1-RMClogo" src={RMClogo} alt="RMC Logo" />
+            <RMClogo id="footer1-RMClogo" />
             <p className="d-none d-sm-block">
               Tell us more about your goals, so we can get you started.
             </p>

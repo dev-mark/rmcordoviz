@@ -1,3 +1,5 @@
+$gold-color: #e2b654;
+
 .footer1 {
   text-align: center;
   padding: 2% 0;
@@ -8,13 +10,15 @@
     line-height: 190%;
   }
   #footer1-RMClogo {
-    width: 50%;
+    width: 60%;
+    margin-bottom: 10px;
+    height: auto;
   }
 
   a {
     color: white;
     &:hover {
-      color: gold;
+      color: $gold-color;
       text-decoration: none;
     }
   }

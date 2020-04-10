@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../assets/styles/contact.scss";
+import axios from "axios";
 
 // icons
 import { ReactComponent as PhoneIcon } from "../assets/icons/phone-solid.svg";
@@ -21,17 +22,30 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [referrals, setReferrals] = useState("");
   const [message, setMessage] = useState("");
+  // const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
 
-  const handleSubmit = () => {
-    alert("Coming soon.");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    axios
+      .post("/email", { name, email, referrals, message })
+      .then((response) => {
+        console.log(response.response.data);
+      })
+      .catch((err) => {
+        setErrors(err.response.data);
+      });
+    // setValidated(true);
   };
-
   return (
     <Container className="mb-5">
       <h1 className="banner-title  text-white">GET IN TOUCH</h1>
       <Row className="  justify-content-center ">
         <Col md={8} lg={6} className="">
           <Form
+            noValidate
             className="text-left  contact-form mb-3"
             onSubmit={handleSubmit}
           >
@@ -40,24 +54,32 @@ const Contact = () => {
                 Name <span className="text-danger">*</span>
               </Form.Label>
               <Form.Control
+                isInvalid={errors.name}
                 type="text"
                 placeholder="Enter your name here"
                 value={name}
                 onChange={(value) => setName(value.target.value)}
               />
+              <Form.Control.Feedback type="invalid">
+                {errors.name}
+              </Form.Control.Feedback>
             </Form.Group>
             <Form.Group>
               <Form.Label>
                 Email <span className="text-danger">*</span>
               </Form.Label>
               <Form.Control
+                isInvalid={errors.email}
                 type="email"
                 placeholder="Enter your email here"
                 value={email}
                 onChange={(value) => setEmail(value.target.value)}
               />
+              <Form.Control.Feedback type="invalid">
+                {errors.email}
+              </Form.Control.Feedback>
             </Form.Group>
-            <Form.Group>
+            <Form.Group isInvalid={true}>
               <Form.Label>Referrals</Form.Label>
               <Form.Control
                 type="Text"
@@ -71,12 +93,16 @@ const Contact = () => {
                 Message <span className="text-danger">*</span>
               </Form.Label>
               <Form.Control
+                isInvalid={errors.message}
                 as="textarea"
                 rows="4"
                 placeholder="Tell us what you want"
                 value={message}
                 onChange={(value) => setMessage(value.target.value)}
               />
+              <Form.Control.Feedback type="invalid">
+                {errors.name}
+              </Form.Control.Feedback>
             </Form.Group>
             <p>
               <small>
