@@ -2,7 +2,7 @@
 
 .landing-banner {
   position: relative;
-  // background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
 
   &::after {
     content: "";
@@ -21,21 +21,6 @@
 
   .landing-button {
     width: 20%;
-    border: none;
-    font-size: 20px;
-    color: black;
-    background-color: $gold-color;
-    &:hover {
-      background-color: $gold-color;
-      a {
-        color: white;
-        text-decoration: none;
-      }
-      -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
-      -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
-      box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 255.75);
-      font-weight: bolder;
-    }
   }
 
   .landing-button-icon {
@@ -109,34 +94,6 @@
     .landing-header {
       letter-spacing: 5px !important;
       font-size: 25px;
-      line-height: 140%;
-    }
-  }
-  @media #{$medium-device} {
-    background-size: 100%;
-    background-position: bottom;
-
-    .landing-button {
-      width: 40%;
-      font-size: 15px;
-    }
-
-    .landing-content-container {
-      background-size: 80% 65%;
-      background-position: bottom right -85px;
-      height: 92vh;
-    }
-
-    .align-text-middle-left {
-      top: 20%;
-      -ms-transform: translateY(-20%);
-      transform: translateY(-20%);
-      padding-right: 23%;
-    }
-
-    .landing-header {
-      letter-spacing: 5px !important;
-      font-size: 55px;
       line-height: 140%;
     }
   }

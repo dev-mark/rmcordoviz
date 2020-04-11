@@ -6,10 +6,10 @@ import { ReactComponent as RMClogo } from "../assets/images/RMC-logo.svg";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 
-// icons
-import { ReactComponent as DropIcon } from "../assets/icons/down-solid.svg";
+// // icons
+// import { ReactComponent as DropIcon } from "../assets/icons/down-solid.svg";
 
 const App = (props) => {
   const [location, setLocation] = useState("");
@@ -25,7 +25,7 @@ const App = (props) => {
       collapseOnSelect={true}
       expand="md"
       variant="dark"
-      className="justify top-layer"
+      className="justify black-background"
       expanded={navExpanded}
       onToggle={() => setNavExpanded(!navExpanded)}
     >
@@ -112,14 +112,14 @@ const App = (props) => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <NavDropdown
+        {/* <NavDropdown
           title={<DropIcon className="drop-icon" />}
           id="basic-nav-dropdown"
-          className="dropdown-menu-right"
+          className="dropdown-menu-right black-background"
         >
           <NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.1">Register</NavDropdown.Item>
-        </NavDropdown>
+        </NavDropdown> */}
       </Container>
     </Navbar>
   );

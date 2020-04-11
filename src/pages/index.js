@@ -34,6 +34,7 @@ const Index = () => {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+
   return (
     <div>
       <Container fluid className="landing-banner">
@@ -49,7 +50,7 @@ const Index = () => {
                 A coach can be the difference between making a thousands to
                 millions
               </p>
-              <Button className="pt-2 pb-2 landing-button">
+              <Button className="pt-2 pb-2 landing-button gold-button">
                 <Link to="/contact" className="text-black">
                   <i>
                     <PhoneVolumeIcon className="landing-button-icon" />
@@ -69,7 +70,7 @@ const Index = () => {
 
         <Row noGutters className="justify-content-center pb-5">
           <ServiceCategory
-            title="Certified Consultant"
+            title="Business Consultant"
             icon={ConsultantIcon}
             description="Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Praesent venenatis."

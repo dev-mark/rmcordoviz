@@ -113,7 +113,7 @@ const Contact = () => {
               </small>
             </p>
 
-            <Button type="submit" className="gold-background text-gold">
+            <Button type="submit" className="gold-button">
               <strong>Send</strong>
             </Button>
           </Form>

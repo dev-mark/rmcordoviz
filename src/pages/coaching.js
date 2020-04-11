@@ -131,7 +131,7 @@ function coaching() {
                 </strong>
               </p>
             </p>
-            <Button className="my-3 find-more-button">
+            <Button className="my-3 find-more-button gold-button">
               <Link to="/contact" className="text-black">
                 <strong>Find out more</strong>
               </Link>

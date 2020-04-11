@@ -2,7 +2,6 @@ $gold-color: #e2b654;
 
 .navbar {
   position: relative;
-  background-color: black;
 
   .dropdown-menu {
     background-color: black;
@@ -19,31 +18,26 @@ $gold-color: #e2b654;
     height: 20px;
     color: white;
   }
+
   .RMClogo {
     width: 60px;
     height: 30px;
   }
+
   .navbar-nav {
     width: 100%;
   }
+
   a {
     color: white;
-    background-color: black;
 
     &:hover {
       color: $gold-color;
       text-decoration: none;
     }
   }
+
   .selected-state {
     color: $gold-color;
   }
-}
-
-.top-layer {
-  z-index: 1;
-}
-
-.black-background {
-  background-color: black;
 }
