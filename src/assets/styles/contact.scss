@@ -23,15 +23,17 @@
   color: black;
   padding: 5% 5% 11% 5%;
   button {
-    color: black;
+    color: black !important;
     width: 100%;
-    background-color: $gold-color;
-    border: none;
+
+    &:focus {
+      box-shadow: none;
+      border: none;
+      background-color: $gold-color !important;
+    }
 
     &:hover {
-      font-weight: bolder;
-      background-color: $gold-color;
-      color: white;
+      color: white !important;
       opacity: 0.9;
     }
   }

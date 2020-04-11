@@ -29,14 +29,14 @@ const Contact = () => {
     e.preventDefault();
     e.stopPropagation();
 
-    axios
-      .post("/email", { name, email, referrals, message })
-      .then((response) => {
-        console.log(response.response.data);
-      })
-      .catch((err) => {
-        setErrors(err.response.data);
-      });
+    // axios
+    //   .post("/email", { name, email, referrals, message })
+    //   .then((response) => {
+    //     console.log(response.response.data);
+    //   })
+    //   .catch((err) => {
+    //     setErrors(err.response.data);
+    //   });
     // setValidated(true);
   };
   return (
