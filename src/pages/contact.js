@@ -29,16 +29,16 @@ const Contact = () => {
     e.preventDefault();
     e.stopPropagation();
 
-    // axios
-    //   .post("/email", { name, email, referrals, message })
-    //   .then((response) => {
-    //     console.log(response.response.data);
-    //   })
-    //   .catch((err) => {
-    //     setErrors(err.response.data);
-    //   });
-    // setValidated(true);
+    axios
+      .post("/email", { name, email, referrals, message })
+      .then((response) => {
+        console.log(response.response.data);
+      })
+      .catch((err) => {
+        setErrors(err.response.data);
+      });
   };
+
   return (
     <Container className="mb-5">
       <h1 className="banner-title  text-white">GET IN TOUCH</h1>

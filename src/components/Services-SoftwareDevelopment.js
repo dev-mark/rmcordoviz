@@ -20,7 +20,7 @@ function SoftwareDevelopment() {
         <Col lg={5} className="fit-content">
           <img
             src={webDev}
-            alt="web development"
+            alt="Web development"
             className="development-image"
           />
         </Col>
@@ -65,7 +65,7 @@ function SoftwareDevelopment() {
         <Col lg={5} className=" ml-2 mr-2">
           <img
             src={appDev}
-            alt="app development"
+            alt="App development"
             className="development-image"
           />
         </Col>
@@ -81,7 +81,7 @@ function SoftwareDevelopment() {
             <img
               className="sample-website-images"
               src={sample1}
-              alt="sample1"
+              alt="Sample website"
               height="35"
               width="35"
             />
@@ -97,7 +97,7 @@ function SoftwareDevelopment() {
             <img
               className="sample-website-images"
               src={sample2}
-              alt="sample2"
+              alt="Sample website"
               height="35"
               width="35"
             />
@@ -113,7 +113,7 @@ function SoftwareDevelopment() {
             <img
               className="sample-website-images"
               src={sample3}
-              alt="sample3"
+              alt="Sample website"
               height="35"
               width="35"
             />
@@ -129,7 +129,7 @@ function SoftwareDevelopment() {
             <img
               className="sample-website-images"
               src={sample4}
-              alt="sample4"
+              alt="Sample website"
               height="35"
               width="35"
             />

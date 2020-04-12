@@ -12,7 +12,11 @@ function TeamMember(props) {
       lg={3}
       className="debugger text-white content-team-container  mx-3"
     >
-      <img src={props.image} className="coaching-team-image" alt={props.name} />
+      <img
+        src={props.image}
+        className="coaching-team-image"
+        alt="Business consultant, coach"
+      />
       <h4 className="mt-4 mb-4 content-team-name">{props.name}</h4>
     </Col>
   );

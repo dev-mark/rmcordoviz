@@ -15,7 +15,7 @@ function ZijaProductContainer(props) {
 
       <img
         src={props.productImage}
-        alt="Zija Product"
+        alt="Best Zija Product"
         height="200"
         width="200"
         className="zija-featured-product-image"

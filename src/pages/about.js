@@ -21,7 +21,7 @@ function about() {
               <img
                 src={RossImage}
                 className="team-member-image"
-                alt="Ross Cordoviz"
+                alt="Certified Consultant"
               />
             </Col>
             <Col md={7} lg={7} className="text-left gold-background  info-div">
@@ -76,7 +76,7 @@ function about() {
               <img
                 src={MelanieImage}
                 className="team-member-image"
-                alt="Melanie Cordoviz"
+                alt="Certified Consultant"
               />
             </Col>
             <Col md={7} lg={7} className="text-left gold-background  info-div">

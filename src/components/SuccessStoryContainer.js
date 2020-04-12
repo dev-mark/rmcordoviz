@@ -12,7 +12,7 @@ function SuccessStoryContainer(props) {
           <img
             className="success-story-image"
             src={props.image}
-            alt="Success story"
+            alt="Success story from zija"
           />
           <h3 className=" text-left success-story-title">{props.name}</h3>
           <hr />
