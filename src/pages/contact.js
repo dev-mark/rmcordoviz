@@ -32,10 +32,15 @@ const Contact = () => {
     axios
       .post("/email", { name, email, referrals, message })
       .then((response) => {
-        console.log(response.response.data);
+        setName("");
+        setEmail("");
+        setReferrals("");
+        setMessage("");
+        return response.data.message;
       })
       .catch((err) => {
-        setErrors(err.response.data);
+        console.log(err);
+        return setErrors(err);
       });
   };
 
@@ -101,7 +106,7 @@ const Contact = () => {
                 onChange={(value) => setMessage(value.target.value)}
               />
               <Form.Control.Feedback type="invalid">
-                {errors.name}
+                {errors.message}
               </Form.Control.Feedback>
             </Form.Group>
             <p>
