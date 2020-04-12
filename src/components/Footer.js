@@ -67,7 +67,7 @@ function Footer() {
                   </i>
                 </Col>
                 <Col>
-                  <p>rmcordoviz@outlook.com</p>
+                  <p>ross@rmcordoviz.com</p>
                 </Col>
               </Row>
               <Row noGutters className="mb-1">

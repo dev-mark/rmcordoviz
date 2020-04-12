@@ -22,7 +22,7 @@
   background-color: white;
   color: black;
   padding: 5% 5% 11% 5%;
-  button {
+  .gold-button {
     color: black !important;
     width: 100%;
 
@@ -36,5 +36,11 @@
       color: white !important;
       opacity: 0.9;
     }
+  }
+}
+
+.alert {
+  p {
+    margin-bottom: 0;
   }
 }

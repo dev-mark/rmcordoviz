@@ -16,19 +16,24 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Alert from "react-bootstrap/Alert";
+import Spinner from "react-bootstrap/Spinner";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [referrals, setReferrals] = useState("");
   const [message, setMessage] = useState("");
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
+  const [showError, setShowError] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     e.stopPropagation();
-
+    setLoading(true);
+    setShowError(false);
     axios
       .post("/email", { name, email, referrals, message })
       .then((response) => {
@@ -36,17 +41,30 @@ const Contact = () => {
         setEmail("");
         setReferrals("");
         setMessage("");
+        setErrors({});
+        setLoading(false);
+        setShowSuccess(true);
         return response.data.message;
       })
       .catch((err) => {
-        console.log(err);
-        return setErrors(err);
+        console.log(err.response.data);
+        setLoading(false);
+        if (err.response.status === 500) {
+          setShowError(true);
+          return setErrors({
+            general: "Something went wrong, Please try again.",
+          });
+        } else {
+          return setErrors({
+            ...err.response.data,
+          });
+        }
       });
   };
 
   return (
     <Container className="mb-5">
-      <h1 className="banner-title  text-white">GET IN TOUCH</h1>
+      <h1 className="banner-title  text-white">GET IN TOUCH</h1>{" "}
       <Row className="  justify-content-center ">
         <Col md={8} lg={6} className="">
           <Form
@@ -54,11 +72,28 @@ const Contact = () => {
             className="text-left  contact-form mb-3"
             onSubmit={handleSubmit}
           >
+            <Alert
+              show={showError}
+              variant="danger"
+              onClose={() => setShowError(false)}
+              dismissible
+            >
+              <p>{errors.general}</p>
+            </Alert>
+            <Alert
+              show={showSuccess}
+              onClose={() => setShowSuccess(false)}
+              variant="success"
+              dismissible
+            >
+              <p>Email was sent successfully.</p>
+            </Alert>
             <Form.Group>
               <Form.Label>
                 Name <span className="text-danger">*</span>
               </Form.Label>
               <Form.Control
+                disabled={loading}
                 isInvalid={errors.name}
                 type="text"
                 placeholder="Enter your name here"
@@ -74,6 +109,7 @@ const Contact = () => {
                 Email <span className="text-danger">*</span>
               </Form.Label>
               <Form.Control
+                disabled={loading}
                 isInvalid={errors.email}
                 type="email"
                 placeholder="Enter your email here"
@@ -87,6 +123,7 @@ const Contact = () => {
             <Form.Group isInvalid={true}>
               <Form.Label>Referrals</Form.Label>
               <Form.Control
+                disabled={loading}
                 type="Text"
                 placeholder="Enter your referrals here"
                 value={referrals}
@@ -98,6 +135,7 @@ const Contact = () => {
                 Message <span className="text-danger">*</span>
               </Form.Label>
               <Form.Control
+                disabled={loading}
                 isInvalid={errors.message}
                 as="textarea"
                 rows="4"
@@ -119,7 +157,11 @@ const Contact = () => {
             </p>
 
             <Button type="submit" className="gold-button">
-              <strong>Send</strong>
+              {loading ? (
+                <Spinner animation="border" size="sm" />
+              ) : (
+                <strong>Send</strong>
+              )}
             </Button>
           </Form>
         </Col>
@@ -146,7 +188,7 @@ const Contact = () => {
                   </i>
                 </Col>
                 <Col>
-                  <p>rmcordoviz@outlook.com</p>
+                  <p>ross@rmcordoviz.com</p>
                 </Col>
               </Row>
               <Row noGutters className="mb-1">
