@@ -4,20 +4,24 @@ import "../assets/styles/services.scss";
 // bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
-// icons
-import { ReactComponent as MarketingIcon } from "../assets/icons/marketing.svg";
-import { ReactComponent as ConsultantIcon } from "../assets/icons/consultant.svg";
-import { ReactComponent as DevelopmentIcon } from "../assets/icons/code.svg";
+// // icons
+import ConsultantIcon from "../assets/icons/consultant.svg";
+import DevelopmentIcon from "../assets/icons/code.svg";
+import ProgressIcon from "../assets/icons/progress.svg";
+import DigitalMarketing from "../assets/icons/social-media-marketing.svg";
+import SEOIcon from "../assets/icons/search.svg";
 
 // Components
 import SoftwareDevelopment from "../components/Services-SoftwareDevelopment";
+import BusinessDevelopment from "../components/Services-BusinessDevelopment";
+import ServicesSocialMediaManagement from "../components/Services-SocialMediamanagement";
 import Coaching from "../components/Services-Coaching";
 import Marketing from "../components/Services-Marketing";
+import ServiceCategory from "../components/Service-Category-With-Indicator";
 
 const Services = (props) => {
-  const [selected, setSelected] = useState("marketing");
+  const [selected, setSelected] = useState("Business Coaching");
 
   useEffect(() => {
     if (props.location.state !== undefined) {
@@ -41,83 +45,60 @@ const Services = (props) => {
         </div>
       </div>
 
-      <Container className="services-category  text-center">
-        <Row noGutters className="mt-4 justify-content-center">
+      <Container className=" text-center">
+        {/* <Row noGutters className="mt-4 justify-content-center">
           <Col xs={3} lg={3} className="mx-2 service-category-title">
-            <h3 className="text-gold">Coaching</h3>
+            <h3 className="text-gold">Business Coaching</h3>
           </Col>
-          <Col xs={3} lg={3} className="mx-2  service-category-title">
-            <h3 className="text-gold">Marketing</h3>
+          <Col xs={3} lg={3} className="mx-2 service-category-title">
+            <h3 className="text-gold">Business Coaching</h3>
           </Col>
-          <Col xs={3} lg={3} className="mx-2  service-category-title">
-            <h3 className="text-gold">Software Development</h3>
+          <Col xs={3} lg={3} className="mx-2 service-category-title">
+            <h3 className="text-gold">Business Coaching</h3>
           </Col>
-        </Row>
-        <Row noGutters className=" justify-content-center">
-          <Col
-            xs={3}
-            lg={3}
-            className="mx-2  services-category-container"
-            onClick={() => setSelected("coaching")}
-          >
-            <div>
-              <ConsultantIcon
-                className={`icon-component ${
-                  selected === "coaching" && "icon-component-selected"
-                }`}
-              />
-            </div>
-            <hr
-              className={`line-indicator ${
-                selected === "coaching" && "selected-indicator"
-              }`}
-            />
-          </Col>
-          <Col
-            xs={3}
-            lg={3}
-            className="mx-2  services-category-container"
-            onClick={() => setSelected("marketing")}
-          >
-            <div>
-              <MarketingIcon
-                className={`icon-component ${
-                  selected === "marketing" && "icon-component-selected"
-                }`}
-              />
-            </div>
-            <hr
-              className={`line-indicator ${
-                selected === "marketing" && "selected-indicator"
-              }`}
-            />
-          </Col>
-          <Col
-            xs={3}
-            lg={3}
-            className="mx-2  services-category-container"
-            onClick={() => setSelected("development")}
-          >
-            <div>
-              <DevelopmentIcon
-                className={`icon-component ${
-                  selected === "development" && "icon-component-selected"
-                }`}
-              />
-            </div>
-            <hr
-              className={`line-indicator ${
-                selected === "development" && "selected-indicator"
-              }`}
-            />
-          </Col>
+        </Row> */}
+        <Row noGutters className="services-category justify-content-center">
+          <ServiceCategory
+            icon={ProgressIcon}
+            title="Business Development"
+            selected={selected}
+            setSelected={setSelected}
+          />
+          <ServiceCategory
+            icon={ConsultantIcon}
+            title="Business Coaching"
+            selected={selected}
+            setSelected={setSelected}
+          />
+          <ServiceCategory
+            icon={DigitalMarketing}
+            title="Digital Marketing"
+            selected={selected}
+            setSelected={setSelected}
+          />
+          <ServiceCategory
+            icon={SEOIcon}
+            title="Social Media Management, Ads Development and SEO"
+            selected={selected}
+            setSelected={setSelected}
+          />
+          <ServiceCategory
+            icon={DevelopmentIcon}
+            title="Software Development"
+            selected={selected}
+            setSelected={setSelected}
+          />
         </Row>
       </Container>
 
       <Container>
-        {selected === "coaching" && <Coaching />}
-        {selected === "marketing" && <Marketing />}
-        {selected === "development" && <SoftwareDevelopment />}
+        {selected === "Business Coaching" && <Coaching />}
+        {selected === "Business Development" && <BusinessDevelopment />}
+        {selected === "Digital Marketing" && <Marketing />}
+        {selected === "Social Media Management, Ads Development and SEO" && (
+          <ServicesSocialMediaManagement />
+        )}
+        {selected === "Software Development" && <SoftwareDevelopment />}
       </Container>
     </div>
   );

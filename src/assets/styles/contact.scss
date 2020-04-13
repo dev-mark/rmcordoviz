@@ -1,5 +1,16 @@
 @import "./variables";
 
+.about-us-content {
+  // margin: 30px 0;
+  // background-color: gray;
+  // width: 75%;
+  padding: 5%;
+
+  @media #{$extra-small-device} {
+    width: 100%;
+  }
+}
+
 .contact-info {
   text-align: left;
   padding: 5% 10% !important;

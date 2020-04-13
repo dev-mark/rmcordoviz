@@ -37,7 +37,7 @@ function zija() {
         </a>
       </div>
 
-      <Container fluid className="services-category  text-center">
+      <Container fluid className=" text-center">
         <Row className=" justify-content-center">
           <h1 className="zija-color text-title ">Featured Product</h1>
         </Row>

@@ -33,7 +33,7 @@
     background-color: rgba($color: #000000, $alpha: 0);
     background-image: url("../images/ross-and-melanie.png");
     background-repeat: no-repeat;
-    background-size: 72% 75%;
+    background-size: 75% 75%;
     background-position: bottom right -145px;
     height: 92vh;
   }
@@ -41,9 +41,9 @@
   .align-text-middle-left {
     margin: 0;
     position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 35%;
+    -ms-transform: translateY(-35%);
+    transform: translateY(-35%);
     padding-right: 20%;
   }
   .services-icon-landing {
@@ -58,6 +58,7 @@
     font-weight: bolder;
     line-height: 140%;
     color: $gold-color;
+    padding-right: 10%;
   }
 
   @media #{$extra-small-device} {

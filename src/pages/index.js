@@ -10,9 +10,11 @@ import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
 
 // icons
-import MarketingIcon from "../assets/icons/marketing.svg";
 import ConsultantIcon from "../assets/icons/consultant.svg";
 import DevelopmentIcon from "../assets/icons/code.svg";
+import ProgressIcon from "../assets/icons/progress.svg";
+import DigitalMarketing from "../assets/icons/social-media-marketing.svg";
+import SEOIcon from "../assets/icons/search.svg";
 import { ReactComponent as PhoneVolumeIcon } from "../assets/icons/phone-volume-solid.svg";
 
 // images
@@ -42,14 +44,19 @@ const Index = () => {
           <div id="landing-color-overlay" />
           <Col xs={12} lg={9} className="landing-content-container">
             <div className="text-left  align-text-middle-left">
-              <h5 className="text-white">RMCORDOVIZ INC.</h5>
+              <h6 className="text-white text-uppercase">
+                We measure our success not on what we have tried, but what has
+                succeeded.
+              </h6>
               <h1 className="landing-header">
-                <strong>HELPING YOU ACHIEVE BUSINESS SUCCESS</strong>
+                <strong>WE SUCCEED WHEN OUR CLIENTS SUCCEED</strong>
               </h1>
-              <p className="subtitle">
-                A coach can be the difference between making a thousands to
-                millions
-              </p>
+              <h6 className="text-white mt-3 mb-4">RMCORDOVIZ INC</h6>
+              {/* <p className="subtitle">
+                At <strong>RMCordoviz Inc.</strong> Our methods focus on
+                results. We measure our success not on what we have tried, but
+                what has succeeded.
+              </p> */}
               <Button className="pt-2 pb-2 landing-button gold-button">
                 <Link to="/contact" className="text-black">
                   <i>
@@ -70,27 +77,40 @@ const Index = () => {
 
         <Row noGutters className="justify-content-center pb-5">
           <ServiceCategory
-            title="Business Consultant"
-            icon={ConsultantIcon}
-            description="Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Praesent venenatis."
-            category="coaching"
+            title="Business Development"
+            icon={ProgressIcon}
+            category="Business Development"
           />
 
           <ServiceCategory
-            title="Marketing"
-            icon={MarketingIcon}
-            description="Nullam consequat urna at quam scelerisque vehicula. Morbi non
-              nisi tempor, dapibus orci sit amet."
-            category="marketing"
+            title="Business Coaching and Consultancy"
+            icon={ConsultantIcon}
+            category="Business Coaching"
+          />
+
+          <ServiceCategory
+            title="Digital Marketing"
+            icon={DigitalMarketing}
+            category="Digital Marketing"
+          />
+        </Row>
+        <Row noGutters className="justify-content-center pb-5">
+          {/* <ServiceCategory
+            title="Social Media Management"
+            icon={MarketingTeamIcon}
+            category="coaching"
+          /> */}
+
+          <ServiceCategory
+            title="Social Media Management, Ads Development and SEO"
+            icon={SEOIcon}
+            category="Social Media Management, Ads Development and SEO"
           />
 
           <ServiceCategory
             title="Software Development"
             icon={DevelopmentIcon}
-            description=" Mauris malesuada sodales libero nec sodales. Donec interdum
-              ligula ut neque hendrerit porttitor. Curabitur porttitor."
-            category="development"
+            category="Software Development"
           />
         </Row>
       </Container>

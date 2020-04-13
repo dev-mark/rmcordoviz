@@ -18,6 +18,20 @@ import ServiceProvided from "./Service-Provided.js";
 function Coaching() {
   return (
     <div className="text-white">
+      <p>
+        At RMCordoviz Inc. we know that running a successful business enterprise
+        is never a one-man show and involves an endless collaboration{" "}
+      </p>
+      <p>
+        RMCordoviz Inc. Business Coaching and Consultancy will set your company
+        apart with top-notch training and coaching programs that aim to enhance
+        and develop the skills to bulletproof your staff, such as;
+      </p>
+      <p>LIST TO FOLLOW</p>
+      <p>
+        Through our unparalleled coaching and consultancy program, we build a
+        trustworthy and long term professional relationship.{" "}
+      </p>
       <Row className=" justify-content-center mb-5 mt-4">
         <ServiceProvided
           serviceTitle="Leadership"

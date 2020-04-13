@@ -65,7 +65,7 @@ const Contact = () => {
   return (
     <Container className="mb-5">
       <h1 className="banner-title  text-white">GET IN TOUCH</h1>{" "}
-      <Row className="  justify-content-center ">
+      <Row className="  justify-content-center">
         <Col md={8} lg={6} className="">
           <Form
             noValidate
