@@ -65,9 +65,9 @@ const Services = (props) => {
             <h1 className="banner-title text-gold">
               <strong>SERVICES</strong>
             </h1>
-            <p className="subtitle  text-white text-center">
+            {/* <p className="subtitle  text-white text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

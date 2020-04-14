@@ -24,10 +24,10 @@ function coaching() {
             <h1 className="text-gold banner-title">
               <strong>COACHING</strong>
             </h1>
-            <p className="text-white subtitle">
+            {/* <p className="text-white subtitle">
               A coach can be the difference between making a thousands to
               millions
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

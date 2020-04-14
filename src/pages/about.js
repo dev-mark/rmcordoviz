@@ -24,9 +24,9 @@ function about() {
             <h1 className="text-gold banner-title">
               <strong>ABOUT US</strong>
             </h1>
-            <p className="subtitle  text-white text-center">
+            {/* <p className="subtitle  text-white text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
