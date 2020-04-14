@@ -134,3 +134,22 @@
     width: 100%;
   }
 }
+
+.sc-bxivhb {
+  display: flex;
+  justify-content: center;
+  // .services-category-container {
+  //   margin: auto;
+  // }
+  @media #{$extra-small-device} {
+    width: 100%;
+    border: 2px solid red;
+    margin: auto;
+  }
+
+  // @media only screen and (min-width: 321px) and (max-device-width: 375px) {
+  //   width: 100%;
+  //   // margin: 0 4%;
+  //   border: 2px solid red;
+  // }
+}
