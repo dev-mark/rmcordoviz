@@ -1,17 +1,17 @@
 import React from "react";
 import "../assets/styles/services.scss";
 
-// bootstrap
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// // bootstrap
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 
-// images
-import webDev from "../assets/images/web-dev.jpeg";
-import appDev from "../assets/images/app-dev.jpeg";
-import sample1 from "../assets/images/sample1.jpeg";
-import sample2 from "../assets/images/sample2.jpeg";
-import sample3 from "../assets/images/sample3.jpeg";
-import sample4 from "../assets/images/sample4.jpeg";
+// // images
+// import webDev from "../assets/images/web-dev.jpeg";
+// import appDev from "../assets/images/app-dev.jpeg";
+// import sample1 from "../assets/images/sample1.jpeg";
+// import sample2 from "../assets/images/sample2.jpeg";
+// import sample3 from "../assets/images/sample3.jpeg";
+// import sample4 from "../assets/images/sample4.jpeg";
 
 function SoftwareDevelopment() {
   return (
@@ -35,7 +35,7 @@ function SoftwareDevelopment() {
         </p>
       </div>
 
-      <Row noGutters className=" justify-content-center mb-5 ">
+      {/* <Row noGutters className=" justify-content-center mb-5 ">
         <Col lg={5} className="fit-content">
           <img
             src={webDev}
@@ -154,7 +154,7 @@ function SoftwareDevelopment() {
             />
           </div>
         </Col>
-      </Row>
+      </Row> */}
     </div>
   );
 }

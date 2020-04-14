@@ -3,17 +3,19 @@ import "../assets/styles/services.scss";
 
 // bootstrap
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 // images
-import leadershipPhoto from "../assets/images/leadership.jpeg";
-import executivePhoto from "../assets/images/executive-coaching.jpg";
-import managementPhoto from "../assets/images/management-coaching.jpg";
-import oneOnonePhoto from "../assets/images/one-on-one.jpeg";
-import webinarsPhoto from "../assets/images/webinars.jpeg";
-import workshopPhoto from "../assets/images/workshop.jpeg";
+// import leadershipPhoto from "../assets/images/leadership.jpeg";
+// import executivePhoto from "../assets/images/executive-coaching.jpg";
+// import managementPhoto from "../assets/images/management-coaching.jpg";
+// import oneOnonePhoto from "../assets/images/one-on-one.jpeg";
+// import webinarsPhoto from "../assets/images/webinars.jpeg";
+// import workshopPhoto from "../assets/images/workshop.jpeg";
 
 // components
-import ServiceProvided from "./Service-Provided.js";
+// import ServiceProvided from "./Service-Provided.js";
+import { ReactComponent as CheckIcon } from "../assets/icons/check-solid.svg";
 
 function Coaching() {
   return (
@@ -34,14 +36,53 @@ function Coaching() {
           company apart with top-notch training and coaching programs that aim
           to enhance and develop the skills to bulletproof your staff, such as;
         </p>
-        <p>LIST TO FOLLOW</p>
+        <Row className=" justify-content-center">
+          <Col lg={0.5} className="">
+            <CheckIcon className="gold-check-icon " />
+          </Col>
+          <Col xs={10} lg={8} className="">
+            Communication & Interpersonal Training
+          </Col>
+        </Row>
+        <Row className=" justify-content-center">
+          <Col lg={0.5}>
+            <CheckIcon className="gold-check-icon" />
+          </Col>
+          <Col xs={10} lg={8}>
+            Collaboration, Negotiation & Persuasion Training
+          </Col>
+        </Row>
+        <Row className=" justify-content-center">
+          <Col lg={0.5}>
+            <CheckIcon className="gold-check-icon" />
+          </Col>
+          <Col xs={10} lg={8}>
+            Business Intelligence & Project Management Training
+          </Col>
+        </Row>
+        <Row className=" justify-content-center">
+          <Col lg={0.5}>
+            <CheckIcon className="gold-check-icon" />
+          </Col>
+          <Col xs={10} lg={8}>
+            Research & Strategy Training
+          </Col>
+        </Row>
+        <Row className=" justify-content-center mb-4">
+          <Col lg={0.5}>
+            <CheckIcon className="gold-check-icon" />
+          </Col>
+          <Col xs={10} lg={8}>
+            Digital Media & Software Trainingt
+          </Col>
+        </Row>
         <p>
           Through our unparalleled coaching and consultancy program, we build a
           trustworthy and long term professional relationship.{" "}
         </p>
       </div>
 
-      <Row className=" justify-content-center mb-5 mt-4">
+      {/* <Row className=" justify-content-center mb-5 mt-4">
         <ServiceProvided
           serviceTitle="Leadership"
           serviceDescription="Etiam vel massa nec ipsum feugiat efficitur tincidunt quis nibh.
@@ -87,7 +128,7 @@ function Coaching() {
           orci."
           image={oneOnonePhoto}
         />
-      </Row>
+      </Row> */}
     </div>
   );
 }

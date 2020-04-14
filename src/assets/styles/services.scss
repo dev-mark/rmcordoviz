@@ -129,4 +129,8 @@
 .services-text-content {
   width: 60%;
   margin: 50px auto;
+
+  @media #{$extra-small-device} {
+    width: 100%;
+  }
 }

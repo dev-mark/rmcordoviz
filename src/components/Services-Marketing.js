@@ -10,7 +10,7 @@ import { ReactComponent as FacebookLogo } from "../assets/icons/facebook-logo.sv
 import { ReactComponent as TwitterLogo } from "../assets/icons/twitter-logo.svg";
 import { ReactComponent as LinkedInLogo } from "../assets/icons/linkedin-logo.svg";
 import { ReactComponent as InstagramLogo } from "../assets/icons/instagram-logo.svg";
-import { ReactComponent as CheckIcon } from "../assets/icons/check-solid.svg";
+// import { ReactComponent as CheckIcon } from "../assets/icons/check-solid.svg";
 
 function Marketing() {
   return (
@@ -36,36 +36,7 @@ function Marketing() {
           achieve your goal.
         </p>
       </div>
-
-      {/* <Row
-        noGutters
-        className=" marketing-content text-white justify-content-center"
-      >
-        <Col xs={12} md={12} lg={10} className="">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            et dolor vitae libero porttitor malesuada. Proin ultricies euismod
-            volutpat. Donec venenatis, enim eget dictum efficitur, lacus leo
-            imperdiet arcu, non vulputate est quam at dolor. Aenean vel blandit
-            diam. Fusce et magna urna. Maecenas condimentum facilisis nunc,
-            tempus consequat odio tincidunt quis. Vestibulum luctus nunc nec
-            euismod ultrices. Pellentesque eu arcu ac odio imperdiet blandit.
-            Morbi eu tempor enim. Nullam a consequat libero. Phasellus
-            tincidunt, enim sed finibus auctor, lectus risus lacinia massa, ac
-            mollis est ex eget ligula. Aliquam erat volutpat. Mauris arcu lorem,
-            pharetra eget ornare vulputate, aliquam vel turpis.
-          </p>
-
-          <p>
-            Phasellus a felis fringilla, volutpat ante a, ultrices libero. Nulla
-            ac sollicitudin ipsum. Suspendisse non lectus dolor. Donec a elit
-            lorem. Cras velit nisl, tristique vitae metus sit amet, dapibus
-            ultrices elit. Etiam eget condimentum magna. Donec iaculis, libero
-            quis lacinia tempor, ipsum felis consequat est, vel convallis.
-          </p>
-        </Col>
-      </Row> */}
-      <Row className=" text-left text-white seo-checklist justify-content-center">
+      {/* <Row className=" text-left text-white seo-checklist justify-content-center">
         <Col xs={12} lg={10} className=" ">
           <ul>
             <li className="">
@@ -94,7 +65,7 @@ function Marketing() {
             </li>
           </ul>
         </Col>
-      </Row>
+      </Row> */}
       <div>
         <h5 className="text-gold text-title">Connect with us:</h5>
       </div>

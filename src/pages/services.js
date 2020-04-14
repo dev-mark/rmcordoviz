@@ -45,7 +45,7 @@ const useWindowDimensions = () => {
 };
 
 const Services = (props) => {
-  const [selected, setSelected] = useState("Software Development");
+  const [selected, setSelected] = useState("Business Development");
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
   const { width } = useWindowDimensions();
