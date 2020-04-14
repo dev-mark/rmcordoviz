@@ -18,7 +18,7 @@ import { ReactComponent as CheckIcon } from "../assets/icons/check-solid.svg";
 function about() {
   return (
     <div>
-      <div className=" coaching-banner">
+      <div className=" about-us-banner">
         <div id="color-overlay">
           <div className="center-text-to-div">
             <h1 className="text-gold banner-title">

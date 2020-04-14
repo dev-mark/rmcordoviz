@@ -3,7 +3,6 @@ import "../assets/styles/services.scss";
 
 // bootstrap
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 
 // // icons
 import ConsultantIcon from "../assets/icons/consultant.svg";
@@ -21,7 +20,7 @@ import Marketing from "../components/Services-Marketing";
 import ServiceCategory from "../components/Service-Category-With-Indicator";
 
 const Services = (props) => {
-  const [selected, setSelected] = useState("Business Coaching");
+  const [selected, setSelected] = useState("Software Development");
 
   useEffect(() => {
     if (props.location.state !== undefined) {
@@ -46,18 +45,7 @@ const Services = (props) => {
       </div>
 
       <Container className=" text-center">
-        {/* <Row noGutters className="mt-4 justify-content-center">
-          <Col xs={3} lg={3} className="mx-2 service-category-title">
-            <h3 className="text-gold">Business Coaching</h3>
-          </Col>
-          <Col xs={3} lg={3} className="mx-2 service-category-title">
-            <h3 className="text-gold">Business Coaching</h3>
-          </Col>
-          <Col xs={3} lg={3} className="mx-2 service-category-title">
-            <h3 className="text-gold">Business Coaching</h3>
-          </Col>
-        </Row> */}
-        <Row noGutters className="services-category justify-content-center">
+        <div noGutters className="services-category my-4">
           <ServiceCategory
             icon={ProgressIcon}
             title="Business Development"
@@ -88,7 +76,7 @@ const Services = (props) => {
             selected={selected}
             setSelected={setSelected}
           />
-        </Row>
+        </div>
       </Container>
 
       <Container>

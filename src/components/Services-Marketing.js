@@ -16,23 +16,28 @@ function Marketing() {
   return (
     <div className="text-white">
       <div>
-        <h1 className="text-gold mt-5 mb-5 text-title">STAND OUT.</h1>
+        <h1 className="text-gold mt-5 mb-5 text-title text-uppercase">
+          Digital Marketing
+        </h1>
       </div>
-      <p>
-        Today’s E-commerce is an ever-changing landscape driven by potential
-        clients and prospects who now possess power at their fingertips through
-        smart technology.
-      </p>
-      <p>
-        RMCordoviz Inc. will lead as your guide in tracking and monitoring your
-        campaigns, allowing you to adapt and drive toward better results.
-      </p>
-      <p>
-        We recommend tactics that make sense to you, even if it means less money
-        in our pockets. We find the most cost-effective measures to achieve your
-        goal.
-      </p>
-      <Row
+      <div className="services-text-content">
+        <p>
+          Today’s E-commerce is an ever-changing landscape driven by potential
+          clients and prospects who now possess power at their fingertips
+          through smart technology.
+        </p>
+        <p>
+          RMCordoviz Inc. will lead as your guide in tracking and monitoring
+          your campaigns, allowing you to adapt and drive toward better results.
+        </p>
+        <p>
+          We recommend tactics that make sense to you, even if it means less
+          money in our pockets. We find the most cost-effective measures to
+          achieve your goal.
+        </p>
+      </div>
+
+      {/* <Row
         noGutters
         className=" marketing-content text-white justify-content-center"
       >
@@ -59,7 +64,7 @@ function Marketing() {
             quis lacinia tempor, ipsum felis consequat est, vel convallis.
           </p>
         </Col>
-      </Row>
+      </Row> */}
       <Row className=" text-left text-white seo-checklist justify-content-center">
         <Col xs={12} lg={10} className=" ">
           <ul>

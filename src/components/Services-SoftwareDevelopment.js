@@ -15,18 +15,26 @@ import sample4 from "../assets/images/sample4.jpeg";
 
 function SoftwareDevelopment() {
   return (
-    <div className="text-white">
-      <p>
-        We aim to take your business higher than ever with the integration of
-        limitless software development which give you flexible and scalable
-        solutions to make your company and your brand accessible from anywhere
-        and at anyplace through connectivity.
-      </p>
-      <p>
-        Let us improve your client’s user experience, deliver conversions
-        through direct communication and successfully convert the output to
-        actual sales, leads and active subscribers.
-      </p>
+    <div className="text-white ">
+      <div>
+        <h1 className="text-gold mt-5 mb-5 text-title text-uppercase">
+          Software Development
+        </h1>
+      </div>
+      <div className="services-text-content">
+        <p>
+          We aim to take your business higher than ever with the integration of
+          limitless software development which give you flexible and scalable
+          solutions to make your company and your brand accessible from anywhere
+          and at anyplace through connectivity.
+        </p>
+        <p>
+          Let us improve your client’s user experience, deliver conversions
+          through direct communication and successfully convert the output to
+          actual sales, leads and active subscribers.
+        </p>
+      </div>
+
       <Row noGutters className=" justify-content-center mb-5 ">
         <Col lg={5} className="fit-content">
           <img

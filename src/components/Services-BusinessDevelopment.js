@@ -9,9 +9,11 @@ function BusinessMarketing() {
   return (
     <div className="text-white">
       <div>
-        <h1 className="text-gold mt-5 mb-5 text-title">
-          BUSINESS DEVELOPMENT.
+        <h1 className="text-gold mt-5 mb-5 text-title text-uppercase">
+          Business Development
         </h1>
+      </div>
+      <div className="services-text-content">
         <p>
           With a keen vision in identifying rising business opportunities, our
           Business Development Team will purposely develop and grow your
