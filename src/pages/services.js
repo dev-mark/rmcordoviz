@@ -19,11 +19,37 @@ import ServicesSocialMediaManagement from "../components/Services-SocialMediaman
 import Coaching from "../components/Services-Coaching";
 import Marketing from "../components/Services-Marketing";
 import ServiceCategory from "../components/Service-Category-With-Indicator";
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+const useWindowDimensions = () => {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+};
 
 const Services = (props) => {
   const [selected, setSelected] = useState("Software Development");
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
+  const { width } = useWindowDimensions();
+
   useEffect(() => {
     if (props.location.state !== undefined) {
       setSelected(props.location.state.category);
@@ -46,12 +72,13 @@ const Services = (props) => {
         </div>
       </div>
 
-      <Container className="justify-content-center ">
+      <Container>
         <div className="carousel-container mt-5">
           <ItemsCarousel
             requestToChangeActive={setActiveItemIndex}
             activeItemIndex={activeItemIndex}
-            numberOfCards={3}
+            showSlither={true}
+            numberOfCards={width < 426 ? 1 : width > 425 && width < 769 ? 2 : 3}
             leftChevron={<button>{"<"}</button>}
             rightChevron={<button>{">"}</button>}
             outsideChevron
