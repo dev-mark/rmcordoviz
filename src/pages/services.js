@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ItemsCarousel from "react-items-carousel";
 import "../assets/styles/services.scss";
 
 // bootstrap
@@ -21,7 +22,8 @@ import ServiceCategory from "../components/Service-Category-With-Indicator";
 
 const Services = (props) => {
   const [selected, setSelected] = useState("Software Development");
-
+  const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const chevronWidth = 40;
   useEffect(() => {
     if (props.location.state !== undefined) {
       setSelected(props.location.state.category);
@@ -44,7 +46,54 @@ const Services = (props) => {
         </div>
       </div>
 
-      <Container className=" text-center">
+      <Container className="justify-content-center ">
+        <div className="carousel-container mt-5">
+          <ItemsCarousel
+            requestToChangeActive={setActiveItemIndex}
+            activeItemIndex={activeItemIndex}
+            numberOfCards={3}
+            leftChevron={<button>{"<"}</button>}
+            rightChevron={<button>{">"}</button>}
+            outsideChevron
+            chevronWidth={chevronWidth}
+            activePosition="left"
+            alwaysShowChevrons
+          >
+            <ServiceCategory
+              icon={ProgressIcon}
+              title="Business Development"
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <ServiceCategory
+              icon={ConsultantIcon}
+              title="Business Coaching"
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <ServiceCategory
+              icon={DigitalMarketing}
+              title="Digital Marketing"
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <ServiceCategory
+              icon={SEOIcon}
+              title="Social Media Management, Ads Development and SEO"
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <ServiceCategory
+              icon={DevelopmentIcon}
+              title="Software Development"
+              selected={selected}
+              setSelected={setSelected}
+            />
+          </ItemsCarousel>
+        </div>
+      </Container>
+
+      {/* <Container className=" text-center">
         <div noGutters className="services-category my-4">
           <ServiceCategory
             icon={ProgressIcon}
@@ -77,7 +126,7 @@ const Services = (props) => {
             setSelected={setSelected}
           />
         </div>
-      </Container>
+      </Container> */}
 
       <Container>
         {selected === "Business Coaching" && <Coaching />}

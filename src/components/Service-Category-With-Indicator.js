@@ -6,7 +6,7 @@ function ServiceCategoryWithIndicator(props) {
     <div
       // xs={3}
       // lg={3}
-      className="mx-2  services-category-container  "
+      className="mx-2  services-category-container  debugger"
       onClick={() => props.setSelected(props.title)}
     >
       <div>
