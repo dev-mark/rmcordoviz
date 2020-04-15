@@ -17,7 +17,7 @@ function ServiceCategory(props) {
         }}
       >
         <div className=" icon-container">
-          <img src={props.icon} alt={props.title} height="160" width="160" />
+          <img src={props.icon} alt={props.title} height="180" width="180" />
         </div>
         <h3 className="text-capitalize">{props.title}</h3>
       </Link>

@@ -6,7 +6,7 @@ import "../assets/styles/services.scss";
 import Container from "react-bootstrap/Container";
 
 // // icons
-import ConsultantIcon from "../assets/icons/consultant.svg";
+import ConsultantIcon from "../assets/icons/conversation.svg";
 import DevelopmentIcon from "../assets/icons/code.svg";
 import ProgressIcon from "../assets/icons/progress.svg";
 import DigitalMarketing from "../assets/icons/social-media-marketing.svg";

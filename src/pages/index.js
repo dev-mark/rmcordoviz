@@ -10,7 +10,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
 
 // icons
-import ConsultantIcon from "../assets/icons/consultant.svg";
+import ConsultantIcon from "../assets/icons/conversation.svg";
 import DevelopmentIcon from "../assets/icons/code.svg";
 import ProgressIcon from "../assets/icons/progress.svg";
 import DigitalMarketing from "../assets/icons/social-media-marketing.svg";
@@ -44,11 +44,11 @@ const Index = () => {
           <div id="landing-color-overlay" />
           <Col xs={12} lg={9} className="landing-content-container">
             <div className="text-left  align-text-middle-left">
-              <h6 className="text-white text-uppercase">
-                We measure our success not on what we have tried, but what has
-                succeeded.
+              <h6 className="text-white">
+                Our methods focus on results. We measure our success not on what
+                we have tried, but what has succeeded.
               </h6>
-              <h1 className="landing-header">
+              <h1 className="landing-header text-capitalize">
                 <strong>WE SUCCEED WHEN OUR CLIENTS SUCCEED</strong>
               </h1>
               <h6 className="text-white mt-3 mb-4">RMCORDOVIZ INC</h6>
@@ -162,28 +162,22 @@ const Index = () => {
       >
         <Carousel.Item>
           <CustomerStatement
-            name="Abigail A. Dodson"
-            feedback="Cras venenatis ante at eros mattis euismod. In ac purus vulputate,
-            dignissim velit a, volutpat sem. Vivamus neque arcu, maximus vel
-            nibh in, ultrices dapibus."
+            name="Denise, Client"
+            feedback="I have worked with different companies all my life, but OCC stands out from all the rest"
           />
         </Carousel.Item>
 
         <Carousel.Item>
           <CustomerStatement
-            name="Hector G. Oneal"
-            feedback="Aliquam fermentum libero libero, quis semper mauris volutpat non.
-          Nulla maximus arcu sed mauris semper dapibus. Sed vel risus cursus,
-          dignissim dolor ac, pharetra enim."
+            name="Tony, Client"
+            feedback="With 3-11 Live transfer a day, Our team is happy. Now we have two client development. It is the best!"
           />
         </Carousel.Item>
 
         <Carousel.Item>
           <CustomerStatement
-            name="Harold P. Tabor"
-            feedback="In lacinia luctus odio id fermentum. Nulla convallis eros eleifend
-          ex venenatis gravida. Nulla fringilla ullamcorper nisl quis
-          eleifend. Suspendisse sed arcu ultricies, bibendum purus."
+            name="Jamie, Client"
+            feedback="I have done everything in over 20 years and this is the first time I found something that works!"
           />
         </Carousel.Item>
       </Carousel>

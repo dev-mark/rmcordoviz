@@ -5,10 +5,9 @@ body {
   font-size: 16px;
   letter-spacing: 1.5px;
 
-  @media #{$extra-small-device} {
-    font-size: 400px;
-    letter-spacing: 1.3px;
-  }
+  // @media #{$extra-small-device} {
+  //   letter-spacing: 1.3px;
+  // }
 }
 
 p,
