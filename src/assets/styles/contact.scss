@@ -1,9 +1,6 @@
 @import "./variables";
 
 .about-us-content {
-  // margin: 30px 0;
-  // background-color: gray;
-  // width: 75%;
   padding: 5%;
 
   @media #{$extra-small-device} {
@@ -26,7 +23,7 @@
 }
 
 .contact-map {
-  height: 355px;
+  height: 350px;
 }
 
 .contact-form {

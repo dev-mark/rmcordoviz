@@ -206,8 +206,8 @@ const Contact = () => {
             </Col>
           </Row>
           <Row noGutters>
-            <Col className=" contact-map">
-              <Map height="355px" width="100%" />
+            <Col className="debugger contact-map">
+              <Map height="100%" width="100%" />
             </Col>
           </Row>
         </Col>
