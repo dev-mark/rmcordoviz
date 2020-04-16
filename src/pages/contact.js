@@ -35,7 +35,12 @@ const Contact = () => {
     setLoading(true);
     setShowError(false);
     axios
-      .post("/email", { name, email, referrals, message })
+      .post("http://localhost:5000/api/email", {
+        name,
+        email,
+        referrals,
+        message,
+      })
       .then((response) => {
         setName("");
         setEmail("");
@@ -47,9 +52,9 @@ const Contact = () => {
         return response.data.message;
       })
       .catch((err) => {
-        console.log(err.response.data);
+        // console.log(err.response.data);
         setLoading(false);
-        if (err.response.status === 500) {
+        if (err.response.status !== 400) {
           setShowError(true);
           return setErrors({
             general: "Something went wrong, Please try again.",
