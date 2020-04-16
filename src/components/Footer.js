@@ -12,6 +12,7 @@ import { ReactComponent as FacebookLogo } from "../assets/icons/facebook-logo.sv
 import { ReactComponent as TwitterLogo } from "../assets/icons/twitter-logo.svg";
 import { ReactComponent as LinkedInLogo } from "../assets/icons/linkedin-logo.svg";
 import { ReactComponent as InstagramLogo } from "../assets/icons/instagram-logo.svg";
+import { ReactComponent as YoutubeLogo } from "../assets/icons/youtube-logo.svg";
 
 // bootstrap
 import Container from "react-bootstrap/Container";
@@ -118,6 +119,9 @@ function Footer() {
                 </a>
                 <a href="https://www.instagram.com/rmcordoviz/">
                   <InstagramLogo className="footer-social-media-logo" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCh4v2Jl9swUryADUYsrgvdQ">
+                  <YoutubeLogo className="footer-social-media-logo" />
                 </a>
               </div>
             </Col>

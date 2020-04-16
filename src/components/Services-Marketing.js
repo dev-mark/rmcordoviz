@@ -10,7 +10,7 @@ import { ReactComponent as FacebookLogo } from "../assets/icons/facebook-logo.sv
 import { ReactComponent as TwitterLogo } from "../assets/icons/twitter-logo.svg";
 import { ReactComponent as LinkedInLogo } from "../assets/icons/linkedin-logo.svg";
 import { ReactComponent as InstagramLogo } from "../assets/icons/instagram-logo.svg";
-// import { ReactComponent as CheckIcon } from "../assets/icons/check-solid.svg";
+import { ReactComponent as YoutubeLogo } from "../assets/icons/youtube-logo.svg";
 
 function Marketing() {
   return (
@@ -69,12 +69,13 @@ function Marketing() {
       <div>
         <h5 className="text-gold text-title">Connect with us:</h5>
       </div>
-      <Row className=" justify-content-center mb-5 mt-3">
+      <Row noGutters className=" justify-content-center mb-5 mt-3">
         <Col
-          xs={3}
+          xs={2}
           md={2}
           lg={1}
-          className="  text-center justify-content-center"
+          xl={1}
+          className="text-center justify-content-center"
         >
           <a href="https://www.facebook.com/rmccordoviz/">
             <div className="services-icon-container">
@@ -83,9 +84,10 @@ function Marketing() {
           </a>
         </Col>
         <Col
-          xs={3}
+          xs={2}
           md={2}
           lg={1}
+          xl={1}
           className="   text-center justify-content-center"
         >
           <a href="https://twitter.com/rmccordoviz">
@@ -95,9 +97,10 @@ function Marketing() {
           </a>
         </Col>
         <Col
-          xs={3}
+          xs={2}
           md={2}
           lg={1}
+          xl={1}
           className="   text-center justify-content-center"
         >
           <a href="https://www.linkedin.com/company/rmccordoviz/">
@@ -107,14 +110,28 @@ function Marketing() {
           </a>
         </Col>
         <Col
-          xs={3}
+          xs={2}
           md={2}
           lg={1}
+          xl={1}
           className="   text-center justify-content-center"
         >
           <a href="https://www.instagram.com/rmcordoviz/">
             <div className="services-icon-container">
               <InstagramLogo className="services-icon" />
+            </div>
+          </a>
+        </Col>
+        <Col
+          xs={2}
+          md={2}
+          lg={1}
+          xl={1}
+          className="   text-center justify-content-center"
+        >
+          <a href="https://www.youtube.com/channel/UCh4v2Jl9swUryADUYsrgvdQ">
+            <div className="services-icon-container">
+              <YoutubeLogo className="services-icon" />
             </div>
           </a>
         </Col>
